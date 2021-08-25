@@ -1,9 +1,12 @@
 
+# Note Zero on Engine-q
+
 JT did all of the work for engine-q (so far), I am just writing some of my own
 personal thoughts about what I have learned so far in working with
 engine-q.
 
-Engine-q is the next step in the evolution of nushell.
+[Engine-q](https://github.com/jntrnr/engine-q)
+is the next step in the evolution of nushell.
 
 Its a cool new project with a slightly different twist on the core underpinnings of the decoupling and integration of the ParserState and the Eval Loop that underlies what happens every time you hit return at your nushell prompt.
 
@@ -144,7 +147,9 @@ if <cond>     else if <cond>     else if <cond>     else <cond>
 
 ##### Things left to be done in engine-q
 
-JT has put up a Todo List in the engine-q repo but as I dig deeper
+JT has put up a
+[Todo List](https://github.com/jntrnr/engine-q/blob/main/TODO.md)
+in the engine-q repo but as I dig deeper
 into engine-q it becomes apparent to me things left to be done as well.
 
 ```rust
