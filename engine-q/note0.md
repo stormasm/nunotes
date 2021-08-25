@@ -212,7 +212,7 @@ For the following statement in engine-q
 if $true { 10 } else { 20 }
 ```
 
-Here is what the call stack looks like
+Here is what the call stack looks like currently in the most recent codebase:
 
 [stack.rs](./stack.rs)   
 [stack.txt](./stack.txt)
