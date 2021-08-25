@@ -1,0 +1,38 @@
+Example 1
+
+if     0,2
+$true  3,8
+block1 9,15
+else   16,20
+block2 21,27
+
+if $true { 10 } else { 20 }
+
+parse_block: [Span { start: 0, end: 2 }, Span { start: 3, end: 8 }, Span { start: 9, end: 15 }, Span { start: 16, end: 20 }, Span { start: 21, end: 27 }]
+parse_statement: [Span { start: 0, end: 2 }, Span { start: 3, end: 8 }, Span { start: 9, end: 15 }, Span { start: 16, end: 20 }, Span { start: 21, end: 27 }]
+parse_expression: [Span { start: 0, end: 2 }, Span { start: 3, end: 8 }, Span { start: 9, end: 15 }, Span { start: 16, end: 20 }, Span { start: 21, end: 27 }]
+parse_call: [Span { start: 0, end: 2 }, Span { start: 3, end: 8 }, Span { start: 9, end: 15 }, Span { start: 16, end: 20 }, Span { start: 21, end: 27 }]
+
+$true
+
+parse_expression: [Span { start: 3, end: 8 }]
+parse_math_expression: [Span { start: 3, end: 8 }]
+
+10
+
+parse_block: [Span { start: 11, end: 13 }]
+parse_statement: [Span { start: 11, end: 13 }]
+parse_expression: [Span { start: 11, end: 13 }]
+parse_math_expression: [Span { start: 11, end: 13 }]
+
+block 2
+
+parse_expression: [Span { start: 21, end: 27 }]
+parse_math_expression: [Span { start: 21, end: 27 }]
+
+20
+
+parse_block: [Span { start: 23, end: 25 }]
+parse_statement: [Span { start: 23, end: 25 }]
+parse_expression: [Span { start: 23, end: 25 }]
+parse_math_expression: [Span { start: 23, end: 25 }]
