@@ -15,10 +15,10 @@ Nushell does many things well including enabling data visualization
 but at its core all nushell does is give you a way to interact with the state
 of the system over time with a set of custom commands that you define.
 
-Engine-q delineates that state very cleanly with a ParserState that over
+Engine-q delineates that state very cleanly with a **ParserState** that over
 time is easy to change.  Every time you get a command prompt in enqine-q
 you get the opportunity to continually modify the ParserState by creating
-a ParserDelta which when you hit return at the prompt gets "merged" back
+a **ParserDelta** which when you hit return at the prompt gets "merged" back
 into the ParserState.
 
 The Eval loop takes the ParserState along with the most recent block of code
