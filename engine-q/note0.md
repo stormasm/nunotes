@@ -134,6 +134,12 @@ One nice thing is that the else block is no longer required but
 is optional and secondly the SyntaxShape::Expression is more generic
 and not tied to just MathExpressions.
 
+Also the following syntax is available:
+
+```rust
+if <cond> else if <cond> else if <cond> else <cond>
+```
+
 ##### Things left to be done in engine-q
 
 JT has put up a Todo List in the engine-q repo but as I dig deeper
@@ -229,3 +235,23 @@ If you are excited about
 [reedline](https://github.com/jntrnr/reedline)
 you can play around with it as well as see how
 [syntax_highlighting](https://github.com/jntrnr/engine-q/blob/main/crates/nu-cli/src/syntax_highlight.rs) works.
+
+### Benchmark comparisons between engine-q and nushell
+
+JT provided me the following benchmark test he ran comparing
+engine-q with nushell...  Based on his test this appears to
+be a speed up of almost 10 times or **one order of magnitude**
+
+This is a benchmark from engine-q
+
+〉benchmark { for x in 1000000 { } }
+70 ms
+
+This is a benchmark from nushell
+
+benchmark { for x in 0..1000000 {} }
+───┬───────────────────
+ # │     real time     
+───┼───────────────────
+ 0 │ 757ms 214us 512ns
+───┴───────────────────
