@@ -239,7 +239,8 @@ You can play around with it as well as see how
 ### Benchmark comparisons between engine-q and nushell
 
 JT provided me the following benchmark test he ran comparing
-engine-q with nushell...  Based on his test this appears to
+engine-q with nushell...   
+Based on his test this appears to
 be a speed up of almost 10 times or **one order of magnitude** !
 
 This is a benchmark from engine-q running on JT's machine.
