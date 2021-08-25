@@ -52,7 +52,9 @@ default = [
 ]
 ```
 
-Moving forward having a really lightweight, blazing fast core engine that is
-easy to modify as the nushell language evolves is exciting.  If nushell
-developers understand this delineation and the core design pattern
-of nushell being engine-q; then the product can be evolved over time without handicapping the future core engine with unneeded dependencies.
+Moving forward having a really lightweight, blazing fast set of design patterns
+called parser and nu-engine that is easy to modify as the nushell language evolves is exciting.  
+
+### The Details
+
+##### If - else 
