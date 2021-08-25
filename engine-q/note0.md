@@ -53,7 +53,7 @@ default = [
 ```
 
 Moving forward having a really lightweight, blazing fast set of design patterns
-called parser and nu-engine that is easy to modify as the nushell language evolves is exciting.  
+or crates called nu-parser and nu-engine that is easy to modify as the nushell language evolves is exciting.  
 
 ### The Details
 
