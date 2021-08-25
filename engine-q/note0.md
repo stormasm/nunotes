@@ -249,9 +249,5 @@ This is a benchmark from engine-q
 
 This is a benchmark from nushell
 
-benchmark { for x in 0..1000000 {} }
-───┬───────────────────
- # │     real time     
-───┼───────────────────
- 0 │ 757ms 214us 512ns
-───┴───────────────────
+> benchmark { for x in 0..1000000 {} }
+757 ms
