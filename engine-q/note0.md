@@ -31,7 +31,7 @@ The Eval loop takes the ParserState and a new Stack along with the most recent b
 Here is one of the things about engine-q I really like, it will enable moving
 forward --- a very succinct small memory footprint that builds fast and has no other dependencies.  At the moment engine-q's total footprint is
 
-nu-parser has 3 crates as dependencies and builds in less than 5 seconds.
+nu-parser has 3 crates as dependencies and builds in less than 5 seconds.   
 nu-engine has 4 crates as dependencies and builds in less than 6 seconds.
 
 All of engine-q
