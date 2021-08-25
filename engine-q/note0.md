@@ -251,3 +251,7 @@ This is a benchmark from nushell
 
 > benchmark { for x in 0..1000000 {} }   
 757 ms
+
+On my slow macbook there is even a more impressive speed up...
+
+841 ms for engine-q and almost 13 seconds for nushell...
