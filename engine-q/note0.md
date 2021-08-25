@@ -232,7 +232,7 @@ Here is what the call stack looks like currently in the
 ### Reedline
 
 An added bonus of using engine-q is that you get to use
-[reedline](https://github.com/jntrnr/reedline).
+[reedline](https://github.com/jntrnr/reedline).   
 You can play around with it as well as see how
 [syntax_highlighting](https://github.com/jntrnr/engine-q/blob/main/crates/nu-cli/src/syntax_highlight.rs) works.
 
