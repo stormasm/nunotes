@@ -224,7 +224,7 @@ if $true { 10 } else { 20 }
 ```
 
 Here is what the call stack looks like currently in the
-[most recent codebase commit](https://github.com/jntrnr/engine-q/commit/739425431a502df303023942f8edd84f03b3f4cc):
+[most recent codebase commit](https://github.com/jntrnr/engine-q/commit/8ab7b27d4fb2461e512581c3d15bb9ffc93f9a4f)
 
 [stack.rs](./stack.rs)   
 [stack.txt](./stack.txt)
