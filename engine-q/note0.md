@@ -199,3 +199,9 @@ once the operator code lands then the above statement will work as well.
 
 There are many other things like this I could outline, but for now
 hopefully this gives you an idea for where things are headed...
+
+### Digging Deeper
+
+I have put together an outline of all of the current engine-q datastructures
+
+[engine-q-ds.md](./engine-q-ds.md)

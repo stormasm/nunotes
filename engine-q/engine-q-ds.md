@@ -1,6 +1,4 @@
 
-* [engine-q notes](./engine-q.md)
-
 ### Engine-q data structures
 
 ##### nu-parser parser.rs
