@@ -39,7 +39,7 @@ All of engine-q
 * cargo build = 65 crates
 * cargo test  = 89 crates
 
-This enables developers to use engine-q as their programming language for building application that use and need scripting functionality.  
+This enables developers to use engine-q as their programming language for building applications that use and need scripting functionality.  
 
 All of the other custom commands inside nushell get added on top of engine-q along with packages sit on top of engine-q and use its api
 but it does not influence or add dependencies to it.
