@@ -128,3 +128,74 @@ working_set.add_decl(sig.into());
 One nice thing is that the else block is no longer required but
 is optional and secondly the SyntaxShape::Expression is more generic
 and not tied to just MathExpressions.
+
+##### Things left to be done in engine-q
+
+JT has put up a Todo List in the engine-q repo but as I dig deeper
+into engine-q it becomes apparent to me things left to be done as well.
+
+```rust
+match op {
+       Operator::Equal
+       | Operator::NotEqual
+       | Operator::LessThan
+       | Operator::GreaterThan
+       | Operator::LessThanOrEqual
+       | Operator::GreaterThanOrEqual => {
+           value::compare_values(op, left, right).map(UntaggedValue::boolean)
+       }
+       Operator::Contains => string_contains(left, right).map(UntaggedValue::boolean),
+       Operator::NotContains => string_contains(left, right)
+           .map(Not::not)
+           .map(UntaggedValue::boolean),
+       Operator::Plus => value::compute_values(op, left, right),
+       Operator::Minus => value::compute_values(op, left, right),
+       Operator::Multiply => value::compute_values(op, left, right),
+       Operator::Pow => value::compute_values(op, left, right),
+       Operator::Divide => value::compute_values(op, left, right).map(|res| match res {
+           UntaggedValue::Error(_) => UntaggedValue::Error(ShellError::labeled_error(
+               "Evaluation error",
+               "division by zero",
+               &right.tag.span,
+           )),
+           _ => res,
+       }),
+       Operator::Modulo => value::compute_values(op, left, right).map(|res| match res {
+           UntaggedValue::Error(_) => UntaggedValue::Error(ShellError::labeled_error(
+               "Evaluation error",
+               "division by zero",
+               &right.tag.span,
+           )),
+           _ => res,
+       }),
+       Operator::In => inside_of(left, right).map(UntaggedValue::boolean),
+       Operator::NotIn => inside_of(left, right).map(|x| UntaggedValue::boolean(!x)),
+       Operator::And => match (left.as_bool(), right.as_bool()) {
+           (Ok(left), Ok(right)) => Ok(UntaggedValue::boolean(left && right)),
+           _ => Err((left.type_name(), right.type_name())),
+       },
+       Operator::Or => match (left.as_bool(), right.as_bool()) {
+           (Ok(left), Ok(right)) => Ok(UntaggedValue::boolean(left || right)),
+           _ => Err((left.type_name(), right.type_name())),
+       },
+   }
+}
+```
+
+Port all of the
+[operator](https://github.com/nushell/nushell/blob/main/crates/nu-engine/src/evaluate/operator.rs) code over to engine-q which would enable
+
+```rust
+if (3 > 4) { echo 4 } {echo 5 }
+```
+
+currently only this is available
+
+```rust
+if $true { 10 } else { 20 }
+```
+
+once the operator code lands then the above statement will work as well.
+
+There are many other things like this I could outline, but for now
+hopefully this gives you a taste for where things are headed...
