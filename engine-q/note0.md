@@ -137,7 +137,9 @@ and not tied to just MathExpressions.
 Also the following syntax is available:
 
 ```rust
-if <cond> else if <cond> else if <cond> else <cond>
+if $true {10} else if $true {20} else if $true {10} else {20}
+
+if <cond>     else if <cond>     else if <cond>     else <cond>
 ```
 
 ##### Things left to be done in engine-q
