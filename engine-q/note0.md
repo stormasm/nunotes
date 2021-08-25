@@ -244,10 +244,10 @@ be a speed up of almost 10 times or **one order of magnitude**
 
 This is a benchmark from engine-q
 
-〉benchmark { for x in 1000000 { } }
+> benchmark { for x in 1000000 { } }   
 70 ms
 
 This is a benchmark from nushell
 
-> benchmark { for x in 0..1000000 {} }
+> benchmark { for x in 0..1000000 {} }   
 757 ms
