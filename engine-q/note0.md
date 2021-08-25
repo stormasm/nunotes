@@ -242,16 +242,16 @@ JT provided me the following benchmark test he ran comparing
 engine-q with nushell...  Based on his test this appears to
 be a speed up of almost 10 times or **one order of magnitude** !
 
-This is a benchmark from engine-q
+This is a benchmark from engine-q running on JT's machine.
 
 > benchmark { for x in 1000000 { } }   
 70 ms
 
-This is a benchmark from nushell
+This is a benchmark from nushell running on JT's machine.
 
 > benchmark { for x in 0..1000000 {} }   
 757 ms
 
-On my slow macbook there is even a more impressive speed up...
+**On my slow macbook** with 8GB of memory there is even a more impressive speed up...
 
 841 ms for engine-q and almost 13 seconds for nushell...
