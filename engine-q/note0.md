@@ -32,7 +32,7 @@ dependencies.  At the moment engine-q's total footprint is 67 crates.  The parse
 
 This enables developers to use engine-q as their programming language for building application that use and need scripting functionality.  
 
-All of the other custom commands inside nushell get added on top of engine-q along with packages like dataframes sit on top of engine-q and use its api
+All of the other custom commands inside nushell get added on top of engine-q along with packages sit on top of engine-q and use its api
 but it does not influence or add dependencies to it.
 
 In the current nushell here are the stats
@@ -57,4 +57,4 @@ called parser and nu-engine that is easy to modify as the nushell language evolv
 
 ### The Details
 
-##### If - else 
+##### If - else
