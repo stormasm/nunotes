@@ -212,7 +212,8 @@ For the following statement in engine-q
 if $true { 10 } else { 20 }
 ```
 
-Here is what the call stack looks like currently in the most recent codebase:
+Here is what the call stack looks like currently in the
+[most recent codebase commit](https://github.com/jntrnr/engine-q/commit/739425431a502df303023942f8edd84f03b3f4cc):
 
 [stack.rs](./stack.rs)   
 [stack.txt](./stack.txt)
