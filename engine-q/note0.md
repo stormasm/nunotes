@@ -26,6 +26,8 @@ into the ParserState.
 
 The Eval loop takes the ParserState and a new Stack along with the most recent block of code you just last typed at the command prompt and returns to you a visualized Value. That value can take many forms and depending on the form of it you see different things.
 
+### Crate Dependencies
+
 Here is one of the things about engine-q I really like, it will enable moving
 forward a very succinct small memory footprint that builds fast and has no other
 dependencies.  At the moment engine-q's total footprint is
