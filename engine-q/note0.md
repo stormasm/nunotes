@@ -229,9 +229,9 @@ Here is what the call stack looks like currently in the
 [stack.rs](./stack.rs)   
 [stack.txt](./stack.txt)
 
-### Added Bonuses
+### Reedline
 
-If you are excited about
+An added bonus of using engine-q is that you get to use
 [reedline](https://github.com/jntrnr/reedline)
 you can play around with it as well as see how
 [syntax_highlighting](https://github.com/jntrnr/engine-q/blob/main/crates/nu-cli/src/syntax_highlight.rs) works.
