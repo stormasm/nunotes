@@ -186,7 +186,7 @@ Port all of the
 [operator](https://github.com/nushell/nushell/blob/main/crates/nu-engine/src/evaluate/operator.rs) code over to engine-q which would enable
 
 ```rust
-if (3 > 4) { echo 4 } {echo 5 }
+if (3 > 4) { 10 } else { 20 }
 ```
 
 currently only this is available
@@ -198,4 +198,4 @@ if $true { 10 } else { 20 }
 once the operator code lands then the above statement will work as well.
 
 There are many other things like this I could outline, but for now
-hopefully this gives you a taste for where things are headed...
+hopefully this gives you an idea for where things are headed...
