@@ -34,7 +34,7 @@ forward --- a very succinct small memory footprint that builds fast and has no o
 * cargo build = 65 crates
 * cargo test  = 89 crates
 
-The parser has only one dependency, and nu-engine's only dependency is the parser.
+The nu-parser has only one dependency, and nu-engine's only dependency is the parser.
 
 This enables developers to use engine-q as their programming language for building application that use and need scripting functionality.  
 
