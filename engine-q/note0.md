@@ -54,4 +54,77 @@ or crates called nu-parser and nu-engine that is easy to modify as the nushell l
 
 ### The Details
 
-##### If - else
+##### If - else in the current nushell
+
+In the current nushell if you type this it works...
+
+```rust
+if $true { echo $true } { echo $false }
+```
+
+But if you type this
+
+```rust
+if $true { echo $true }
+
+error: Type Error
+  ┌─ shell:3:10
+  │
+3 │ if $true { echo $true }
+  │          ^^^^^^^^^^^^^^ Expected operator, found { echo $true }
+```
+
+The reason you get this error is because if expects an else clause
+as it is required from the if command signature.
+
+```rust
+fn signature(&self) -> Signature {
+    Signature::build("if")
+        .required(
+            "condition",
+            SyntaxShape::MathExpression,
+            "the condition that must match",
+        )
+        .required(
+            "then_case",
+            SyntaxShape::Block,
+            "block to run if condition is true",
+        )
+        .required(
+            "else_case",
+            SyntaxShape::Block,
+            "block to run if condition is false",
+        )
+}
+```
+
+But the error you receive without the else clause is not really
+accurate or correct.  It says "expected operator", but ideally
+you would like the error message to say something along the lines
+of "you forgot your else clause which is required"
+
+However, right now the "condition" of the if clause is a
+**SyntaxShape::MathExpression** where ideally you would like
+it to be more of a **SyntaxShape::Expression**, where any type of Condition
+should work for an if condition as long as it returns some type
+of a Boolean.
+
+##### If - else in engine-q
+
+In engine-q if is defined like this:
+
+```rust
+let sig = Signature::build("if")
+    .required("cond", SyntaxShape::Expression, "condition")
+    .required("then_block", SyntaxShape::Block, "then block")
+    .optional(
+        "else",
+        SyntaxShape::Keyword(b"else".to_vec(), Box::new(SyntaxShape::Expression)),
+        "optional else followed by else block",
+    );
+working_set.add_decl(sig.into());
+```
+
+One nice thing is that the else block is no longer required but
+is optional and secondly the SyntaxShape::Expression is more generic
+and not tied to just MathExpressions.
