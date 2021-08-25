@@ -205,3 +205,14 @@ hopefully this gives you an idea for where things are headed...
 I have put together an outline of all of the current engine-q datastructures
 
 [engine-q-ds.md](./engine-q-ds.md)
+
+For the following statement in engine-q
+
+```rust
+if $true { 10 } else { 20 }
+```
+
+Here is what the call stack looks like
+
+[stack.rs](./stack.rs)   
+[stack.txt](./stack.txt)
