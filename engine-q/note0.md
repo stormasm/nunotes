@@ -29,8 +29,7 @@ The Eval loop takes the ParserState and a new Stack along with the most recent b
 ### Crate Dependencies
 
 Here is one of the things about engine-q I really like, it will enable moving
-forward a very succinct small memory footprint that builds fast and has no other
-dependencies.  At the moment engine-q's total footprint is
+forward --- a very succinct small memory footprint that builds fast and has no other dependencies.  At the moment engine-q's total footprint is
 
 * cargo build = 65 crates
 * cargo test  = 89 crates
