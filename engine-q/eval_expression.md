@@ -20,7 +20,9 @@ Expr::BinaryOp(lhs, op, rhs) => {
 }
 ```
 
-##### value
+### crate: nu_engine, file: value.rs
+
+##### {add, subtract, multiply, divide}
 
 ```rust
 impl Value {
