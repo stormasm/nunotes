@@ -6,10 +6,6 @@ when working with new operators like {* / -} you need to add more cases here or 
 
 eval_expression returns a Value so Value needs {subtract, multiply, divide}
 
-impl Value {
-    pub fn add(&self, op: Span, rhs: &Value) -> Result<Value, ShellError> {
-
-
 ```rust
 Expr::BinaryOp(lhs, op, rhs) => {
     let op_span = op.span;
@@ -22,4 +18,11 @@ Expr::BinaryOp(lhs, op, rhs) => {
         _ => Ok(Value::Nothing { span: expr.span }),
     }
 }
+```
+
+##### value
+
+```rust
+impl Value {
+    pub fn add(&self, op: Span, rhs: &Value) -> Result<Value, ShellError> {
 ```
