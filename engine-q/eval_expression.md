@@ -4,8 +4,6 @@
 ##### eval_expresssion
 when working with new operators like {* / -} you need to add more cases here or create a new function that deals with all of the cases...
 
-eval_expression returns a Value so Value needs {subtract, multiply, divide}
-
 ```rust
 Expr::BinaryOp(lhs, op, rhs) => {
     let op_span = op.span;
@@ -21,6 +19,8 @@ Expr::BinaryOp(lhs, op, rhs) => {
 ```
 
 ### crate: nu_engine, file: value.rs
+
+eval_expression returns a Value so Value needs {subtract, multiply, divide}
 
 ##### {add, subtract, multiply, divide}
 
