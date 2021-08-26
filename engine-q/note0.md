@@ -220,6 +220,7 @@ if $true { 10 } else { 20 }
 once the operator code lands then the above statement will work as well.
 
 **JT _completed the operator code_ a few hours after this blog post came out.**
+Thank you !
 
 There are many other things like this I could outline, but for now
 hopefully this gives you an idea for where things are headed...
