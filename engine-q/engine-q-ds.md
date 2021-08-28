@@ -14,6 +14,11 @@ pub enum Statement {
     Expression(Expression),
 }
 
+pub struct Declaration {
+    pub signature: Box<Signature>,
+    pub body: Option<BlockId>,
+}
+
 pub struct Pipeline {
     pub expressions: Vec<Expression>,
 }
