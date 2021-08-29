@@ -163,12 +163,6 @@ pub enum Operator {
 
 pub enum Import {}
 
-pub enum Statement {
-    Declaration(DeclId),
-    Pipeline(Pipeline),
-    Expression(Expression),
-}
-
 pub struct Call {
     /// identifier of the declaration to call
     pub decl_id: DeclId,
