@@ -1,7 +1,7 @@
 
 ### Engine-q data structures
 
-##### nu-parser parser.rs
+##### nu-parser
 
 ```rust
 pub struct Block {
@@ -70,6 +70,35 @@ pub enum Type {
 pub type VarId = usize;
 pub type DeclId = usize;
 pub type BlockId = usize;
+
+pub struct Signature {
+    pub name: String,
+    pub usage: String,
+    pub extra_usage: String,
+    pub required_positional: Vec<PositionalArg>,
+    pub optional_positional: Vec<PositionalArg>,
+    pub rest_positional: Option<PositionalArg>,
+    pub named: Vec<Flag>,
+    pub is_filter: bool,
+}
+
+pub struct Flag {
+    pub long: String,
+    pub short: Option<char>,
+    pub arg: Option<SyntaxShape>,
+    pub required: bool,
+    pub desc: String,
+    // For custom commands
+    pub var_id: Option<VarId>,
+}
+
+pub struct PositionalArg {
+    pub name: String,
+    pub desc: String,
+    pub shape: SyntaxShape,
+    // For custom commands
+    pub var_id: Option<VarId>,
+}
 
 pub enum SyntaxShape {
     /// A specific match to a word or symbol
