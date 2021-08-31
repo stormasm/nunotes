@@ -228,13 +228,38 @@ pub struct ParserState {
 
 ```rust
 pub enum Value {
-    Bool { val: bool, span: Span },
-    Int { val: i64, span: Span },
-    Float { val: f64, span: Span },
-    String { val: String, span: Span },
-    List { val: Vec<Value>, span: Span },
-    Block { val: BlockId, span: Span },
-    Nothing { span: Span },
+    Bool {
+        val: bool,
+        span: Span,
+    },
+    Int {
+        val: i64,
+        span: Span,
+    },
+    Float {
+        val: f64,
+        span: Span,
+    },
+    String {
+        val: String,
+        span: Span,
+    },
+    List {
+        val: Vec<Value>,
+        span: Span,
+    },
+    Table {
+        headers: Vec<String>,
+        val: Vec<Vec<Value>>,
+        span: Span,
+    },
+    Block {
+        val: BlockId,
+        span: Span,
+    },
+    Nothing {
+        span: Span,
+    },
 }
 ```
 
