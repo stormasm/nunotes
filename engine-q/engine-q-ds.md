@@ -67,9 +67,9 @@ pub enum Type {
     Unknown,
 }
 
-pub type VarId = usize;
-pub type DeclId = usize;
 pub type BlockId = usize;
+pub type DeclId = usize;
+pub type VarId = usize;
 
 pub struct Signature {
     pub name: String,
@@ -209,25 +209,6 @@ pub struct VarDecl {
 ##### nu-parser parser_state.rs
 
 ```rust
-pub type VarId = usize;
-pub type DeclId = usize;
-pub type BlockId = usize;
-
-pub enum Type {
-    Int,
-    Bool,
-    String,
-    Block,
-    ColumnPath,
-    Duration,
-    FilePath,
-    Filesize,
-    List(Box<Type>),
-    Number,
-    Table,
-    Unknown,
-}
-
 struct ScopeFrame {
     vars: HashMap<Vec<u8>, VarId>,
     decls: HashMap<Vec<u8>, DeclId>,
