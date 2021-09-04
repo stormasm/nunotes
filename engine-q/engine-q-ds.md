@@ -11,7 +11,6 @@ pub struct Block {
 pub enum Statement {
     Declaration(DeclId),
     Pipeline(Pipeline),
-    Expression(Expression),
 }
 
 pub struct Declaration {
