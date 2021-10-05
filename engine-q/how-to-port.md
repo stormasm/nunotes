@@ -20,7 +20,8 @@ Name and usage is fairly obvious
 
 #### Signature
 
-The signature can have required parameters, optional parameters, or no parameters.  An example of a command with no parameters is the command **length**.
+The signature can have required parameters, optional parameters, or no parameters.  An example of a command with no parameters is the
+[command length](https://github.com/nushell/engine-q/blob/main/crates/nu-command/src/filters/length.rs).
 
 #### Run
 
