@@ -18,6 +18,12 @@ All commands have the standard boilerplate methods including
 
 Name and usage is fairly obvious
 
+#### Signature
+
+The signature can have required parameters, optional parameters, or no parameters.  An example of a command with no parameters is the command **length**.
+
+#### Run
+
 ```rust
 fn run(
     &self,
@@ -27,8 +33,7 @@ fn run(
 ) -> Result<nu_protocol::Value, nu_protocol::ShellError> {
 ```
 
-
-
+Run is where all of the action happens when porting over a command from nushell or writing a new command.
 
 ```rust
 pub struct Call {
