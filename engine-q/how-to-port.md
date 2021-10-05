@@ -23,6 +23,12 @@ Name and usage is fairly obvious
 The signature can have required parameters, optional parameters, or no parameters.  An example of a command with no parameters is the
 [command length](https://github.com/nushell/engine-q/blob/main/crates/nu-command/src/filters/length.rs).
 
+```rust
+fn signature(&self) -> nu_protocol::Signature {
+  Signature::build("length")
+}
+```
+
 #### Run
 
 ```rust
