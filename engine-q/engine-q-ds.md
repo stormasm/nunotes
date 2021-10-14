@@ -1,8 +1,6 @@
 
 ### Engine-q data structures
 
-##### nu-parser
-
 ```rust
 pub struct Block {
     pub signature: Box<Signature>,
@@ -23,6 +21,7 @@ pub struct Expression {
     pub expr: Expr,
     pub span: Span,
     pub ty: Type,
+    pub custom_completion: Option<String>,
 }
 
 pub enum Expr {
@@ -63,17 +62,24 @@ pub struct Span {
 
 pub enum Type {
     Int,
+    Float,
+    Range,
     Bool,
     String,
     Block,
-    ColumnPath,
+    CellPath,
     Duration,
-    FilePath,
+    Date,
     Filesize,
     List(Box<Type>),
     Number,
+    Nothing,
+    Record(Vec<String>, Vec<Type>),
     Table,
+    ValueStream,
     Unknown,
+    Error,
+    Binary,
 }
 
 pub type BlockId = usize;
@@ -89,8 +95,8 @@ pub struct Signature {
     pub rest_positional: Option<PositionalArg>,
     pub named: Vec<Flag>,
     pub is_filter: bool,
+    pub creates_scope: bool,
 }
-
 pub struct Flag {
     pub long: String,
     pub short: Option<char>,
@@ -120,10 +126,10 @@ pub enum SyntaxShape {
     String,
 
     /// A dotted path to navigate the table
-    ColumnPath,
+    CellPath,
 
     /// A dotted path to navigate the table (including variable)
-    FullColumnPath,
+    FullCellPath,
 
     /// Only a numeric (integer or decimal) value is allowed
     Number,
@@ -135,13 +141,16 @@ pub enum SyntaxShape {
     Int,
 
     /// A filepath is allowed
-    FilePath,
+    Filepath,
 
     /// A glob pattern is allowed, eg `foo*`
     GlobPattern,
 
+    /// A module path pattern used for imports
+    ImportPattern,
+
     /// A block is allowed, eg `{start this thing}`
-    Block,
+    Block(Option<Vec<SyntaxShape>>),
 
     /// A table is allowed, eg `[[first, second]; [1, 2]]`
     Table,
@@ -176,7 +185,15 @@ pub enum SyntaxShape {
 
     /// A general expression, eg `1 + 2` or `foo --bar`
     Expression,
+
+    /// A boolean value
+    Boolean,
+
+    /// A custom shape with custom completion logic
+    Custom(Box<SyntaxShape>, String),
 }
+
+##### updated above here 10/14/21
 
 pub enum Operator {
     Equal,
