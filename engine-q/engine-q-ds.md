@@ -1,6 +1,8 @@
 
 ### Engine-q data structures
 
+##### nu-protocol
+
 ```rust
 pub struct Block {
     pub signature: Box<Signature>,
@@ -194,8 +196,6 @@ pub enum SyntaxShape {
     Custom(Box<SyntaxShape>, String),
 }
 
-##### updated above here 10/14/21
-
 pub enum Operator {
     Equal,
     NotEqual,
@@ -224,41 +224,7 @@ pub struct Call {
     pub positional: Vec<Expression>,
     pub named: Vec<(Spanned<String>, Option<Expression>)>,
 }
-```
 
-##### nu-parser
-
-```rust
-
-pub enum Import {}
-
-pub struct VarDecl {
-    var_id: VarId,
-    expression: Expression,
-}
-```
-
-##### nu-parser parser_state.rs
-
-```rust
-struct ScopeFrame {
-    vars: HashMap<Vec<u8>, VarId>,
-    decls: HashMap<Vec<u8>, DeclId>,
-}
-
-pub struct ParserState {
-    files: Vec<(String, usize, usize)>,
-    file_contents: Vec<u8>,
-    vars: Vec<Type>,
-    decls: Vec<Declaration>,
-    blocks: Vec<Block>,
-    scope: Vec<ScopeFrame>,
-}
-```
-
-##### nu-engine value.rs
-
-```rust
 pub enum Value {
     Bool {
         val: bool,
@@ -266,6 +232,22 @@ pub enum Value {
     },
     Int {
         val: i64,
+        span: Span,
+    },
+    Filesize {
+        val: i64,
+        span: Span,
+    },
+    Duration {
+        val: i64,
+        span: Span,
+    },
+    Date {
+        val: DateTime<FixedOffset>,
+        span: Span,
+    },
+    Range {
+        val: Box<Range>,
         span: Span,
     },
     Float {
@@ -276,13 +258,17 @@ pub enum Value {
         val: String,
         span: Span,
     },
-    List {
-        val: Vec<Value>,
+    Record {
+        cols: Vec<String>,
+        vals: Vec<Value>,
         span: Span,
     },
-    Table {
-        headers: Vec<String>,
-        val: Vec<Vec<Value>>,
+    Stream {
+        stream: ValueStream,
+        span: Span,
+    },
+    List {
+        vals: Vec<Value>,
         span: Span,
     },
     Block {
@@ -292,14 +278,61 @@ pub enum Value {
     Nothing {
         span: Span,
     },
+    Error {
+        error: ShellError,
+    },
+    Binary {
+        val: Vec<u8>,
+        span: Span,
+    },
+    CellPath {
+        val: CellPath,
+        span: Span,
+    },
 }
 ```
 
-##### nu-engine state.rs
+##### nu-protocol: engine_state.rs
 
 ```rust
-pub struct State {
-    pub parser_state: Rc<RefCell<ParserState>>,
+pub struct EngineState {
+    files: Vec<(String, usize, usize)>,
+    file_contents: Vec<u8>,
+    vars: Vec<Type>,
+    decls: Vec<Box<dyn Command>>,
+    blocks: Vec<Block>,
+    pub scope: Vec<ScopeFrame>,
+}
+
+pub struct ScopeFrame {
+    pub vars: HashMap<Vec<u8>, VarId>,
+    predecls: HashMap<Vec<u8>, DeclId>, // temporary storage for predeclarations
+    decls: HashMap<Vec<u8>, DeclId>,
+    aliases: HashMap<Vec<u8>, Vec<Span>>,
+    modules: HashMap<Vec<u8>, BlockId>,
+    visibility: Visibility,
+}
+
+pub struct StateWorkingSet<'a> {
+    pub permanent_state: &'a EngineState,
+    pub delta: StateDelta,
+}
+
+pub struct StateDelta {
+    files: Vec<(String, usize, usize)>,
+    pub(crate) file_contents: Vec<u8>,
+    vars: Vec<Type>,              // indexed by VarId
+    decls: Vec<Box<dyn Command>>, // indexed by DeclId
+    blocks: Vec<Block>,           // indexed by BlockId
+    pub scope: Vec<ScopeFrame>,
+}
+```
+
+##### engine/evaluation_context.rs
+
+```rust
+pub struct EvaluationContext {
+    pub engine_state: Rc<RefCell<EngineState>>,
     pub stack: Stack,
 }
 
@@ -312,27 +345,23 @@ pub struct StackFrame {
 pub struct Stack(Rc<RefCell<StackFrame>>);
 ```
 
-##### nu-engine eval.rs
+##### nu-parser parser.rs
 
 ```rust
-pub enum ShellError {
-    OperatorMismatch {
-        op_span: Span,
-        lhs_ty: Type,
-        lhs_span: Span,
-        rhs_ty: Type,
-        rhs_span: Span,
-    },
-    Unsupported(Span),
-    InternalError(String),
-    VariableNotFound(Span),
-    CantConvert(String, Span),
+pub enum Import {}
+
+pub struct VarDecl {
+    var_id: VarId,
+    expression: Expression,
 }
 ```
-#### References
+
+### References
 
 ##### usize
 
 The pointer-sized unsigned integer type.
 
 The size of this primitive is how many bytes it takes to reference any location in memory. For example, on a 32 bit target, this is 4 bytes and on a 64 bit target, this is 8 bytes.
+
+##### Update: October 14, 2021
