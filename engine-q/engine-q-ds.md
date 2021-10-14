@@ -217,15 +217,20 @@ pub enum Operator {
     Pow,
 }
 
-pub enum Import {}
-
 pub struct Call {
     /// identifier of the declaration to call
     pub decl_id: DeclId,
     pub head: Span,
     pub positional: Vec<Expression>,
-    pub named: Vec<(String, Option<Expression>)>,
+    pub named: Vec<(Spanned<String>, Option<Expression>)>,
 }
+```
+
+##### nu-parser
+
+```rust
+
+pub enum Import {}
 
 pub struct VarDecl {
     var_id: VarId,
