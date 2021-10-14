@@ -97,6 +97,7 @@ pub struct Signature {
     pub is_filter: bool,
     pub creates_scope: bool,
 }
+
 pub struct Flag {
     pub long: String,
     pub short: Option<char>,
