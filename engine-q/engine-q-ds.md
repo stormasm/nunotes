@@ -5,17 +5,14 @@
 
 ```rust
 pub struct Block {
+    pub signature: Box<Signature>,
     pub stmts: Vec<Statement>,
+    pub exports: Vec<(Vec<u8>, DeclId)>, // Assuming just defs for now
 }
 
 pub enum Statement {
     Declaration(DeclId),
     Pipeline(Pipeline),
-}
-
-pub struct Declaration {
-    pub signature: Box<Signature>,
-    pub body: Option<BlockId>,
 }
 
 pub struct Pipeline {
@@ -28,27 +25,40 @@ pub struct Expression {
     pub ty: Type,
 }
 
-pub struct Span {
-    pub start: usize,
-    pub end: usize,
-}
-
 pub enum Expr {
     Bool(bool),
     Int(i64),
+    Float(f64),
+    Range(
+        Option<Box<Expression>>, // from
+        Option<Box<Expression>>, // next value after "from"
+        Option<Box<Expression>>, // to
+        RangeOperator,
+    ),
     Var(VarId),
     Call(Box<Call>),
-    ExternalCall(Vec<u8>, Vec<Vec<u8>>),
+    ExternalCall(String, Span, Vec<Expression>),
     Operator(Operator),
+    RowCondition(VarId, Box<Expression>),
     BinaryOp(Box<Expression>, Box<Expression>, Box<Expression>), //lhs, op, rhs
     Subexpression(BlockId),
     Block(BlockId),
     List(Vec<Expression>),
     Table(Vec<Expression>, Vec<Vec<Expression>>),
     Keyword(Vec<u8>, Span, Box<Expression>),
-    String(String), // FIXME: improve this in the future?
+    ValueWithUnit(Box<Expression>, Spanned<Unit>),
+    Filepath(String),
+    GlobPattern(String),
+    String(String),
+    CellPath(CellPath),
+    FullCellPath(Box<FullCellPath>),
     Signature(Box<Signature>),
     Garbage,
+}
+
+pub struct Span {
+    pub start: usize,
+    pub end: usize,
 }
 
 pub enum Type {
