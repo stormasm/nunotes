@@ -290,6 +290,15 @@ pub enum Value {
         span: Span,
     },
 }
+
+pub enum PathMember {
+    String { val: String, span: Span },
+    Int { val: usize, span: Span },
+}
+
+pub struct CellPath {
+    pub members: Vec<PathMember>,
+}
 ```
 
 ##### nu-protocol: engine_state.rs
