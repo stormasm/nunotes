@@ -6,13 +6,18 @@ We start out with a summary of the subdirectory **filters** in the crate nu-comm
 ### These commands work on rows
 
   * first
+  * last
   * nth
   * range
+  * reverse
   * roll
+  * shuffle
 
 ### These commands work on columns
 
   * select
+  * wrap
+  * update
 
 ### These commands work on both
 
@@ -22,3 +27,5 @@ We start out with a summary of the subdirectory **filters** in the crate nu-comm
 
   * keep
   * skip
+  * append
+  * prepend
