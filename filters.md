@@ -29,3 +29,7 @@ We start out with a summary of the subdirectory **filters** in the crate nu-comm
   * skip
   * append
   * prepend
+
+### Notes
+
+Table is a List of vals where each val is a Row which is a Record
