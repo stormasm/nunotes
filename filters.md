@@ -32,4 +32,4 @@ We start out with a summary of the subdirectory **filters** in the crate nu-comm
 
 ### Notes
 
-Table is a List of vals where each val is a Row which is a Record
+**In the context of follow_cell_path** Table is a List of vals where each val is a Row which is a Record
