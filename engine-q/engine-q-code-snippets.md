@@ -12,6 +12,7 @@ from **nu-engine/src/from_value.rs**
 impl FromValue for CellPath {
 ```
 
+from an older implementation of the last command
 ```rust
 match input {
          PipelineData::Stream(stream) => {
