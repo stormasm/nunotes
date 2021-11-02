@@ -7,7 +7,7 @@ We start out with a summary of the subdirectory **filters** in the crate nu-comm
 
   * first
   * last
-  * nth
+  * nth [possible candidate after you finish reverse and shuffle]
   * range
   * reverse
   * roll
