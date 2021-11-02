@@ -9,7 +9,7 @@ We start out with a summary of the subdirectory **filters** in the crate nu-comm
   * last
   * nth [possible candidate after you finish reverse and shuffle]
   * range
-  * reverse
+  * reverse [work on this in tandem with shuffle]
   * roll
   * shuffle [ref](https://stackoverflow.com/questions/26033976/how-do-i-create-a-vec-from-a-range-and-shuffle-it)
 
