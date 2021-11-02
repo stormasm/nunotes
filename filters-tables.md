@@ -11,7 +11,7 @@ We start out with a summary of the subdirectory **filters** in the crate nu-comm
   * range
   * reverse
   * roll
-  * shuffle
+  * shuffle [ref](https://stackoverflow.com/questions/26033976/how-do-i-create-a-vec-from-a-range-and-shuffle-it)
 
 ### These commands work on columns
 
