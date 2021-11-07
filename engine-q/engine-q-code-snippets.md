@@ -36,3 +36,11 @@ match input {
 
      // Ok(PipelineData::Value(Value::Nothing { span: call.head }))
 ```
+
+### Clippy Notes
+
+rg needless
+
+```rust
+#[allow(clippy::needless_collect)]
+```
