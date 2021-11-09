@@ -1,4 +1,21 @@
 
+### Latest matching in the append command
+
+```rust
+    match input {
+        PipelineData::Value(Value::List { vals, .. }) => {
+            dbg!("Got a Value");
+        }
+        PipelineData::Stream(stream) => {
+            dbg!("Got a Stream");
+        }
+        _ => {
+            dbg!("Fall to the bottom");
+        }
+    }
+```
+
+
 ### Example of how to use from_value
 
 ```rust
