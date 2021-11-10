@@ -7,6 +7,14 @@
 [[a b]; [1 a] [2 b]] | append [[a b]; [3 c]]
 ```
 
+##### engine-q table example
+```rust
+[[a b]; [1 a] [2 b]]
+
+\\ both cases work the same
+[[a, b]; [1, a] [2, b]]
+```
+
 ls | pivot | str capitalize Column0
 
 ps | sort-by pid | first 10
