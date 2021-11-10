@@ -1,5 +1,12 @@
 # nunotes
 
+
+##### nushell table example
+
+```rust
+[[a b]; [1 a] [2 b]] | append [[a b]; [3 c]]
+```
+
 ls | pivot | str capitalize Column0
 
 ps | sort-by pid | first 10
