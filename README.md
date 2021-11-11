@@ -1,5 +1,47 @@
 # nunotes
 
+##### more matching of values
+
+```rust
+// will remove this once append lands...
+fn signature(&self) -> nu_protocol::Signature {
+    Signature::build("append").required("row", SyntaxShape::Any, "the row to append")
+}
+
+fn run(
+    &self,
+    engine_state: &EngineState,
+    stack: &mut Stack,
+    call: &Call,
+    input: PipelineData,
+) -> Result<PipelineData, ShellError> {
+    let val: Value = call.req(engine_state, stack, 0)?;
+
+    match val {
+        Value::List { vals, .. } => {
+            dbg!("Got a List val");
+        }
+        _ => {
+            dbg!("Fall to the bottom on val");
+        }
+    }
+
+    match input {
+        PipelineData::Value(Value::List { vals, .. }) => {
+            dbg!("Got a Value input");
+        }
+        PipelineData::Stream(stream) => {
+            dbg!("Got a Stream input");
+        }
+        _ => {
+            dbg!("Fall to the bottom on input");
+        }
+    }
+
+    Ok(PipelineData::Value(Value::Nothing { span: call.head }))
+}
+}
+```
 
 ##### nushell table example
 
