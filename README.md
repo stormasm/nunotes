@@ -7,6 +7,10 @@
 [[a b]; [1 a] [2 b]] | append [[a b]; [3 c]]
 ```
 
+##### nu json syntax
+
+[discord](https://discord.com/channels/601130461678272522/683070703716925568/908095523133751356)
+
 ##### engine-q table example
 ```rust
 [[a b]; [1 a] [2 b]]
