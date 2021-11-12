@@ -1,5 +1,45 @@
 # nunotes
 
+##### append-simple
+
+```rust
+use nu_engine::CallExt;
+use nu_protocol::ast::Call;
+use nu_protocol::engine::{Command, EngineState, Stack};
+use nu_protocol::{
+    IntoInterruptiblePipelineData, PipelineData, ShellError, Signature, SyntaxShape, Value,
+};
+
+#[derive(Clone)]
+pub struct Append;
+
+impl Command for Append {
+    fn name(&self) -> &str {
+        "append"
+    }
+
+    fn signature(&self) -> nu_protocol::Signature {
+        Signature::build("append").required("row", SyntaxShape::Any, "the row to append")
+    }
+
+    fn usage(&self) -> &str {
+        "Append a row to the table."
+    }
+
+    fn run(
+        &self,
+        engine_state: &EngineState,
+        stack: &mut Stack,
+        call: &Call,
+        input: PipelineData,
+    ) -> Result<PipelineData, ShellError> {
+        let val: Value = call.req(engine_state, stack, 0)?;
+        let iter = input.into_iter().chain([val]);
+        Ok(iter.into_pipeline_data(engine_state.ctrlc.clone()))
+    }
+}
+```
+
 ##### more matching of values
 
 ```rust
