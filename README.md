@@ -5,6 +5,8 @@ engine-q notes
 ##### How do you run CI checks locally ?
 
 ```
+alias ciman='cargo fmt; cargo check; cargo clippy; cargo test --all'
+
 cargo fmt
 cargo check
 cargo clippy
