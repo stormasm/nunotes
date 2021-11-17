@@ -1,6 +1,11 @@
 
 engine-q notes
 
+### Send back no data
+
+```rust
+Ok(PipelineData::Value(Value::Nothing { span: call.head }))
+```
 
 ##### How do you run CI checks locally ?
 
