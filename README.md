@@ -1,5 +1,5 @@
 
-engine-q notes
+# engine-q notes
 
 [table syntax](./engine-q/table-syntax.md)
 
