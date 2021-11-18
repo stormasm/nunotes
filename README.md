@@ -1,6 +1,24 @@
 
 engine-q notes
 
+### Table Syntax
+
+[discord](https://discord.com/channels/601130461678272522/683070703716925568/911013704378765322)
+
+These 2 are equivalent
+
+```rust
+[[a,b]; [1,2]]
+[{ "a": 1, "b": 2}]
+```
+
+These 2 are slightly different
+
+```rust
+{"a" : 1, "b" : 2}
+{a:1, b:2}
+```
+
 ### Send back no data
 
 ```rust
