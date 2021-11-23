@@ -1,7 +1,7 @@
 
 # engine-q notes
 
-[table syntax](./engine-q/table-syntax.md)
+* [table syntax](./engine-q/table-syntax.md)
 
 ### Send back no data
 
