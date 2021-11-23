@@ -35,7 +35,7 @@ PathMember::String
 ```
 
 The String arguments to follow_cell_path are for the column names.  
-The Int arguments to follow_cell_path are for the row names.
+The Int arguments to follow_cell_path are for the rows.
 
 ```rust
 [[a,b];[rick,pete], [bill,paul]] | get a
