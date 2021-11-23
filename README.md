@@ -26,3 +26,20 @@ cargo test --all
 ##### trait CustomValue
 
 [discord](https://discord.com/channels/601130461678272522/889232844101156914/911337922890985512)
+
+##### follow_cell_path
+
+```rust
+PathMember::Int
+PathMember::String
+```
+
+The String arguments to follow_cell_path are for the column names.  
+The Int arguments are for the row names.
+
+```rust
+[[a,b];[rick,pete], [bill,paul]] | get a
+[[a,b];[rick,pete], [bill,paul]] | get b
+[[a,b];[rick,pete], [bill,paul]] | get 0
+[[a,b];[rick,pete], [bill,paul]] | get 1
+```
