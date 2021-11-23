@@ -44,4 +44,7 @@ The Int arguments to follow_cell_path are for the rows.
 [[a,b];[rick,pete], [bill,paul]] | get 1
 ```
 
-rg follow_cell_path for more details
+For more details...
+```rust
+rg follow_cell_path
+```
