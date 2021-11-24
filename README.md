@@ -1,6 +1,7 @@
 
 # engine-q notes
 
+* [fdncred](./fdncred.md)
 * [table syntax](./engine-q/table-syntax.md)
 
 ### Send back no data
