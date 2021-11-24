@@ -1,3 +1,4 @@
+```rust
 let x = [
     [name value];
     [foo 123]
@@ -5,15 +6,19 @@ let x = [
     [baz 789]
     [qux 111]
 ]
+```
 
 > $x | nth 0
-# returns a 1 row table
-# this is nushell syntax - not in e-q yet as of 11/23/2021
+returns a 1 row table
+this is nushell syntax - not in e-q yet as of 11/23/2021
+
+```rust
 ╭───┬──────┬───────╮
 │ # │ name │ value │
 ├───┼──────┼───────┤
 │ 0 │ foo  │   123 │
 ╰───┴──────┴───────╯
+```
 
 > $x | get 0
 # returns a record
