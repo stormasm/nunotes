@@ -8,7 +8,7 @@ let x = [
 ]
 ```
 
-> $x | nth 0
+> $x | nth 0  
 returns a 1 row table   
 this is nushell syntax - not in e-q yet as of 11/23/2021
 
@@ -20,7 +20,7 @@ this is nushell syntax - not in e-q yet as of 11/23/2021
 ╰───┴──────┴───────╯
 ```
 
-> $x | get 0
+> $x | get 0  
 returns a record
 
 ```rust
@@ -33,9 +33,9 @@ returns a record
 > $x | get 0 | describe   
 record<name: string, value: int>
 
-> $x | select value
+> $x | select value  
 
-returns a 1 column table
+returns a 1 column table  
 
 ```rust
 ╭───┬───────╮
@@ -59,8 +59,8 @@ returns a 1 column table
 ╰───┴────────────────────╯
 ```
 
-$x | get Value
-returns a list
+$x | get Value  
+returns a list  
 
 ```rust
 ╭───┬─────╮
@@ -71,7 +71,7 @@ returns a list
 ╰───┴─────╯
 ```
 
-> $x | get value | describe
+> $x | get value | describe  
 
 ```rust
 ╭───┬─────╮
