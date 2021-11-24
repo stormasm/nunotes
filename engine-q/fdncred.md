@@ -59,7 +59,7 @@ returns a 1 column table
 ╰───┴────────────────────╯
 ```
 
-$x | get Value  
+> $x | get Value  
 returns a list  
 
 ```rust
