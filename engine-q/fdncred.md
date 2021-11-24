@@ -34,7 +34,6 @@ returns a record
 record<name: string, value: int>
 
 > $x | select value  
-
 returns a 1 column table  
 
 ```rust
