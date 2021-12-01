@@ -49,3 +49,22 @@ For more details...
 ```rust
 rg follow_cell_path
 ```
+
+```rust
+fn run(
+    &self,
+    engine_state: &EngineState,
+    stack: &mut Stack,
+    call: &Call,
+    input: PipelineData,
+) -> Result<nu_protocol::PipelineData, nu_protocol::ShellError> {
+    let columns: Vec<CellPath> = call.rest(engine_state, stack, 0)?;
+    let span = call.head;
+```
+
+In lots of commands you see the "call.rest" feature, this functionality
+is defined in the nu-engine crate in [call_ext](https://github.com/nushell/engine-q/blob/main/crates/nu-engine/src/call_ext.rs) 
+
+```rust
+pub trait CallExt {
+```
