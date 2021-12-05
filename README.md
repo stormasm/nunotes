@@ -7,7 +7,7 @@
 ### Send back no data
 
 ```rust
-Ok(PipelineData::Value(Value::Nothing { span: call.head }))
+Ok(PipelineData::Value(Value::Nothing { span: call.head }, None,))
 ```
 
 #### How do you run CI checks locally ?
@@ -63,7 +63,7 @@ fn run(
 ```
 
 In lots of commands you see the "call.rest" feature, this functionality
-is defined in the nu-engine crate in [call_ext](https://github.com/nushell/engine-q/blob/main/crates/nu-engine/src/call_ext.rs) 
+is defined in the nu-engine crate in [call_ext](https://github.com/nushell/engine-q/blob/main/crates/nu-engine/src/call_ext.rs)
 
 ```rust
 pub trait CallExt {
