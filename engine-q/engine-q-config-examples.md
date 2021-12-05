@@ -1,3 +1,6 @@
+
+[kobouch example config](https://github.com/nushell/nu_scripts/tree/main/engine-q/example-config)
+
 ### fdncred v1
 
 ```rust
