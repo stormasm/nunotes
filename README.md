@@ -68,3 +68,9 @@ is defined in the nu-engine crate in [call_ext](https://github.com/nushell/engin
 ```rust
 pub trait CallExt {
 ```
+
+##### Random commands
+
+```rust
+[[name,age];[bill,20],[rick,21]] | append [[name,age]; [paul, 40], [hb,70], [sally, 33], [sam,46]] | prepend [[name,age]; [sarah,40],[jane,50]]
+```
