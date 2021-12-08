@@ -1,6 +1,8 @@
 
 * What is the difference between a PipelineMetadata::Value and PipelineMetadata::Stream is?
 [discord](https://discord.com/channels/601130461678272522/889232844101156914/917872317747589131)
+    * the Value case is a fully-known, finite value, and stream is a set of values of unknown length (possibly infinite) --- meaning its an Iterator.
+
 
 * In the source command it uses position 1 for the block_id
 [discord](https://discord.com/channels/601130461678272522/889232844101156914/894312997638512692)
