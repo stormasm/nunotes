@@ -7,6 +7,7 @@
 
 * cargo bloat --all-features --time
 * [discord response](https://discord.com/channels/601130461678272522/683070703716925568/918192921860243456)
+[cargo-bloat](https://github.com/RazrFalcon/cargo-bloat)
 
 ##### Interesting comments on discord about how engine-q works
 
