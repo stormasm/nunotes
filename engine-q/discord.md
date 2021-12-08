@@ -14,3 +14,6 @@
     * lite_parse takes tokens and groups them for you, but doesn't do a full parse
     * lite_parse and parse both run at keystroke and submit
     * To do syntax highlighting we do a full parse that includes classifying what everything is so we know the correct style for each span
+
+##### Ref
+* [github markdown note](https://commonmark.org/help/tutorial/10-nestedLists.html)
