@@ -1,5 +1,5 @@
 
-* Can anyone explain to me what the difference between a PipelineMetadata::Value and PipelineMetadata::Stream is?
+* What is the difference between a PipelineMetadata::Value and PipelineMetadata::Stream is?
 [discord](https://discord.com/channels/601130461678272522/889232844101156914/917872317747589131)
 
 * In the source command it uses position 1 for the block_id
