@@ -5,6 +5,9 @@
 * In the source command it uses position 1 for the block_id
 * [discord response](https://discord.com/channels/601130461678272522/889232844101156914/894312997638512692)
 
+* cargo bloat --all-features --time
+* [discord response](https://discord.com/channels/601130461678272522/683070703716925568/918192921860243456)
+
 ##### Interesting comments on discord about how engine-q works
 
 ##### JT goes through the whole logic of eq parsing
