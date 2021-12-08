@@ -1,5 +1,5 @@
 
-* What is the difference between a PipelineMetadata::Value and PipelineMetadata::Stream is?
+* What is the difference between a PipelineMetadata::Value and PipelineMetadata::Stream ?
 [discord](https://discord.com/channels/601130461678272522/889232844101156914/917872317747589131)
     * the Value case is a fully-known, finite value, and stream is a set of values of unknown length (possibly infinite) --- meaning its an Iterator.
 
