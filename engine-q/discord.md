@@ -1,11 +1,9 @@
 
 * Can anyone explain to me what the difference between a PipelineMetadata::Value and PipelineMetadata::Stream is?
-
-[discord response](https://discord.com/channels/601130461678272522/889232844101156914/917872317747589131)
+* [discord response](https://discord.com/channels/601130461678272522/889232844101156914/917872317747589131)
 
 * In the source command it uses position 1 for the block_id
-
-[discord response](https://discord.com/channels/601130461678272522/889232844101156914/894312997638512692)
+* [discord response](https://discord.com/channels/601130461678272522/889232844101156914/894312997638512692)
 
 ##### Interesting comments on discord about how engine-q works
 
