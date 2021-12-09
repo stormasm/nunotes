@@ -1,4 +1,18 @@
 
+### Comparison of the nth command in nushell and engine-q
+
+```rust
+struct NthIterator {
+    input: PipelineIterator,
+    rows: Vec<usize>,
+    skip: bool,
+    current: usize,
+}
+```
+
+All we had to do was swap out the InputStream for the PipelineIterator
+and the impl was identical...
+
 ### Latest matching in the append command
 
 ```rust
