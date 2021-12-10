@@ -1,6 +1,42 @@
 
 [kobouch example config](https://github.com/nushell/nu_scripts/tree/main/engine-q/example-config)
 
+### next release of config
+
+```rust
+let $config = {
+  filesize_metric: $true
+  table_mode: rounded # basic, compact, compact_double, light, thin, with_love, rounded, reinforced, heavy, none, other
+  use_ls_colors: $true
+  color_config: {
+    separator: yd
+    leading_trailing_space_bg: white
+    header: cb
+    date: pu
+    filesize: ub
+    row_index: yb
+
+    bool: red
+    int: green
+    duration: red
+    range: red
+    float: red
+    #string: red
+    nothing: red
+    binary: red
+    cellpath: red
+  }
+  use_grid_icons: $true
+  footer_mode: always #always, never, number_of_rows, auto
+  animate_prompt: $false
+  float_precision: 2
+  without_color: $false
+  filesize_format: "b" # b, kb, kib, mb, mib, gb, gib, tb, tib, pb, pib, eb, eib, zb, zib, auto
+}
+```
+
+[discord](https://discord.com/channels/601130461678272522/683070703716925568/918624930793422858)
+
 ### fdncred v1
 
 ```rust
