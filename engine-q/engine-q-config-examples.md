@@ -35,7 +35,8 @@ let $config = {
 }
 ```
 
-[discord](https://discord.com/channels/601130461678272522/683070703716925568/918624930793422858)
+* [discord](https://discord.com/channels/601130461678272522/683070703716925568/918624930793422858)
+* [issue 459](https://github.com/nushell/engine-q/issues/459)
 
 ### fdncred v1
 
