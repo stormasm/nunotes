@@ -10,20 +10,6 @@
 Ok(PipelineData::Value(Value::Nothing { span: call.head }, None,))
 ```
 
-#### How do you run CI checks locally ?
-
-```
-alias ciman='cargo fmt; cargo check; cargo clippy; cargo test --all'
-
-cargo fmt
-cargo check
-cargo clippy
-cargo test --all
-```
-
-[CI workflow steps manually](https://github.com/nushell/engine-q/blob/main/.github/workflows/ci.yml); &nbsp;&nbsp;
-[discord link](https://discord.com/channels/601130461678272522/889232844101156914/904688334578794516)
-
 #### trait CustomValue
 
 [discord](https://discord.com/channels/601130461678272522/889232844101156914/911337922890985512)
@@ -74,3 +60,25 @@ pub trait CallExt {
 ```rust
 [[name,age];[bill,20],[rick,21]] | append [[name,age]; [paul, 40], [hb,70], [sally, 33], [sam,46]] | prepend [[name,age]; [sarah,40],[jane,50]]
 ```
+
+
+#### How do you run CI checks locally ?
+
+```
+alias ciman='cargo fmt; cargo check; cargo clippy; cargo test --all'
+
+cargo fmt
+cargo check
+cargo clippy
+cargo test --all
+```
+
+[CI workflow steps manually](https://github.com/nushell/engine-q/blob/main/.github/workflows/ci.yml); &nbsp;&nbsp;
+[discord link](https://discord.com/channels/601130461678272522/889232844101156914/904688334578794516)
+
+##### Other useful cargo commands
+
+```rust
+cargo update --package reedline
+```
+* [discord](https://discord.com/channels/601130461678272522/855886335980994600/918604480965120081)
