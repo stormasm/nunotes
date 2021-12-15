@@ -35,6 +35,8 @@ nu-example-3 4 why
 1 | inc
 ```
 
+nu-example-3 is supposed to throw an error
+
 ### Discord Notes
 
 [note1](https://discord.com/channels/601130461678272522/683070703716925568/919953220011425833)
