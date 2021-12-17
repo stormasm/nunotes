@@ -104,3 +104,7 @@ if let Value::Record { .. } = value { <code> }
 
 the engine-q table command will convert to strings   
 in nushell, viewers don't return anything
+
+>>> getting columns names in engine-q similar to nushell
+
+[discord](https://discord.com/channels/601130461678272522/614593951969574961/921375934551048232)
