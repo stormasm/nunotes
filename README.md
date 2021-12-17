@@ -76,20 +76,20 @@ cargo test --all
 [CI workflow steps manually](https://github.com/nushell/engine-q/blob/main/.github/workflows/ci.yml); &nbsp;&nbsp;
 [discord link](https://discord.com/channels/601130461678272522/889232844101156914/904688334578794516)
 
-##### Other useful cargo commands
+#### Other useful cargo commands
 
 ```rust
 cargo update --package reedline
 ```
 * [discord](https://discord.com/channels/601130461678272522/855886335980994600/918604480965120081)
 
-##### Rust Embed
+#### Rust Embed
 
 [discord](https://discord.com/channels/601130461678272522/683070703716925568/921313094049882172)
 
 we use this thing called rust-embed to embed things into the binary. Right now it looks like we're embedding themes for doing html, but I think you can use it for this as well
 
-##### Code Questions
+#### Code Questions
 
 >>> Anyone has an idea how to check if a value's type is Record?
 
