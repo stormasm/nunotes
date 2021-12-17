@@ -97,3 +97,10 @@ You can pattern-match on the value:
 ```rust
 if let Value::Record { .. } = value { <code> }
 ```
+
+>>> Does anyone know offhand if there is code in nushell to convert tables and rows to Strings?  I know there is the autoview command, but it uses a bunch of config stuff, etc. which I am trying to avoid
+
+[discord](https://discord.com/channels/601130461678272522/615329862395101194/917099551058427904)
+
+the engine-q table command will convert to strings   
+in nushell, viewers don't return anything
