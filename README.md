@@ -82,3 +82,9 @@ cargo test --all
 cargo update --package reedline
 ```
 * [discord](https://discord.com/channels/601130461678272522/855886335980994600/918604480965120081)
+
+##### Rust Embed
+
+[discord](https://discord.com/channels/601130461678272522/683070703716925568/921313094049882172)
+
+we use this thing called rust-embed to embed things into the binary. Right now it looks like we're embedding themes for doing html, but I think you can use it for this as well
