@@ -108,3 +108,14 @@ in nushell, viewers don't return anything
 >>> getting columns names in engine-q similar to nushell
 
 [discord](https://discord.com/channels/601130461678272522/614593951969574961/921375934551048232)
+
+### Do not use...
+
+```rust
+Span::unknown()
+```
+
+[As discussed here](https://github.com/nushell/engine-q/issues/242#issuecomment-997017183)
+[in this PR 242](https://github.com/nushell/engine-q/issues/242)
+
+When working on commands, you can use call.head (this is a good option for new values created within the command) or reuse spans that come with Values from the input stream or command arguments. To get it right requires a bit of playing around so a good idea is to also purposefully trigger the errors and see how the messages look like.
