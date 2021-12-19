@@ -42,4 +42,5 @@ nu-example-3 is supposed to throw an error
 
 ### PRs
 
-[Plugin json #475](https://github.com/nushell/engine-q/pull/475)
+* [Plugin signature #520](https://github.com/nushell/engine-q/pull/520)
+* [Plugin json #475](https://github.com/nushell/engine-q/pull/475)
