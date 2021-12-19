@@ -10,7 +10,7 @@ register -e capnp /some/path/nu_plugin_example
 register -e json -s /path/to/python3 /path/to/nu_plugin_python/plugin.py
 ```
 
-If you are using python2 instead of python3 here is your solution. [524](https://github.com/nushell/engine-q/pull/524)
+If you are using python2 instead of python3 here is your [solution PR 524](https://github.com/nushell/engine-q/pull/524)
 
 To show yourself that the commands were registered   
 
