@@ -7,6 +7,7 @@ cargo build --all-features
 register -e capnp /some/path/nu_plugin_inc
 register -e capnp /some/path/nu_plugin_gstat
 register -e capnp /some/path/nu_plugin_example
+register -e json  /some/path/nu_plugin_python/plugin.py
 ```
 
 To show yourself that the commands were registered   
@@ -23,6 +24,7 @@ help inc
 help nu-example-0
 help nu-example-1
 help nu-example-2
+help nu-python
 ```
 
 To run the plugins simply type
@@ -33,6 +35,7 @@ nu-example-1 2 hi
 nu-example-2 3 bye
 nu-example-3 4 why
 1 | inc
+echo "this is input" | nu-python 1 abc 2 -f -n dog now is the time
 ```
 
 nu-example-3 is supposed to throw an error
