@@ -1,6 +1,7 @@
 
 # engine-q notes
 
+* [kubouch list of configurable settings](https://github.com/nushell/engine-q/issues/459)
 * [fdncred](./engine-q/fdncred.md)
 * [table syntax](./engine-q/table-syntax.md)
 
