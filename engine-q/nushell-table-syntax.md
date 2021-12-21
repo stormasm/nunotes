@@ -1,5 +1,5 @@
 
-Here is what a table looks like in nushell, which is different from engine-q.
+Here is what a table looks like in nushell.
 
 ```rust
 [[a b]; [jim susie] [3 4]]
