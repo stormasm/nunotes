@@ -6,6 +6,13 @@
 * [table syntax](./engine-q/table-syntax.md)
 * [table syntax nushell old](./engine-q/nushell-table-syntax.md)
 
+
+### Json with no formatting chars
+
+```rust
+[[a b]; [jim susie] [3 4]] | to json | str find-replace '\n' '' -a | str trim -a
+```
+
 ### Send back no data
 
 ```rust
