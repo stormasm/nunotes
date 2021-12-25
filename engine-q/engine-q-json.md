@@ -14,3 +14,10 @@ For this reason all of [these tests](https://github.com/nushell/nushell/blob/mai
 ```rust
 [["a c" b]; ["jim smith" "susie roberts"] [3 4]] | to json -r
 ```
+
+##### These two data structures are equivalent in engine-q
+
+```rust
+[["a c" b]; ["jim smith" "susie roberts"] [3 4]]
+[{"a c":"jim smith","b":"susie roberts"},{"a c":3,"b":4}]
+```
