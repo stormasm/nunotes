@@ -92,6 +92,13 @@ cargo update --package reedline
 ```
 * [discord](https://discord.com/channels/601130461678272522/855886335980994600/918604480965120081)
 
+##### Other useful clippy commands
+
+```rust
+cargo clippy -- -W clippy::pedantic
+```
+* [discord](https://discord.com/channels/601130461678272522/855886335980994600/924724885039763468)
+
 #### Rust Embed
 
 [discord](https://discord.com/channels/601130461678272522/683070703716925568/921313094049882172)
