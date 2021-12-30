@@ -28,3 +28,9 @@ fn get_columns(input: &[Value]) -> Vec<String> {
     columns
 }
 ```
+
+### References
+
+[Rust By Example: String Slice](https://doc.rust-lang.org/rust-by-example/std/str.html)
+
+[Rust Book: String Intro](https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html#the-string-type)
