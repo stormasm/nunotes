@@ -1,5 +1,5 @@
 
-##### How to update config
+#### How to update config
 
 ```rust
 let $config = ($config | update color_config $base16_theme)
