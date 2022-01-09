@@ -107,6 +107,9 @@ we use this thing called rust-embed to embed things into the binary. Right now i
 
 #### Code Questions
 
+example 24-bit terminals on mac including kitty, tabby, iterm2,
+the default mac terminal is not 24-bit.
+
 >>> Anyone has an idea how to check if a value's type is Record?
 
 You can pattern-match on the value:
