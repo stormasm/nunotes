@@ -135,4 +135,6 @@ Span::unknown()
 
 When working on commands, you can use call.head (this is a good option for new values created within the command) or reuse spans that come with Values from the input stream or command arguments. To get it right requires a bit of playing around so a good idea is to also purposefully trigger the errors and see how the messages look like.
 
+### References
+
 * [references](./ref.md)
