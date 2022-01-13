@@ -6,6 +6,14 @@
 * [table syntax](./engine-q/table-syntax.md)
 * [table syntax nushell old](./engine-q/nushell-table-syntax.md)
 
+# How to run engine-q
+
+If you want to see all the plugins you need to do
+
+```rust
+cargo build --features=extra
+cargo run --features=extra
+```
 
 ### Json with no formatting chars
 
