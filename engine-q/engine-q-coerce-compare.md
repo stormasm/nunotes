@@ -2,7 +2,8 @@
 I am working on the command sort-by and slowly figuring out what its
 going to take to get this going...
 
-One thing I came across in the nushell sort-by was this function
+One thing I came across in the nushell
+[sort-by was coerce_compare](https://github.com/nushell/nushell/blob/main/crates/nu-command/src/commands/filters/sort_by.rs#L160)
 
 [coerce_compare](https://github.com/nushell/nushell/blob/main/crates/nu-data/src/base.rs#L113)
 
