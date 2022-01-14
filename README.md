@@ -31,7 +31,24 @@ Ok(PipelineData::Value(Value::Nothing { span: call.head }, None,))
 
 [discord](https://discord.com/channels/601130461678272522/889232844101156914/911337922890985512)
 
-#### follow_cell_path
+## Getting column data
+
+### get_data_by_key
+
+commands that use get_data_by_key include **empty?** and **compact**
+
+If you review empty? and debug the code you will see that given a particular column name
+
+```rust
+for column in column_paths.clone() {
+    let path = column.into_string();
+    let data = input.get_data_by_key(&path);
+    println!("{:?} {:?}",path,data);
+```
+
+It goes through and prints each value going down the column...
+
+### follow_cell_path
 
 ```rust
 PathMember::Int
