@@ -15,3 +15,5 @@ In nushell the only place the function **coerce_compare** is used is inside sort
 I am thinking I am going to need this for my **sort-by** implementation ?
 
 Do we already have similar functionality in engine-q, or do you believe I should move this code over to engine-q ?
+
+[std::cmp::Ordering](https://doc.rust-lang.org/std/cmp/enum.Ordering.html)
