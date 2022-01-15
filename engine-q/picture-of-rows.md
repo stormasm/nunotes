@@ -6,6 +6,8 @@ This is the command sort-by before **sort_by_cached_key** is called...
 
 ```rust
 
+[[a, b, c]; [1, 2, 3] [40 50 60] [4 5 6]] | sort-by a
+
 println!("{:?}",vec);
 vec.sort_by_cached_key(calc_key);
 
@@ -21,9 +23,13 @@ Value { value: Row(Dictionary { entries: {"a": Value { value: Primitive(Int(4)),
 This is the command select on age.
 
 ```rust
+
+[[name, age]; [a, 1] [c,3] [b, 2] [c,3]] | select age
+
 [
 Record { cols: ["age"], vals: [Int { val: 1, span: Span { start: 6295, end: 6296 } }], span: Span { start: 6277, end: 6317 } },
 Record { cols: ["age"], vals: [Int { val: 3, span: Span { start: 6301, end: 6302 } }], span: Span { start: 6277, end: 6317 } },
-Record { cols: ["age"], vals: [Int { val: 2, span: Span { start: 6308, end: 6309 } }], span: Span { start: 6277, end: 6317 } }, Record { cols: ["age"], vals: [Int { val: 3, span: Span { start: 6314, end: 6315 } }], span: Span { start: 6277, end: 6317 } }
+Record { cols: ["age"], vals: [Int { val: 2, span: Span { start: 6308, end: 6309 } }], span: Span { start: 6277, end: 6317 } },
+Record { cols: ["age"], vals: [Int { val: 3, span: Span { start: 6314, end: 6315 } }], span: Span { start: 6277, end: 6317 } }
 ]
 ```
