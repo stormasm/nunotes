@@ -1,4 +1,15 @@
 
+These are the branches I have so far...
+
+* sortselecta is the latest one, everything is working except Ord
+is not implemented for Value...
+
+sortbyb --- was all of the work I did which went nowhere...
+
+sortbya --- is just an initial copy of getting the beginnings of select
+renamed
+
+
 January 2022
 
 Starting to work on sort-by...
