@@ -25,6 +25,11 @@ cargo run --features=extra
 
 ```rust
 Ok(PipelineData::Value(Value::Nothing { span: call.head }, None,))
+
+// Or this way if Span is passed into the function
+
+Ok(PipelineData::Value(Value::Nothing { span: *span }, None))
+
 ```
 
 #### trait CustomValue
