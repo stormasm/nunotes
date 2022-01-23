@@ -1,6 +1,10 @@
 
 [JT note on discord post landing initial PR](https://discord.com/channels/601130461678272522/683070703716925568/934639445012017182)
 
+@storm - for the sorting stuff can you use the .gt() on Value I wonder?
+that'll give you at least some way to compare the floats (and other types) if you have the original Values
+there should be .eq() also
+
 These are the branches I have so far...
 
 * sortselecta is the latest one, everything is working except Ord
