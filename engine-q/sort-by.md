@@ -1,4 +1,6 @@
 
+[JT note on discord post landing initial PR](https://discord.com/channels/601130461678272522/683070703716925568/934639445012017182)
+
 These are the branches I have so far...
 
 * sortselecta is the latest one, everything is working except Ord
