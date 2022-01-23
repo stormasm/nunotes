@@ -5,6 +5,8 @@
 that'll give you at least some way to compare the floats (and other types) if you have the original Values
 there should be .eq() also
 
+# Legacy Notes
+
 These are the branches I have so far...
 
 * sortselecta is the latest one, everything is working except Ord
