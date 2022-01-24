@@ -135,6 +135,14 @@ cargo clippy -- -W clippy::pedantic
 
 we use this thing called rust-embed to embed things into the binary. Right now it looks like we're embedding themes for doing html, but I think you can use it for this as well
 
+#### General Questions
+
+##### what is our convention about commands having underscores ?
+
+It's because commands like move_ is also a Rust keyword. 
+
+So commands like let, do, if have underscore, otherwise when you want to include them as a module, you'd type mod if and the compiler would complain that you cannot put if after mod.
+
 #### Code Questions
 
 example 24-bit terminals on mac including kitty, tabby, iterm2,
