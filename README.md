@@ -141,7 +141,7 @@ we use this thing called rust-embed to embed things into the binary. Right now i
 
 It's because commands like move_ is also a Rust keyword.
 
-So commands like let, do, if have underscore, otherwise when you want to include them as a module, you'd type mod if and the compiler would complain that you cannot put if after mod.
+So commands like **let, do, if** have **underscore**, otherwise when you want to include them as a module, you'd type mod if and the compiler would complain that you cannot put if after mod.
 
 #### Code Questions
 
