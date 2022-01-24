@@ -5,6 +5,16 @@
 that'll give you at least some way to compare the floats (and other types) if you have the original Values
 there should be .eq() also
 
+[JT note 2 on discord](https://discord.com/channels/601130461678272522/683070703716925568/935156195323433070)
+
+[reddit](https://www.reddit.com/r/rust/comments/29kia3/no_ord_for_f32/)
+
+```rust
+aliases.sort_by(|a, b| a.partial_cmp(b).unwrap_or(Ordering::Equal));
+```
+
+makes me think we could probably use partial_cmp in sort-by, and if it ever fails, we could either do what that does or we could give an error to the user that the list couldn't be sorted
+
 # Legacy Notes
 
 These are the branches I have so far...
