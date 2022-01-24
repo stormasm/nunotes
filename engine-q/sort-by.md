@@ -1,4 +1,6 @@
 
+[Fix Bug in Date Comparison](https://github.com/nushell/engine-q/pull/842)
+
 [JT note on discord post landing initial PR](https://discord.com/channels/601130461678272522/683070703716925568/934639445012017182)
 
 @storm - for the sorting stuff can you use the .gt() on Value I wonder?
