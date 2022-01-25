@@ -10,10 +10,13 @@ All of these events can be changed in config file
 
 To configure the menu in the config use
 
+```rust
  history_config: {
    page_size: 10
    selector: ":"                                                                                                                          
    text_style: dark_gray
     selected_text_style: green_reverse
   }
+```
+
 the selector is a character that when typed with a number after it will select that input. e.g. :4 will select that row
