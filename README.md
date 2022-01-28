@@ -1,4 +1,12 @@
 
+To see raw input values print val in the **append** command
+
+```rust
+let val: Value = call.req(engine_state, stack, 0)?;
+println!("{:?}",val);
+let vec: Vec<Value> = process_value(val);
+```
+
 # engine-q notes
 
 * [kubouch list of configurable settings](https://github.com/nushell/engine-q/issues/459)
