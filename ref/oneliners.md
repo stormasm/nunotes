@@ -1,7 +1,7 @@
 
 [discord](https://discord.com/channels/601130461678272522/889232844101156914/938711460505325649)
 
-is it possible to skip some kinds of comments line when open a csv file ?
+is it possible to skip some kinds of comments line when open a csv file ?   
 i got some bank's transaction file which include some lines begin with #
 
 I'd do something like
