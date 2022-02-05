@@ -1,4 +1,10 @@
 
+[discord](https://discord.com/channels/601130461678272522/889232844101156914/939357502414409758)
+
+```rust
+$nu.cwd
+```
+
 [discord](https://discord.com/channels/601130461678272522/889232844101156914/938711460505325649)
 
 is it possible to skip some kinds of comments line when open a csv file ?   
