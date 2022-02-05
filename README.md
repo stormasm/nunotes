@@ -1,5 +1,5 @@
 
-### Use metadata to create valid spans
+### use metadata to create valid spans
 
 [discord](https://discord.com/channels/601130461678272522/738253041546952705/939546327426162688)
 
