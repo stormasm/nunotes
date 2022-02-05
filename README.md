@@ -1,4 +1,10 @@
 
+[discord](https://discord.com/channels/601130461678272522/738253041546952705/939546327426162688)
+
+but these spans need to be valid spans for this to work, and you can't create valid spans yourself (you need to use helpers like metadata).
+
+### append command
+
 To see raw input values print val in the **append** command
 
 ```rust
