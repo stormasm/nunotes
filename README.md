@@ -212,3 +212,6 @@ traditionally a shell would be for interacting with the system directly and a RE
 * nakst
 yeah, I'm trying to make a REPL for my scripting language but give it some shell-like capabilities
 I find a little difficult to strike the right balance between the two
+
+### How to get input from the user ?
+See the input command.
