@@ -215,3 +215,6 @@ I find a little difficult to strike the right balance between the two
 
 ### How to get input from the user ?
 See the input command.
+
+### Lots of details about events and how order matters
+[discord start here](https://discord.com/channels/601130461678272522/683070703716925568/939977870258876486)
