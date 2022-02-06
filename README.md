@@ -217,4 +217,4 @@ I find a little difficult to strike the right balance between the two
 See the input command.
 
 ### Lots of details about events and how order matters
-[discord start here](https://discord.com/channels/601130461678272522/683070703716925568/939977870258876486)
+[discord start here, coreteam](https://discord.com/channels/601130461678272522/683070703716925568/939977870258876486)
