@@ -195,3 +195,18 @@ When working on commands, you can use call.head (this is a good option for new v
 ### References
 
 * [ref 2022](./ref/ref22.md)
+
+### Difference between a shell and a scripting language
+
+[discord](https://discord.com/channels/601130461678272522/601130461678272524/939617182529241128)
+
+* nakst Philosophically, what is the difference between a shell and a scripting language REPL? (Sorry if this is the wrong place to ask)
+My intuition is that the former is designed for programmatic coordination of other applications, while the latter is instead aimed primarily at computation. But I'm interested to hear what people who have spent more time thinking about shells would argue.
+
+* jt
+for nushell, we're trying to merge the two concepts into one
+traditionally a shell would be for interacting with the system directly and a REPL would be for interacting with the language's engine directly. For us, we'd like to do both equally well
+
+* nakst
+yeah, I'm trying to make a REPL for my scripting language but give it some shell-like capabilities
+I find a little difficult to strike the right balance between the two
