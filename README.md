@@ -29,6 +29,8 @@ If you want to see all the plugins you need to do
 ```rust
 cargo build --features=extra
 cargo run --features=extra
+
+nurun --help
 ```
 
 ### Json with no formatting chars
