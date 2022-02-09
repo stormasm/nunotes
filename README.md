@@ -220,3 +220,11 @@ See the input command.
 
 ### Lots of details about events and how order matters
 [discord start here, coreteam](https://discord.com/channels/601130461678272522/683070703716925568/939977870258876486)
+
+### Move nth to select PR
+
+This moves nth into select. This works by looking at the cell path we're given. If the cell path is a number, we follow the same logic as get: instead of a column name, use this as a row number.
+
+The end result is that now select works like get, but instead of extracting data, it down-selects data and keeps the original shape intact. I think this will help teaching, as you can remember that one commands down-selects and one extracts and that works either for colum...
+
+ref: [#4385](https://github.com/nushell/nushell/pull/4385)
