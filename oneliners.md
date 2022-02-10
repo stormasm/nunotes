@@ -4,3 +4,7 @@
 ```rust
 for x in 0..3 { ls } | flatten | table
 ```
+
+```rust
+which rg | get path | str collect
+```
