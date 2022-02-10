@@ -7,7 +7,9 @@ https://github.com/nushell/nushell/issues/4314
 
 https://github.com/nushell/nushell/issues/4356
 
+##### Location of the file config.nu
 * $nu.config-path
+* on mac: /Users/username/Library/Application Support/nushell
 
 ### use metadata to create valid spans
 
