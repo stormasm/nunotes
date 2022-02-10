@@ -1,4 +1,12 @@
 
+##### changes in nushell from legacy nushell
+
+* pivot
+* insert (is now part of update)
+* and nth (is now part of select)
+
+#### Rolling towards release day
+
 https://github.com/nushell/nushell/issues/4300
 
 https://github.com/nushell/nushell/issues/4305
