@@ -1,4 +1,12 @@
 
+https://github.com/nushell/nushell/issues/4300
+
+https://github.com/nushell/nushell/issues/4305
+
+https://github.com/nushell/nushell/issues/4314
+
+https://github.com/nushell/nushell/issues/4356
+
 * $nu.config-path
 
 ### use metadata to create valid spans
