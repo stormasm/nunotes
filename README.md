@@ -1,7 +1,7 @@
 
 ##### changes in nushell from legacy nushell
 
-* pivot
+* pivot is now transpose
 * insert (is now part of update)
 * and nth (is now part of select)
 
