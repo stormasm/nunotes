@@ -1,7 +1,7 @@
 
 ### Nushell data structures
 
-This document just covers nu-protocol
+This document just covers the core data structures of nu-protocol
 
 ##### crate: nu-protocol
 
