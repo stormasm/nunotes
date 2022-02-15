@@ -1,18 +1,15 @@
 
 ### Engine-q data structures
 
-##### nu-protocol
+### nu-protocol
 
 ```rust
 pub struct Block {
     pub signature: Box<Signature>,
-    pub stmts: Vec<Statement>,
-    pub exports: Vec<(Vec<u8>, DeclId)>, // Assuming just defs for now
-}
-
-pub enum Statement {
-    Declaration(DeclId),
-    Pipeline(Pipeline),
+    pub pipelines: Vec<Pipeline>,
+    pub captures: Vec<VarId>,
+    pub redirect_env: bool,
+    pub span: Option<Span>, // None option encodes no span to avoid using test_span()
 }
 
 pub struct Pipeline {
@@ -37,15 +34,17 @@ pub enum Expr {
         RangeOperator,
     ),
     Var(VarId),
+    VarDecl(VarId),
     Call(Box<Call>),
-    ExternalCall(String, Span, Vec<Expression>),
+    ExternalCall(Box<Expression>, Vec<Expression>),
     Operator(Operator),
-    RowCondition(VarId, Box<Expression>),
+    RowCondition(BlockId),
     BinaryOp(Box<Expression>, Box<Expression>, Box<Expression>), //lhs, op, rhs
     Subexpression(BlockId),
     Block(BlockId),
     List(Vec<Expression>),
     Table(Vec<Expression>, Vec<Vec<Expression>>),
+    Record(Vec<(Expression, Expression)>),
     Keyword(Vec<u8>, Span, Box<Expression>),
     ValueWithUnit(Box<Expression>, Spanned<Unit>),
     Filepath(String),
@@ -53,7 +52,10 @@ pub enum Expr {
     String(String),
     CellPath(CellPath),
     FullCellPath(Box<FullCellPath>),
+    ImportPattern(ImportPattern),
     Signature(Box<Signature>),
+    StringInterpolation(Vec<Expression>),
+    Nothing,
     Garbage,
 }
 
@@ -76,17 +78,21 @@ pub enum Type {
     List(Box<Type>),
     Number,
     Nothing,
-    Record(Vec<String>, Vec<Type>),
+    Record(Vec<(String, Type)>),
     Table,
     ValueStream,
     Unknown,
     Error,
     Binary,
+    Custom,
+    Signature,
 }
 
-pub type BlockId = usize;
-pub type DeclId = usize;
 pub type VarId = usize;
+pub type DeclId = usize;
+pub type AliasId = usize;
+pub type BlockId = usize;
+pub type OverlayId = usize;
 
 pub struct Signature {
     pub name: String,
@@ -98,6 +104,8 @@ pub struct Signature {
     pub named: Vec<Flag>,
     pub is_filter: bool,
     pub creates_scope: bool,
+    // Signature category used to classify commands stored in the list of declarations
+    pub category: Category,
 }
 
 pub struct Flag {
@@ -110,12 +118,38 @@ pub struct Flag {
     pub var_id: Option<VarId>,
 }
 
+#[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize)]
 pub struct PositionalArg {
     pub name: String,
     pub desc: String,
     pub shape: SyntaxShape,
     // For custom commands
     pub var_id: Option<VarId>,
+}
+
+#[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]
+pub enum Category {
+    Default,
+    Conversions,
+    Core,
+    Date,
+    Env,
+    Experimental,
+    FileSystem,
+    Filters,
+    Formats,
+    Math,
+    Network,
+    Random,
+    Platform,
+    Shells,
+    Strings,
+    System,
+    Viewers,
+    Hash,
+    Generators,
+    Custom(String),
+    Deprecated,
 }
 
 pub enum SyntaxShape {
@@ -192,6 +226,9 @@ pub enum SyntaxShape {
     /// A boolean value
     Boolean,
 
+    /// A record value
+    Record,
+
     /// A custom shape with custom completion logic
     Custom(Box<SyntaxShape>, String),
 }
@@ -263,16 +300,13 @@ pub enum Value {
         vals: Vec<Value>,
         span: Span,
     },
-    Stream {
-        stream: ValueStream,
-        span: Span,
-    },
     List {
         vals: Vec<Value>,
         span: Span,
     },
     Block {
         val: BlockId,
+        captures: HashMap<VarId, Value>,
         span: Span,
     },
     Nothing {
@@ -287,6 +321,10 @@ pub enum Value {
     },
     CellPath {
         val: CellPath,
+        span: Span,
+    },
+    CustomValue {
+        val: Box<dyn CustomValue>,
         span: Span,
     },
 }
