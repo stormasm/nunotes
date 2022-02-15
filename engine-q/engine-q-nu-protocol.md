@@ -341,7 +341,7 @@ pub struct CellPath {
 }
 ```
 
-### nu-protocol: engine_state.rs
+##### nu-protocol: engine_state.rs
 
 ```rust
 pub struct EngineState {
