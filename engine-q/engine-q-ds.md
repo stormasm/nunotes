@@ -1,7 +1,9 @@
 
-### Engine-q data structures
+### Nushell data structures
 
-### nu-protocol
+This document just covers nu-protocol
+
+##### crate: nu-protocol
 
 ```rust
 pub struct Block {
@@ -339,24 +341,37 @@ pub struct CellPath {
 }
 ```
 
-##### nu-protocol: engine_state.rs
+### nu-protocol: engine_state.rs
 
 ```rust
 pub struct EngineState {
-    files: Vec<(String, usize, usize)>,
-    file_contents: Vec<u8>,
-    vars: Vec<Type>,
-    decls: Vec<Box<dyn Command>>,
-    blocks: Vec<Block>,
-    pub scope: Vec<ScopeFrame>,
+    files: im::Vector<(String, usize, usize)>,
+    file_contents: im::Vector<(Vec<u8>, usize, usize)>,
+    vars: im::Vector<Type>,
+    decls: im::Vector<Box<dyn Command + 'static>>,
+    aliases: im::Vector<Vec<Span>>,
+    blocks: im::Vector<Block>,
+    overlays: im::Vector<Overlay>,
+    pub scope: im::Vector<ScopeFrame>,
+    pub ctrlc: Option<Arc<AtomicBool>>,
+    pub env_vars: im::HashMap<String, Value>,
+    #[cfg(feature = "plugin")]
+    pub plugin_signatures: Option<PathBuf>,
 }
+
+pub const NU_VARIABLE_ID: usize = 0;
+pub const SCOPE_VARIABLE_ID: usize = 1;
+pub const IN_VARIABLE_ID: usize = 2;
+pub const CONFIG_VARIABLE_ID: usize = 3;
+pub const ENV_VARIABLE_ID: usize = 4;
 
 pub struct ScopeFrame {
     pub vars: HashMap<Vec<u8>, VarId>,
     predecls: HashMap<Vec<u8>, DeclId>, // temporary storage for predeclarations
-    decls: HashMap<Vec<u8>, DeclId>,
-    aliases: HashMap<Vec<u8>, Vec<Span>>,
-    modules: HashMap<Vec<u8>, BlockId>,
+    pub decls: HashMap<Vec<u8>, DeclId>,
+    pub aliases: HashMap<Vec<u8>, AliasId>,
+    pub env_vars: HashMap<Vec<u8>, BlockId>,
+    pub overlays: HashMap<Vec<u8>, OverlayId>,
     visibility: Visibility,
 }
 
@@ -367,39 +382,25 @@ pub struct StateWorkingSet<'a> {
 
 pub struct StateDelta {
     files: Vec<(String, usize, usize)>,
-    pub(crate) file_contents: Vec<u8>,
+    pub(crate) file_contents: Vec<(Vec<u8>, usize, usize)>,
     vars: Vec<Type>,              // indexed by VarId
     decls: Vec<Box<dyn Command>>, // indexed by DeclId
-    blocks: Vec<Block>,           // indexed by BlockId
+    aliases: Vec<Vec<Span>>,      // indexed by AliasId
+    pub blocks: Vec<Block>,       // indexed by BlockId
+    overlays: Vec<Overlay>,       // indexed by OverlayId
     pub scope: Vec<ScopeFrame>,
-}
-```
-
-##### nu-protocol: engine/evaluation_context.rs
-
-```rust
-pub struct EvaluationContext {
-    pub engine_state: Rc<RefCell<EngineState>>,
-    pub stack: Stack,
+    #[cfg(feature = "plugin")]
+    plugins_changed: bool, // marks whether plugin file should be updated
 }
 
-pub struct StackFrame {
+pub struct Stack {
+    /// Variables
     pub vars: HashMap<VarId, Value>,
-    pub env_vars: HashMap<String, String>,
-    pub parent: Option<Stack>,
-}
-
-pub struct Stack(Rc<RefCell<StackFrame>>);
-```
-
-##### nu-parser: parser.rs
-
-```rust
-pub enum Import {}
-
-pub struct VarDecl {
-    var_id: VarId,
-    expression: Expression,
+    /// Environment variables arranged as a stack to be able to recover values from parent scopes
+    pub env_vars: Vec<HashMap<String, Value>>,
+    /// Tells which environment variables from engine state are hidden. We don't need to track the
+    /// env vars in the stack since we can just delete them.
+    pub env_hidden: HashSet<String>,
 }
 ```
 
@@ -411,4 +412,4 @@ The pointer-sized unsigned integer type.
 
 The size of this primitive is how many bytes it takes to reference any location in memory. For example, on a 32 bit target, this is 4 bytes and on a 64 bit target, this is 8 bytes.
 
-##### Update: October 14, 2021
+##### Last Updated: February 15, 2022
