@@ -2,7 +2,8 @@
 ### cargo-nextest
 
 * [doc](https://nexte.st/)
-* [discord](https://discord.com/channels/601130461678272522/683070703716925568/942909162004828191)
+* [discord1](https://discord.com/channels/601130461678272522/683070703716925568/942909162004828191)
+* [discord2](https://discord.com/channels/601130461678272522/683070703716925568/942985557800288268)
 
 ```rust
 let next1 = (cargo nextest list -p nu --message-format json | from json)
