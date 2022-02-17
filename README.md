@@ -272,3 +272,10 @@ Kebab:
 ##### Long flags do not include "="
 
 [discord](https://discord.com/channels/601130461678272522/614593951969574961/943957860373651536)
+
+##### How do I build up a string ?
+
+```rust
+let age = 10
+echo "my age is " $age | str collect
+```
