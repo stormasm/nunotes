@@ -246,3 +246,21 @@ This moves nth into select. This works by looking at the cell path we're given. 
 The end result is that now select works like get, but instead of extracting data, it down-selects data and keeps the original shape intact. I think this will help teaching, as you can remember that one commands down-selects and one extracts and that works either for colum...
 
 ref: [#4385](https://github.com/nushell/nushell/pull/4385)
+
+### When do I use Snake and when do I use Kebab ?
+
+We know we didn't like either extreme, so after chatting with folks I think we should have a balance between the two: Here's my proposal:
+
+Snake:
+  * Column names
+  * Cell paths (cell paths are column names)
+  * Record fields (record fields are column names)
+  * Variables (less confusing if you have math, eg) a_b - c_d is easier than a-b - c-d
+  * env vars
+
+Kebab:
+  * Command names
+  * Subcommand names
+  * Flags (kebab flags appear to be the standard for most of the apps I checked)
+
+[discord](https://discord.com/channels/601130461678272522/615329862395101194/943862648666222652)
