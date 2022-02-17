@@ -264,3 +264,7 @@ Kebab:
   * Flags (kebab flags appear to be the standard for most of the apps I checked)
 
 [discord](https://discord.com/channels/601130461678272522/615329862395101194/943862648666222652)
+
+How do I set up custom prompts ?
+
+[discord](https://discord.com/channels/601130461678272522/601130461678272524/943882097175707718)
