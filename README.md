@@ -265,6 +265,10 @@ Kebab:
 
 [discord](https://discord.com/channels/601130461678272522/615329862395101194/943862648666222652)
 
-How do I set up custom prompts ?
+#### How do I set up custom prompts ?
 
 [discord](https://discord.com/channels/601130461678272522/601130461678272524/943882097175707718)
+
+##### Long flags do not include "="
+
+[discord](https://discord.com/channels/601130461678272522/614593951969574961/943957860373651536)
