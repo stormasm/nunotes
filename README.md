@@ -1,4 +1,15 @@
 
+##### what is --testbin
+
+--testbin String  
+what does it mean to run internal test binary ?
+
+It's a known external we can call from our tests, since not all platforms have echo, cat, etc...
+
+ok so that means an end user would never use that feature (except if they were writing tests as a nushell developer for our code base)
+
+[discord](https://discord.com/channels/601130461678272522/683070703716925568/944671442371485756)
+
 ##### changes in nushell from legacy nushell
 
 * pivot is now transpose
