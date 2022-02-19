@@ -3,7 +3,7 @@
 
 I was looking for a method of clearing the buffer of the vertical scroll back slider and came across this little Terminal escape snippet I had never seen before:   
 
-Code:
+Code:   
 printf "%b" "\033[3J"   
 
 SO...   
