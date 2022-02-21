@@ -14,3 +14,9 @@ which rg | get path | str collect
 ```rust
 ^ls -al | detect columns -s 2 | rename perms id user group size month day time file
 ```
+
+```rust
+alias lsg = (ls | grid -c)
+alias nuvermd = (version | transpose key value | to md)
+ls | drop column | to nuon | from nuon
+```
