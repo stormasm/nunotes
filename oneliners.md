@@ -1,4 +1,46 @@
 
+[discord](https://discord.com/channels/601130461678272522/614593951969574961/945600413028212756)
+
+```rust
+#You need to accumulate both the number and the array. So you need to modify #acc to store both values:
+
+0..4 | reduce -f {n: 0, a: []} {|it acc| let res = $acc.n + $it; { n: $res ,  a: ($acc.a | append $res) } } | get a
+
+
+#The acc in my example is a record { n: int, a: list }
+
+###version 0.44
+
+#!/usr/bin/nu
+
+echo 0..4 |
+reduce -f [[n a]; [0 []]] {|it acc|
+                    let res = (($acc | get n) + $it)
+                    [[n a]; [$res ($acc.a | append $res)]]
+             } |
+get a
+
+───┬────────────────
+ 0 │ [table 0 rows]
+ 1 │              0
+ 2 │              1
+ 3 │              3
+ 4 │              6
+ 5 │             10
+───┴────────────────
+```
+
+[discord core](https://discord.com/channels/601130461678272522/683070703716925568/945689592554733568)
+
+```rust
+##it's a little odd, you have to do it in two steps:
+
+let block = {|x| $x + 10}
+do $block 15
+25
+##we should probably add support for the literal form also
+```
+
 [discord](https://discord.com/channels/601130461678272522/683070703716925568/940721505250209842)
 
 ```rust
