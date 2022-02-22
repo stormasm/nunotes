@@ -16,3 +16,11 @@ How to assign a F(5) key...
         ]
 }
 ```
+
+you can either edit your config file, or if you want a temporary config change you can do:
+
+```rust
+let config = ($config | update my.setting <my value>)
+```
+
+[discord-core](https://discord.com/channels/601130461678272522/683070703716925568/945440961713041499)

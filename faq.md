@@ -1,3 +1,10 @@
+
+### how do I set nushell to be my default shell on mac
+
+* make sure nu is in your /etc/shells
+* make sure nu is in your path
+* run chsh
+
 ### how can I merging two dict(or lists) into one?
 
 ```rust
