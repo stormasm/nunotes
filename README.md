@@ -1,4 +1,8 @@
 
+##### what is the **exempt** label in issues
+
+exempt from the stale bot
+
 ##### what is --testbin
 
 --testbin String  
