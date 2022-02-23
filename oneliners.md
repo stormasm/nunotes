@@ -2,7 +2,7 @@
 [discord](https://discord.com/channels/601130461678272522/614593951969574961/945600413028212756)
 
 ```rust
-##You need to accumulate both the number and the array. 
+##You need to accumulate both the number and the array.
 ##So you need to modify #acc to store both values:
 
 0..4 | reduce -f {n: 0, a: []} {|it acc| let res = $acc.n + $it; { n: $res ,  a: ($acc.a | append $res) } } | get a
@@ -62,4 +62,21 @@ which rg | get path | str collect
 alias lsg = (ls | grid -c)
 alias nuvermd = (version | transpose key value | to md)
 ls | drop column | to nuon | from nuon
+```
+
+[discord](https://discord.com/channels/601130461678272522/889232844101156914/939357502414409758)
+
+```rust
+$nu.cwd
+```
+
+[discord](https://discord.com/channels/601130461678272522/889232844101156914/938711460505325649)
+
+is it possible to skip some kinds of comments line when open a csv file ?   
+i got some bank's transaction file which include some lines begin with #
+
+I'd do something like
+
+```rust
+open foo.csv --raw | lines | where ($it | str starts-with '#') == $false | from csv
 ```
