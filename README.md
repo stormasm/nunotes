@@ -8,8 +8,7 @@ ListStreams are used for Values any time you have an iterator
 
 RawStreams are used for externals as well as the
 open command when you don't have a file extension that
-you know about.   
-In other words, it goes to raw when you do not know what
+you know about.  In other words, it goes to raw when you do not know what
 you are going to get back...
 
 Both of these streams are referenced in nu-protocol in
