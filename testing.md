@@ -1,6 +1,11 @@
 
 ### cargo-nextest
 
+```rust
+alias cnr='cargo nextest run'
+cargo nextest run --all --all-features
+```
+
 * [doc](https://nexte.st/)
 * [discord1](https://discord.com/channels/601130461678272522/683070703716925568/942909162004828191)
 * [discord2](https://discord.com/channels/601130461678272522/683070703716925568/942985557800288268)
