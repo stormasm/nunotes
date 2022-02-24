@@ -26,11 +26,11 @@ Both of these streams are referenced in nu-protocol in
 * pipeline_data.rs
 * value/stream.rs
 
-##### what is the **exempt** label in issues
+#### what is the **exempt** label in issues
 
 exempt from the stale bot
 
-##### what is --testbin
+#### what is --testbin
 
 --testbin String  
 what does it mean to run internal test binary ?
@@ -41,7 +41,7 @@ ok so that means an end user would never use that feature (except if they were w
 
 [discord core](https://discord.com/channels/601130461678272522/683070703716925568/944671442371485756)
 
-##### changes in nushell from legacy nushell
+#### changes in nushell from legacy nushell
 
 * pivot is now transpose
 * insert (is now part of update)
@@ -57,17 +57,17 @@ https://github.com/nushell/nushell/issues/4314
 
 https://github.com/nushell/nushell/issues/4356
 
-##### Location of the file config.nu
+#### Location of the file config.nu
 * $nu.config-path
 * on mac: /Users/username/Library/Application Support/nushell
 
-### use metadata to create valid spans
+#### use metadata to create valid spans
 
 [discord](https://discord.com/channels/601130461678272522/738253041546952705/939546327426162688)
 
 but these spans need to be valid spans for this to work, and you can't create valid spans yourself (you need to use helpers like metadata).
 
-### append command
+#### append command
 
 To see raw input values print val in the **append** command
 
@@ -77,14 +77,14 @@ println!("{:?}",val);
 let vec: Vec<Value> = process_value(val);
 ```
 
-# engine-q notes
+#### engine-q notes
 
 * [kubouch list of configurable settings](https://github.com/nushell/engine-q/issues/459)
 * [fdncred](./engine-q/fdncred.md)
 * [table syntax](./engine-q/table-syntax.md)
 * [table syntax nushell old](./engine-q/nushell-table-syntax.md)
 
-# How to run engine-q
+#### How to run engine-q
 
 If you want to see all the plugins you need to do
 
@@ -95,13 +95,13 @@ cargo run --features=extra
 nurun --help
 ```
 
-### Json with no formatting chars
+#### Json with no formatting chars
 
 ```rust
 [[a b]; [jim susie] [3 4]] | to json | str find-replace '\n' '' -a | str trim -a
 ```
 
-### Send back no data
+#### Send back no data
 
 ```rust
 Ok(PipelineData::Value(Value::Nothing { span: call.head }, None,))
@@ -116,9 +116,9 @@ Ok(PipelineData::Value(Value::Nothing { span: *span }, None))
 
 [discord](https://discord.com/channels/601130461678272522/889232844101156914/911337922890985512)
 
-## Getting column data
+#### Getting column data
 
-### get_data_by_key
+* get_data_by_key
 
 commands that use get_data_by_key include **empty?** and **compact**
 
@@ -133,7 +133,7 @@ for column in column_paths.clone() {
 
 It goes through and prints each value going down the column...
 
-### follow_cell_path
+* follow_cell_path
 
 ```rust
 PathMember::Int
@@ -174,12 +174,11 @@ is defined in the nu-engine crate in [call_ext](https://github.com/nushell/engin
 pub trait CallExt {
 ```
 
-##### Random commands
+#### Random commands
 
 ```rust
 [[name,age];[bill,20],[rick,21]] | append [[name,age]; [paul, 40], [hb,70], [sally, 33], [sam,46]] | prepend [[name,age]; [sarah,40],[jane,50]]
 ```
-
 
 #### How do you run CI checks locally ?
 
@@ -202,7 +201,7 @@ cargo update --package reedline
 ```
 * [discord](https://discord.com/channels/601130461678272522/855886335980994600/918604480965120081)
 
-##### Other useful clippy commands
+#### Other useful clippy commands
 
 ```rust
 cargo clippy -- -W clippy::pedantic
@@ -215,7 +214,7 @@ cargo clippy -- -W clippy::pedantic
 
 we use this thing called rust-embed to embed things into the binary. Right now it looks like we're embedding themes for doing html, but I think you can use it for this as well
 
-### General Questions
+#### General Questions
 
 #### what is our convention about commands having underscores ?
 
@@ -228,12 +227,14 @@ So commands like **let, do, if** have **underscore**, otherwise when you want to
 example 24-bit terminals on mac including kitty, tabby, iterm2,
 the default mac terminal is not 24-bit.
 
->>> Anyone has an idea how to check if a value's type is Record?
+#### Anyone has an idea how to check if a value's type is Record?
 
 You can pattern-match on the value:
 ```rust
 if let Value::Record { .. } = value { <code> }
 ```
+
+#### Convert tables and rows to Strings
 
 >>> Does anyone know offhand if there is code in nushell to convert tables and rows to Strings?  I know there is the autoview command, but it uses a bunch of config stuff, etc. which I am trying to avoid
 
@@ -246,7 +247,7 @@ in nushell, viewers don't return anything
 
 [discord](https://discord.com/channels/601130461678272522/614593951969574961/921375934551048232)
 
-### Do not use...
+#### Do not use...
 
 ```rust
 Span::unknown()
@@ -256,7 +257,7 @@ Span::unknown()
 
 When working on commands, you can use call.head (this is a good option for new values created within the command) or reuse spans that come with Values from the input stream or command arguments. To get it right requires a bit of playing around so a good idea is to also purposefully trigger the errors and see how the messages look like.
 
-### References
+#### References
 
 * [ref 2022](./ref/ref22.md)
 
@@ -275,13 +276,13 @@ traditionally a shell would be for interacting with the system directly and a RE
 yeah, I'm trying to make a REPL for my scripting language but give it some shell-like capabilities
 I find a little difficult to strike the right balance between the two
 
-### How to get input from the user ?
+#### How to get input from the user ?
 See the input command.
 
-### Lots of details about events and how order matters
+#### Lots of details about events and how order matters
 [discord start here, coreteam](https://discord.com/channels/601130461678272522/683070703716925568/939977870258876486)
 
-### Move nth to select PR
+#### Move nth to select PR
 
 This moves nth into select. This works by looking at the cell path we're given. If the cell path is a number, we follow the same logic as get: instead of a column name, use this as a row number.
 
@@ -289,7 +290,7 @@ The end result is that now select works like get, but instead of extracting data
 
 ref: [#4385](https://github.com/nushell/nushell/pull/4385)
 
-### When do I use Snake and when do I use Kebab ?
+#### When do I use Snake and when do I use Kebab ?
 
 We know we didn't like either extreme, so after chatting with folks I think we should have a balance between the two: Here's my proposal:
 
@@ -311,11 +312,11 @@ Kebab:
 
 [discord](https://discord.com/channels/601130461678272522/601130461678272524/943882097175707718)
 
-##### Long flags do not include "="
+#### Long flags do not include "="
 
 [discord](https://discord.com/channels/601130461678272522/614593951969574961/943957860373651536)
 
-##### How do I build up a string ?
+#### How do I build up a string ?
 
 ```rust
 let age = 10
