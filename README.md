@@ -1,4 +1,15 @@
 
+#### Value and Strings
+
+[discord-core](https://discord.com/channels/601130461678272522/683070703716925568/946312855668543538)
+
+is there a difference between Value::as_string and Value::into_string?
+
+as_string() converts any value that supports it to a string. into_string() formats the value and prints it, even lists etc. Maybe into_string() could be called print() or format() or something.
+
+yeah, in theory there's a difference, so we don't accidentally convert something to string that shouldn't be but, like your external args, we should be able to safely convert ints to strings
+
+
 #### There are two types of Streams in Nushell
 
 * ListStream
