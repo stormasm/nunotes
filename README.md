@@ -1,4 +1,8 @@
 
+#### First cut at exit codes
+
+[discord-core](https://discord.com/channels/601130461678272522/683070703716925568/946842065998860348)
+
 #### Value and Strings
 
 [discord-core](https://discord.com/channels/601130461678272522/683070703716925568/946312855668543538)
