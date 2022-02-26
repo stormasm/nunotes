@@ -1,7 +1,18 @@
 
+
+#### Need to look into optional arguments
+
+here is an example [discord](https://discord.com/channels/601130461678272522/614593951969574961/946807063927988266)
+
+more details [discord](https://discord.com/channels/601130461678272522/614593951969574961/946810405894897746)
+
+more research on nu as a language [discord](https://discord.com/channels/601130461678272522/615329862395101194/946859683015180298)
+
 #### First cut at exit codes
 
 [discord-core](https://discord.com/channels/601130461678272522/683070703716925568/946842065998860348)
+
+and the [PR](https://github.com/nushell/nushell/pull/4647)
 
 #### Value and Strings
 
