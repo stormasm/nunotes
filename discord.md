@@ -1,4 +1,12 @@
 
+* sorry but i cant figure out how to access the nu variable 😛 any hints?
+[discord](https://discord.com/channels/601130461678272522/615962413203718156/947101719358238750)
+
+* is it possible to declare a function so its usable by the user inside a block?
+
+* I believe def-env makes it global, and let-env for variables.
+[discord](https://discord.com/channels/601130461678272522/601130461678272524/947077158084444230)
+
 * What is the difference between a PipelineMetadata::Value and PipelineMetadata::Stream ?
 [discord](https://discord.com/channels/601130461678272522/889232844101156914/917872317747589131)
     * the Value case is a fully-known, finite value, and stream is a set of values of unknown length (possibly infinite) --- meaning its an Iterator.
