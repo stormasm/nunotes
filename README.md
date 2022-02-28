@@ -1,4 +1,6 @@
 
+#### Env Notes
+[discord](https://discord.com/channels/601130461678272522/614593951969574961/947802107325587518)
 
 #### Need to look into optional arguments
 
