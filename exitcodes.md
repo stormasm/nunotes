@@ -21,12 +21,13 @@ for nu a; b means "run a and then if it errors, don't run b. Otherwise, run b"
 which isn't exit codes but nushell's internal error system, which actually does mean failure or success
 
 LordMZTE  
-oh ok! thats when i want then
+oh ok! thats when i want then   
 hmm nah it just ran the second command although the first one failed :/
 
 jt  
 is a an external or internal command?
-LordMZTE — Today at 10:04 AM
+
+LordMZTE  
 external
 
 jt  
