@@ -1,4 +1,6 @@
 
+#### path stuff
+
 is there a replacement for pathvar in .59?   
 let-env PATH = ($env.PATH | append foo)
 
