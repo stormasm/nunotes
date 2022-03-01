@@ -1,4 +1,29 @@
 
+cd to a path (file or directory) in the pipeline
+
+```rust
+def-env goto [] {
+    let input = $in
+    cd (
+        if ($input | path type) == file {
+            ($input | path dirname)
+        } else {
+            $input
+        }
+    )
+}
+```
+example usage:   
+
+```rust
+$nu.config-path | goto
+```
+
+```bash
+cd ~/j/tmp17/nuscripts/testdata;
+open payload.json | get my_payload | to json | post https://jsonplaceholder.typicode.com/posts $in
+```
+
 ```rust
 open payload.json | get my_payload | to json | post https://jsonplaceholder.typicode.com/posts $in
 ```
