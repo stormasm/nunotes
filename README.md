@@ -1,4 +1,8 @@
 
+#### $it notes
+
+See the book section [Working with lists](https://www.nushell.sh/book/working_with_lists.html)
+
 #### $in notes
 
 when you want to just grab what the next to last pipeline is outputting and test it (for whatever reason)...
