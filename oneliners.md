@@ -1,4 +1,19 @@
 
+```rust
+open payload.json | get my_payload | to json | post https://jsonplaceholder.typicode.com/posts $in
+```
+
+where payload.json
+```rust
+{
+  "my_payload": {
+    "title": "foo",
+    "body": "bar",
+    "userId": 1
+  }
+}
+```
+
 [discord](https://discord.com/channels/601130461678272522/614593951969574961/945600413028212756)
 
 ```rust
