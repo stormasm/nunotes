@@ -1,4 +1,10 @@
 
+#### Alias Notes
+
+```rust
+alias "dfr describe" = dfr describe -q [0.5 0.90 0.95 0.99]
+```
+
 #### Env Notes
 [discord](https://discord.com/channels/601130461678272522/614593951969574961/947802107325587518)
 
