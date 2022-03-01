@@ -1,4 +1,12 @@
 
+#### $in notes
+
+when you want to just grab what the next to last pipeline is outputting and test it (for whatever reason)...
+
+```rust
+"john ran to the store" | str length | $in > 25
+```
+
 #### Alias Notes
 
 ```rust
