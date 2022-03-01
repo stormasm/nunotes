@@ -24,11 +24,7 @@ cd ~/j/tmp17/nuscripts/testdata;
 open payload.json | get my_payload | to json | post https://jsonplaceholder.typicode.com/posts $in
 ```
 
-```rust
-open payload.json | get my_payload | to json | post https://jsonplaceholder.typicode.com/posts $in
-```
-
-where payload.json
+where payload.json is...   
 ```rust
 {
   "my_payload": {
