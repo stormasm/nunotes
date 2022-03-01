@@ -1,4 +1,7 @@
 
+is there a replacement for pathvar in .59?   
+let-env PATH = ($env.PATH | append foo)
+
 #### $it notes
 
 See the book section [Working with lists](https://www.nushell.sh/book/working_with_lists.html)
