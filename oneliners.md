@@ -1,4 +1,8 @@
 
+```rust
+seq date -b '2020-01-01' -e '2020-12-31'
+```
+
 cd to a path (file or directory) in the pipeline
 
 ```rust
