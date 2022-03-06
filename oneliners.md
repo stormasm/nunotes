@@ -1,5 +1,15 @@
 
 ```rust
+def ! [b: expr] { if ($b) { $false } else { $true } }
+```
+> ! $true
+false
+> ! $false
+true
+
+[discord](https://discord.com/channels/601130461678272522/614593951969574961/948583172914962432)
+
+```rust
 seq date -b '2020-01-01' -e '2020-12-31'
 ```
 

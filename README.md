@@ -1,4 +1,8 @@
 
+### blocks and parentheses, what are they ?
+
+[discord](https://discord.com/channels/601130461678272522/614593951969574961/950068278015979541)
+
 #### strings, nuon, escape characters philosophy
 
 [discord](https://discord.com/channels/601130461678272522/615329862395101194/948363539561713694)
