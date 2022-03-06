@@ -1,4 +1,11 @@
 
+#### keybindings
+
+```rust
+keybindings list --events
+keybindings default
+```
+
 ### blocks and parentheses, what are they ?
 
 [discord](https://discord.com/channels/601130461678272522/614593951969574961/950068278015979541)
