@@ -1,4 +1,10 @@
 
+#### sourcing a file
+
+[discord](https://discord.com/channels/601130461678272522/601130461678272524/951097285465477180)
+
+source requires a known string. it doesn't support dynamically creating a string.  it's a design choice because: In Nushell, we're trying to make it so we know all of the source at "parse time". This lets us later add really good IDE support, and for Nushell to more easily scale up to large projects
+
 #### keybindings
 
 ```rust
