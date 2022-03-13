@@ -1,4 +1,10 @@
 
+#### building a string
+
+is build-str the only way to build a string?  
+we don't have an append or something like that. right?  
+you can also do "hello" + " world"
+
 #### sourcing a file
 
 [discord](https://discord.com/channels/601130461678272522/601130461678272524/951097285465477180)
