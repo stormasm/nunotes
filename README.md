@@ -1,4 +1,11 @@
 
+#### key points
+
+```rust
+let list = help commands | select name # This breaks
+let $list = (help commands | select name | first 10) # This works
+```
+
 #### building a string
 
 is build-str the only way to build a string?  
