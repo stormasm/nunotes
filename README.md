@@ -1,4 +1,15 @@
 
+Remember to blow away all of your old nushell processes
+everytime you do a code update and rebuild nushell otherwise
+you will get into the problem I was seeing this morning
+with history and probably other stuff
+
+#### how the bang and history commands work
+
+if you type history | last 10 and look the index columns - that's what you use with !number... if you're in ctrl-x history mode, you can search, and then just type !5 and it'll choose the 5th item, assuming you have it setup that way
+
+[discord core](https://discord.com/channels/601130461678272522/683070703716925568/952989254961733682)
+
 #### key points
 
 ```rust
