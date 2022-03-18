@@ -11,7 +11,9 @@ For more details on this topic see
 
 #### $nu is your gateway into lots of internal nushell stuff
 
-Remember to blow away all of your old nushell processes
+#### When developing nushell, remember to...
+
+*Remember to* blow away all of your old nushell processes
 everytime you do a code update and rebuild nushell otherwise
 you will get into the problem I was seeing this morning
 with history and probably other stuff
