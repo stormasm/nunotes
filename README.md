@@ -1,4 +1,14 @@
 
+#### how escaping works in nushell
+
+```rust
+"one\ntwo"
+'one\ntwo'
+```
+
+For more details on this topic see
+[issue 4869](https://github.com/nushell/nushell/issues/4869)
+
 #### $nu is your gateway into lots of internal nushell stuff
 
 Remember to blow away all of your old nushell processes
