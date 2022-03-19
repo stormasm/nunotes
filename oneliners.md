@@ -1,4 +1,13 @@
 
+started working on a str repeat command until I realized you can just use lpad/rpad
+
+```rust
+'' | str lpad -l 3 -c 'ab'                             
+ababab
+```
+
+[discord](https://discord.com/channels/601130461678272522/615962413203718156/954486380099154051)
+
 ```rust
 def ! [b: expr] { if ($b) { $false } else { $true } }
 ```

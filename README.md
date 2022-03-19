@@ -31,7 +31,7 @@ let list = help commands | select name # This breaks
 let $list = (help commands | select name | first 10) # This works
 ```
 
-#### building a string
+#### building a string or concatenation
 
 is build-str the only way to build a string?  
 we don't have an append or something like that. right?  
