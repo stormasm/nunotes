@@ -1,4 +1,14 @@
 
+### Understanding reduce
+
+```rust
+let rec = {foo: "bar"};
+let cols = ("one two three" | split row " ");
+$cols | reduce -f $rec {|it, acc| $acc | insert $it $it}
+```
+
+[discord](https://discord.com/channels/601130461678272522/614593951969574961/956339229946953738)
+
 started working on a str repeat command until I realized you can just use lpad/rpad
 
 ```rust
