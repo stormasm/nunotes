@@ -435,8 +435,6 @@ let age = 10
 echo "my age is " $age | str collect
 ```
 
-#### cargo-outdated
-
 #### [cargo-outdated](https://crates.io/crates/cargo-outdated)
 
 Install cargo-outdated as a binary just like you do rg, or whalespotter
