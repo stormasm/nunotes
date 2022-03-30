@@ -1,4 +1,10 @@
 
+#### Help command
+
+* ctrl q gets you going
+* hit tab to move around
+* option [up, down] etc...
+
 #### git push versus git status, why are they different
 
 [discord](https://discord.com/channels/601130461678272522/614593951969574961/956961004212846632)
