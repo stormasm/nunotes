@@ -1,11 +1,12 @@
 
-### how does the repl loop work in nu-cli
-
-[search for eval_source in repl.rs](https://github.com/nushell/nushell/blob/main/crates/nu-cli/src/repl.rs)
-
 ### how does the data get into PipelineData
 
-A good example of seeing this is in the command
+* see the repl loop in nu-cli
+* [nu_cli::eval_source](https://github.com/nushell/nushell/blob/main/crates/nu-cli/src/repl.rs)
+* [nu_engine::eval_block](https://github.com/nushell/nushell/blob/main/crates/nu-engine/src/eval.rs)
+
+### A good example of seeing this is in the command
+
 [from nuon](https://github.com/nushell/nushell/blob/main/crates/nu-command/src/formats/from/nuon.rs)
 
 ```rust
