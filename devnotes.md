@@ -1,4 +1,8 @@
 
+### how does the repl loop work in nu-cli
+
+[search for eval_source in repl.rs](https://github.com/nushell/nushell/blob/main/crates/nu-cli/src/repl.rs)
+
 [nu-protocol data structures](./engine-q/engine-q-nu-protocol.md)
 
 ### How does the data get into the PipelineData ?
