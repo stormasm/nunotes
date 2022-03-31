@@ -5,7 +5,7 @@
 * [nu_cli::eval_source](https://github.com/nushell/nushell/blob/main/crates/nu-cli/src/repl.rs)
 * [nu_engine::eval_block](https://github.com/nushell/nushell/blob/main/crates/nu-engine/src/eval.rs)
 
-### A good example of seeing this is in the command
+### good example of seeing this is in the command
 
 [from nuon](https://github.com/nushell/nushell/blob/main/crates/nu-command/src/formats/from/nuon.rs)
 
