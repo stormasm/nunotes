@@ -3,8 +3,6 @@
 
 [search for eval_source in repl.rs](https://github.com/nushell/nushell/blob/main/crates/nu-cli/src/repl.rs)
 
-[nu-protocol data structures](./engine-q/engine-q-nu-protocol.md)
-
 ### how does the data get into PipelineData
 
 A good example of seeing this is in the command
@@ -22,3 +20,7 @@ let result = convert_to_value(expr, head, &string_input);
 
 * then the expression emerges from the pipeline
 * and convert_to_value gets called...
+
+### References for further research
+
+[nu-protocol data structures](./engine-q/engine-q-nu-protocol.md)
