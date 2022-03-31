@@ -5,7 +5,7 @@
 
 [nu-protocol data structures](./engine-q/engine-q-nu-protocol.md)
 
-### How does the data get into the PipelineData ?
+### how does the data get into PipelineData
 
 A good example of seeing this is in the command
 [from nuon](https://github.com/nushell/nushell/blob/main/crates/nu-command/src/formats/from/nuon.rs)
