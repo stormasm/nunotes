@@ -1,4 +1,16 @@
 
+#### Is there an easy way to get a column from a table by column index ?
+
+```rust
+def column [n] { transpose | select $n | transpose | select column1 | headers }
+```
+
+```rust
+ls | column 1
+```
+
+[discord](https://discord.com/channels/601130461678272522/615253963645911060/959152636945387632)
+
 ### Understanding reduce
 
 ```rust
