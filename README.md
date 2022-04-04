@@ -1,4 +1,36 @@
 
+#### Export and use
+
+in order to use blah.nu * you need to have exported defs as well like export def on the defs that you want to be able to call externally - if defs are called internally by other defs only, they don't need to be exported.
+
+see nushell book on modules
+
+[discord](https://discord.com/channels/601130461678272522/614593951969574961/960308389957730364)
+
+#### Info about decls, each taking a block etc...
+
+[discord](https://discord.com/channels/601130461678272522/958067223187062834/960243865548357682)
+
+#### First cut at @elferherrera menuverse
+
+[discord core](https://discord.com/channels/601130461678272522/683070703716925568/960249740522561536)
+
+#### In a block what are the captures ?
+
+>> the variables outside of a block that it's using. So in:
+
+```rust
+let x = 10
+do {
+  let y = 20
+  print ($x + $y)
+}
+```
+
+>> then $x is a capture of the block given to do
+
+[discord core](https://discord.com/channels/601130461678272522/683070703716925568/960229362567889036)
+
 #### Help command
 
 * ctrl q gets you going
@@ -454,3 +486,5 @@ Then to run the command go to a particular crate in nushell and run...
 ```rust
 cargo outdated -R
 ```
+
+#### [ulid](https://github.com/ulid)
