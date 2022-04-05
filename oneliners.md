@@ -1,4 +1,10 @@
 
+```rust
+help commands | select name usage | find --predicate { |it| ($it.usage | split chars | first) == ($it.usage | split chars | first | str downcase) }
+```
+
+[discord](https://discord.com/channels/601130461678272522/614593951969574961/960773100411179018)
+
 #### Is there an easy way to get a column from a table by column index ?
 
 ```rust
