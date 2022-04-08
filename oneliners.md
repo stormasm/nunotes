@@ -1,4 +1,12 @@
 
+How do you add a list to a table ?
+
+```rust
+ls | upsert md5 {|n| $n.name | hash md5}
+```
+
+[discord](https://discord.com/channels/601130461678272522/614593951969574961/961946292198715442)
+
 ```rust
 help commands | select name usage | find --predicate { |it| ($it.usage | split chars | first) == ($it.usage | split chars | first | str downcase) }
 ```

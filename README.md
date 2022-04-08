@@ -1,4 +1,8 @@
 
+#### Evaluate parenthesis
+
+[discord](https://discord.com/channels/601130461678272522/614593951969574961/961968896255078501)
+
 #### Export and use
 
 in order to use blah.nu * you need to have exported defs as well like export def on the defs that you want to be able to call externally - if defs are called internally by other defs only, they don't need to be exported.
