@@ -1,4 +1,8 @@
 
+```rust
+git branch | lines | find new | str trim | each { |it| git branch -D $it }
+```
+
 How do you add a list to a table ?
 
 ```rust
