@@ -20,7 +20,11 @@ let create = format!("create table {}({})", table_name, columns?);
 let insert = format!("insert into {} values {}", table_name, insert_values?);
 ```
 
+### References
+
 * [read_to_end](https://doc.rust-lang.org/nightly/std/io/trait.Read.html#method.read_to_end)
+
+### fdncred rsq implementation
 
 [first mention](https://discord.com/channels/601130461678272522/855886335980994600/933116747630923776)
 
