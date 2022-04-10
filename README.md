@@ -496,3 +496,9 @@ cargo outdated -R
 ```
 
 #### [ulid](https://github.com/ulid)
+
+### Find unused dependencies
+
+```rust
+cargo +nightly udeps --all-targets
+```
