@@ -1,6 +1,5 @@
 
-Move BufferedReader somewhere else possibly
-to filesystem/util.rs
+Move BufferedReader to filesystem/util.rs
 
 It is referenced in these 3 spots.
 
@@ -23,4 +22,3 @@ in doing that it tied a rusqlite crate dependency to main.rs
 this is not prudent long term as custom nu-command crates
 will be inhibited due to main.rs needing this particular
 open command which is not related in any way to main.rs
- 
