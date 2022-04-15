@@ -1,5 +1,10 @@
 
-Move BufferedReader to filesystem/util.rs
+nu-command cleanup
+
+* move duplicated code to central location
+* remove rusqlite dependency tied to src/main.rs
+
+Move BufferedReader to nu-command/src/util.rs
 
 It is referenced in these 3 spots.
 
@@ -8,11 +13,6 @@ It is referenced in these 3 spots.
 * network/post.rs
 
 We do not want it in open.rs because of the rusqlite dependency...
-
-nu-command cleanup
-
-* move duplicated code to central location
-* remove rusqlite dependency tied to src/main.rs
 
 recently the rusqlite crate was added to filesystem/open
 to enable the ability to open sqlite databases.
