@@ -6,7 +6,7 @@ nu-command cleanup
 
 Move BufferedReader to nu-command/src/util.rs
 
-It is referenced in these 3 spots.
+The same exact code is located in these 3 spots.
 
 * filesystem/open.rs
 * network/fetch.rs
