@@ -356,13 +356,6 @@ cargo test --all
 [CI workflow steps manually](https://github.com/nushell/engine-q/blob/main/.github/workflows/ci.yml); &nbsp;&nbsp;
 [discord link](https://discord.com/channels/601130461678272522/889232844101156914/904688334578794516)
 
-#### Other useful cargo commands
-
-```rust
-cargo update --package reedline
-```
-* [discord](https://discord.com/channels/601130461678272522/855886335980994600/918604480965120081)
-
 #### Other useful clippy commands
 
 ```rust
@@ -484,6 +477,13 @@ Kebab:
 let age = 10
 echo "my age is " $age | str collect
 ```
+
+#### Other useful Cargo commands
+
+```rust
+cargo update --package reedline
+```
+* [discord](https://discord.com/channels/601130461678272522/855886335980994600/918604480965120081)
 
 ### More details on cargo update
 
