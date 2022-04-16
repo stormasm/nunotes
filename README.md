@@ -485,6 +485,10 @@ let age = 10
 echo "my age is " $age | str collect
 ```
 
+### More details on cargo update
+
+https://github.com/nushell/nushell/pull/5184
+
 #### [cargo-outdated](https://crates.io/crates/cargo-outdated)
 
 Install cargo-outdated as a binary just like you do rg, or whalespotter
