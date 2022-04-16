@@ -1,4 +1,18 @@
 
+Hack to convert a table to a record
+
+```rust
+❯  let record = ([[key value]; [foo 10] [bar 20] [baz 30]] | each {|row| echo $"($row.key): ($row.value)"} | str collect , | $"{($in)}" | from nuon)
+```                                                                                      
+❯ $record.foo  
+10               
+❯ $record.bar  
+20            
+❯ $record.baz  
+30  
+
+[discord](https://discord.com/channels/601130461678272522/614593951969574961/964613306155413535)
+
 ```rust
 git branch | lines | find new | str trim | each { |it| git branch -D $it }
 ```
