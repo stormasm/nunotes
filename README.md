@@ -1,4 +1,10 @@
 
+#### How errors are displayed
+
+```rust
+3 / "bob"
+```
+
 #### Adding env.nu, why ?
 
 Just for some context, if I understand correctly env.nu was added because we otherwise couldn't access the updated environment variables in config.nu (for env vars that were updated in config.nu). That meant that we couldn't use files in any of the NU_LIB_DIRS from config.nu, because that env var was defined in the same file. By first sourcing env.nu and defining NU_LIB_DIRS there, we can now use files from those directories in config.nu. Is that correct?
