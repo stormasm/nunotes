@@ -5,7 +5,7 @@ To bring up the nana console:
 ### To install rollup locally with npm
 
 ```rust
-npm install rollup --save-dev
+alias nroll='npm install rollup --save-dev'
 ```
 
 ### To run rollup manually
