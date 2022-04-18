@@ -1,4 +1,16 @@
 
+### Helper function to identify SQLite databases:
+
+```rust
+def is-sqlite-db [$path: path] {(open --raw $path | first 16) == ($"SQLite format 3(char -i 0)" | into binary)}
+```
+
+Example:
+
+```rust
+ls **/* | where (is-sqlite-db $it.name)
+```
+
 Hack to convert a table to a record
 
 ```rust
