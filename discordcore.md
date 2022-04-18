@@ -14,6 +14,8 @@ also some other interesting points on blocks etc...
 record<foo: string>
 [{foo: bar}] | describe
 table<foo: string>
+[[foo]; [([[bar]; [baz]])]] | describe
+table<foo: table<bar: string>>
 ```
 
 ### Earlier in the spring
