@@ -209,7 +209,10 @@ open foo.csv --raw | lines | where ($it | str starts-with '#') == $false | from 
 ### String stuff
 
 This is a bit of a dumb question, but I bizarrely can't find anything about it in the docs... I'm trying to append a string to a variable, in bash I would do:
+
+```rust
 echo $variable/dir
+```
 
 But it doesn't seem to work. I also tried echo
 
