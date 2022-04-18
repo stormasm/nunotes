@@ -16,7 +16,12 @@ record<foo: string>
 table<foo: string>
 [[foo]; [([[bar]; [baz]])]] | describe
 table<foo: table<bar: string>>
+
+ah okay to nuon turns it into:
+
+[[foo]; [[[bar]; ["baz"]]]]
 ```
+which is also valid... so a list of one value, the table makes sense
 
 ### Earlier in the spring
 
