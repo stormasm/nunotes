@@ -1,4 +1,12 @@
 
+#### how to output to /dev/null ?
+
+```rust
+| ignore and do -i {... } | ignore
+```
+
+[Issue](https://github.com/nushell/nushell/issues/5269)
+
 #### How errors are displayed
 
 ```rust
