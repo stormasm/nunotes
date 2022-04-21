@@ -1,4 +1,21 @@
 
+### query db command
+
+loving your query db command. i have a question though.
+i ran this command and it works as expected...
+
+```rust
+open ./cities.db | query db "select * from cities where country = 'New Zealand' order by city"
+```
+
+however if i do let db = (open ./cities.db) and then $db | query db "blah" it doesn't work.
+
+do i need to open the file each time?
+
+i mean, obviously, you do but what i'd like to do is store the open connection as above and just use it.
+
+[discord](https://discord.com/channels/601130461678272522/615962413203718156/966485679716597851)
+
 #### how to output to /dev/null ?
 
 ```rust
