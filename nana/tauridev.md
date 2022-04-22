@@ -7,7 +7,7 @@ looks like everything gets kicked off in **app.rs**
 search for pub fn run  
 and check out the method pub fn build
 
-search for default() in app.rs for more details...
+search for default() in app.rs for more details   
 see on_event_loop_event()   
 
 
