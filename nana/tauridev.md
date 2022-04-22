@@ -1,7 +1,7 @@
 
 ## Tauri Source Code Notes
 
-#### How does everything get kicked off
+#### How does everything get kicked off ?
 
 looks like everything gets kicked off in **app.rs**  
 search for pub fn run  
