@@ -1,5 +1,5 @@
 
-### Why do we a $ sign for variables ?
+### Why do we need a $ sign for variables ?
 
 This would confuse it with external commands. If Nushell sees a bare word (e.g., pwd) where it cannot be a string, it considers it an external command. Ditching $ would make bare words ambiguous: let x = pwd could mean both "run pwd command" and "fetch pwd variable". So I personally see $ useful.
 
