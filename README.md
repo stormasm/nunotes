@@ -1,6 +1,10 @@
 
 ### Why do we need a $ sign for variables ?
 
+someone asked:  
+i dont really know what using let $bla brings when you could do let bla
+
+@kubouch reply:
 This would confuse it with external commands. If Nushell sees a bare word (e.g., pwd) where it cannot be a string, it considers it an external command. Ditching $ would make bare words ambiguous: let x = pwd could mean both "run pwd command" and "fetch pwd variable". So I personally see $ useful.
 
 JT response:
