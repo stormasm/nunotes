@@ -1,4 +1,13 @@
 
+### Is there a nu equivalent for bash export BROWSER=w3m ?
+
+```rust
+My bad, you have to quote the value.
+let-env BROWSER = "w3m"
+```
+
+[discord](https://discord.com/channels/601130461678272522/614593951969574961/967153405934071829)
+
 ### query db command
 
 loving your query db command. i have a question though.
