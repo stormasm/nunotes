@@ -1,4 +1,11 @@
 
+#### Ansi Escapes
+
+* https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797
+* https://en.wikipedia.org/wiki/ANSI_escape_code
+
+[discordcore](https://discord.com/channels/601130461678272522/683070703716925568/968136456856043581)
+
 ### Why do we need a $ sign for variables ?
 
 someone asked:  
