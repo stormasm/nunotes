@@ -1,5 +1,4 @@
 
-
 ```rust
 let first = [[a b]; [1 2]]
 let second = [[c d]; [3 4]]
