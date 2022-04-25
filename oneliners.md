@@ -1,5 +1,9 @@
 
 ```rust
+date to-record
+```
+
+```rust
 fetch https://api.github.com/repos/nushell/nushell | get stargazers_count
 ```
 
