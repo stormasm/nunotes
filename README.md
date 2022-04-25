@@ -1,4 +1,16 @@
 
+
+```rust
+let first = [[a b]; [1 2]]
+let second = [[c d]; [3 4]]
+let third = [[e f]; [5 6]]
+[$first $second $third]|reduce {|it, acc| $acc|merge {$it}}
+```
+
+#### Transforming Records to Table
+
+[discord](https://discord.com/channels/601130461678272522/601130461678272524/968119536446484510)
+
 #### Ansi Escapes
 
 * https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797
