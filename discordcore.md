@@ -1,6 +1,10 @@
 
 ### Spring 2022
 
+April 23 Weekend Discussion on Future Directions and **compile the pipeline**
+
+[discord](https://discord.com/channels/601130461678272522/683070703716925568/967678930742026251)
+
 Some JT notes in speaking to Andres
 
 nope, we're gradually typed, like TypeScript, so somewhere in between static and dynamic
