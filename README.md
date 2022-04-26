@@ -507,6 +507,11 @@ See the input command.
 #### Lots of details about events and how order matters
 [discord start here, coreteam](https://discord.com/channels/601130461678272522/683070703716925568/939977870258876486)
 
+#### Where does Nushell come from
+
+* [nu](https://jel.jewish-languages.org/words/416)
+* [discord](https://discord.com/channels/601130461678272522/614613939334152217/968447837241225276)
+
 #### Move nth to select PR
 
 This moves nth into select. This works by looking at the cell path we're given. If the cell path is a number, we follow the same logic as get: instead of a column name, use this as a row number.
