@@ -509,8 +509,11 @@ See the input command.
 
 #### Where does Nushell come from
 
-* [nu](https://jel.jewish-languages.org/words/416)
+* [nu comes from](https://jel.jewish-languages.org/words/416)
 * [discord](https://discord.com/channels/601130461678272522/614613939334152217/968447837241225276)
+
+"it's a pun on new, but also comes from hebrew/yiddish
+(originally named by Yehuda)"
 
 #### Move nth to select PR
 
