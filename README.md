@@ -1,4 +1,9 @@
 
+* $in refers to the value passed from the pipe
+* in case of each $in represents each row
+
+[discord](https://discord.com/channels/601130461678272522/614593951969574961/969480626564636702)
+
 ```rust
 let first = [[a b]; [1 2]]
 let second = [[c d]; [3 4]]
