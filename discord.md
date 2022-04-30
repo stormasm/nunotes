@@ -1,4 +1,38 @@
 
+### More details on $in
+
+another way to think of it:
+
+```rust
+ls | $in
+```
+
+becomes:
+
+```rust  
+ls | collect { |x| $x }
+```
+
+Collect takes the iterator, drains it, and turns it into a value that it assigns to the variable. From there it calls the block and runs it
+so:
+
+```rust
+3 | $in + 4
+```
+
+becomes:  
+
+```rust
+3 | collect { |x| $x + 4 }
+```
+
+(it's not always an iterator, like the above sometimes it's a single value)
+but the general case is that collect runs and turns the input into a value. Wherever that data came from, if it has state, will now be drained/emptied
+
+[discord](https://discord.com/channels/601130461678272522/614593951969574961/969846798627774505)
+
+### How to access nu variable
+
 * sorry but i cant figure out how to access the nu variable 😛 any hints?
 [discord](https://discord.com/channels/601130461678272522/615962413203718156/947101719358238750)
 
