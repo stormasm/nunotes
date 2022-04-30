@@ -31,7 +31,7 @@ but the general case is that collect runs and turns the input into a value. Wher
 
 [discord](https://discord.com/channels/601130461678272522/614593951969574961/969846798627774505)
 
-### How to access nu variable
+### Notes of interest
 
 * sorry but i cant figure out how to access the nu variable 😛 any hints?
 [discord](https://discord.com/channels/601130461678272522/615962413203718156/947101719358238750)
