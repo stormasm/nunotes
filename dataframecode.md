@@ -1,7 +1,6 @@
 
-This is about the nushell side of dataframes...
-
-For polars notes go [here](./polars.md)
+For more details on the Polars code tied to dataframes go
+[here](./polars.md)
 
 ### between_values.rs
 
