@@ -2,7 +2,82 @@
 For more details on the Polars code tied to dataframes go
 [here](./polars.md).
 
-### between_values.rs
+### /values/nudataframe/conversion.rs
+
+```rust
+pub fn create_column(
+    series: &Series,
+    from_row: usize,
+    to_row: usize,
+    span: Span,
+) -> Result<Column, ShellError> {
+
+// Adds a separator to the vector of values using the column names from the
+// dataframe to create the Values Row
+
+pub fn add_separator(values: &mut Vec<Value>, df: &DataFrame, span: Span) {
+
+// Inserting the values found in a Value::List
+pub fn insert_record(
+    column_values: &mut ColumnMap,
+    cols: &[String],
+    values: &[Value],
+) -> Result<(), ShellError> {
+
+pub fn insert_value(
+    value: Value,
+    key: String,
+    column_values: &mut ColumnMap,
+) -> Result<(), ShellError> {
+
+// The ColumnMap has the parsed data from the StreamInput
+// This data can be used to create a Series object that can initialize
+// the dataframe based on the type of data that is found
+
+pub fn from_parsed_columns(column_values: ColumnMap) -> Result<NuDataFrame, ShellError> {
+```
+
+
+
+
+
+
+
+
+
+
+
+### /values/nudataframe/custom_value.rs
+
+these methods are referenced here.
+
+### /values/nudataframe/operations.rs
+
+* compute_with_value is referenced only in **custom_value.rs**
+
+* append_df is referenced in **between_values.rs** and **eager/append.rs**
+
+```rust
+impl NuDataFrame {
+
+    pub fn compute_with_value(
+        &self,
+        lhs_span: Span,
+        operator: Operator,
+        op_span: Span,
+        right: &Value,
+    ) -> Result<Value, ShellError> {
+
+      pub fn append_df(
+          &self,
+          other: &NuDataFrame,
+          axis: Axis,
+          span: Span,
+      ) -> Result<Self, ShellError> {
+
+```
+
+### /values/nu_dataframe/between_values.rs
 
 has 3 public methods all of which are ONLY referenced in **operations.rs**
 
