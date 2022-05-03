@@ -8,5 +8,5 @@ ChunkedArray Vec<dyn ArrowArray>
 ```
 
 The
-[Series struct](https://docs.rs/polars/latest/polars/series/struct.Series.html)
+[Series struct](https://docs.rs/polars/latest/polars/series/struct.Series.html#series)
 consists of typed ChunkedArray’s. To quickly cast a Series to a ChunkedArray you can call the method with the name of the type:
