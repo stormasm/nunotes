@@ -3,6 +3,14 @@ This is about the nushell side of dataframes...
 
 For polars notes go [here](./polars.md)
 
+### between_values.rs
+
+has 3 public methods all of which are ONLY referenced in **operations.rs**
+
+* between_dataframes
+* compute_between_series
+* compute_series_single_value
+
 ### ChunkedArray
 
 The only place in the nushell code where
