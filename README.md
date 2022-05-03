@@ -1,4 +1,18 @@
 
+### Neat trick
+
+```rust
+def foo [] {
+where size > 10kb
+}
+
+ls | foo
+```
+
+[discord](https://discord.com/channels/601130461678272522/614613939334152217/971119978168320000)
+
+### More on $in
+
 * $in refers to the value passed from the pipe
 * in case of each $in represents each row
 
