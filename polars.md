@@ -1,4 +1,7 @@
 
+For more details on the Nushell code tied to dataframes go
+[here](./dataframecode.md)
+
 ### polars top level
 
 ```rust
