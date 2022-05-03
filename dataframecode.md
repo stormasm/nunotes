@@ -1,6 +1,6 @@
 
 For more details on the Polars code tied to dataframes go
-[here](./polars.md)
+[here](./polars.md).
 
 ### between_values.rs
 
