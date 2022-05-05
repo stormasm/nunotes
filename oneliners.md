@@ -1,4 +1,10 @@
 
+```
+def pwd-short [] {
+  $env.PWD | str replace $nu.home-path '~' -s
+}
+```
+
 ```rust
 date to-record
 ```
