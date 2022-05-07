@@ -96,3 +96,9 @@ is referenced is
 
 * eager/describe.rs
 * values/nu_dataframe {between_values.rs, conversion.rs}
+
+### Dataframe panics
+
+```rust
+[[a b c d]; [pete bill paul mike] [100 200 300 400]] | dfr to-df | dfr to-dummies
+```
