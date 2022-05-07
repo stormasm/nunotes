@@ -1,4 +1,15 @@
 
+### Code Organization
+
+##### completer
+
+The DefaultCompleter is only called from
+
+* engine
+* main
+* lib
+
+
 ### The Painter Notes
 
 Being part of Reedline makes sense to ensure that Reedline can manage event dispatch (for all menus were buffer editing could take place as well) and to have control over the painting/space requirements.

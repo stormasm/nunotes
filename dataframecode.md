@@ -1,4 +1,17 @@
 
+### Methods used by all dataframe commands on NuDataFrame
+
+See all of the methods in *dataframe/values/nu_dataframe/mod.rs*
+
+* try_from_columns
+* try_from_iter
+* try_from_pipeline
+* try_from_series
+* try_from_value
+
+* dataframe_into_value
+* into_value
+
 For more details on the Polars code tied to dataframes go
 [here](./polars.md).
 
