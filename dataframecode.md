@@ -97,6 +97,22 @@ is referenced is
 * eager/describe.rs
 * values/nu_dataframe {between_values.rs, conversion.rs}
 
+#### more code details on dataframe/values/nu_dataframe/mod.rs
+
+```rust
+pub fn as_series(&self, span: Span) -> Result<Series, ShellError> {
+    let series = self
+        .0                 // get the dataframe
+        .get_columns()     // get the series
+        .get(0)            // get the first series
+
+    Ok(series.clone())
+}
+```
+
+
+
+
 ### Dataframe panics
 
 ```rust
