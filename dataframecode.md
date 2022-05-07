@@ -4,7 +4,7 @@ For more details on the Polars code tied to dataframes go
 
 #### Methods used by all dataframe commands on NuDataFrame
 
-See all of the methods in *dataframe/values/nu_dataframe/mod.rs*
+See all of the [pub fn] methods in *dataframe/values/nu_dataframe/mod.rs*
 
 * try_from_columns
 * try_from_iter
