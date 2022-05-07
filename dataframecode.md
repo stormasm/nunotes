@@ -2,7 +2,7 @@
 For more details on the Polars code tied to dataframes go
 [here](./polars.md).
 
-### Methods used by all dataframe commands on NuDataFrame
+#### Methods used by all dataframe commands on NuDataFrame
 
 See all of the methods in *dataframe/values/nu_dataframe/mod.rs*
 
