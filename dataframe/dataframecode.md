@@ -15,6 +15,8 @@ See all of the [pub fn] methods in *dataframe/values/nu_dataframe/mod.rs*
 * dataframe_into_value
 * into_value
 
+### NuDataFrame Code Details
+
 *dataframe/values/nu_dataframe/conversion.rs*
 
 ```rust
@@ -88,15 +90,6 @@ has 3 public methods all of which are ONLY referenced in **operations.rs**
 * compute_between_series
 * compute_series_single_value
 
-### ChunkedArray
-
-The only place in the nushell code where
-[ChunkedArray](https://docs.rs/polars/latest/polars/chunked_array/struct.ChunkedArray.html)
-is referenced is
-
-* eager/describe.rs
-* values/nu_dataframe {between_values.rs, conversion.rs}
-
 #### more code details on dataframe/values/nu_dataframe/mod.rs
 
 ```rust
@@ -109,9 +102,14 @@ pub fn as_series(&self, span: Span) -> Result<Series, ShellError> {
     Ok(series.clone())
 }
 ```
+### ChunkedArray
 
+The only place in the nushell code where
+[ChunkedArray](https://docs.rs/polars/latest/polars/chunked_array/struct.ChunkedArray.html)
+is referenced is
 
-
+* eager/describe.rs
+* values/nu_dataframe {between_values.rs, conversion.rs}
 
 ### Dataframe panics
 
