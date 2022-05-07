@@ -1,4 +1,7 @@
 
+For more details on the Polars code tied to dataframes go
+[here](./polars.md).
+
 ### Methods used by all dataframe commands on NuDataFrame
 
 See all of the methods in *dataframe/values/nu_dataframe/mod.rs*
@@ -11,9 +14,6 @@ See all of the methods in *dataframe/values/nu_dataframe/mod.rs*
 
 * dataframe_into_value
 * into_value
-
-For more details on the Polars code tied to dataframes go
-[here](./polars.md).
 
 *dataframe/values/nu_dataframe/conversion.rs*
 
