@@ -50,21 +50,11 @@ pub fn insert_value(
 pub fn from_parsed_columns(column_values: ColumnMap) -> Result<NuDataFrame, ShellError> {
 ```
 
-
-
-
-
-
-
-
-
-
-
-### /values/nudataframe/custom_value.rs
+* dataframe/values/nu_dataframe/custom_value.rs
 
 these methods are referenced here.
 
-### /values/nudataframe/operations.rs
+* dataframe/values/nu_dataframe/operations.rs
 
 * compute_with_value is referenced only in **custom_value.rs**
 
@@ -90,7 +80,7 @@ impl NuDataFrame {
 
 ```
 
-### /values/nu_dataframe/between_values.rs
+* dataframe/values/nu_dataframe/between_values.rs
 
 has 3 public methods all of which are ONLY referenced in **operations.rs**
 
