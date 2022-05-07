@@ -102,3 +102,7 @@ is referenced is
 ```rust
 [[a b c d]; [pete bill paul mike] [100 200 300 400]] | dfr to-df | dfr to-dummies
 ```
+
+```rust
+[[a b]; [c d] [1 2]] | dfr to-df | dfr to-dummies
+```
