@@ -106,3 +106,11 @@ is referenced is
 ```rust
 [[a b]; [c d] [1 2]] | dfr to-df | dfr to-dummies
 ```
+
+### Dataframe code cleanup
+
+In the dataframe directory fix the error messages for these series commands.
+
+```rust
+rg str-slice
+```
