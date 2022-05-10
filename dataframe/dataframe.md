@@ -1,4 +1,16 @@
 
+### dfr open command
+
+list syntax must be like this for it to work
+
+please add an example to the command so people [and myself]
+can see what is supposed to look like for future reference.
+
+```rust
+dfr open foods1.parquet --columns [calories]
+dfr open foods1.parquet --columns [calories,fats_g]
+```
+
 ### Nushell tables can have multiple types in any given cell
 
 it seemed like dfr tables are columnar based while nushell tables are row based for streaming. also, nushell tables can have multiple datatypes in any given cell whereas dfrs needs to have each column be a singular datatype.

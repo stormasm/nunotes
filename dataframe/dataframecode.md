@@ -2,15 +2,24 @@
 For more details on the Polars code tied to dataframes go
 [here](./polars.md).
 
-#### Methods used by all dataframe commands on NuDataFrame
+#### Methods used by all dataframe commands on NuDataFrame exist in mod.rs
 
 See all of the [pub fn] methods in *dataframe/values/nu_dataframe/mod.rs*
+
+```rust
+pub fn try_from_series(columns: Vec<Series>, span: Span) -> Result<Self, ShellError> {
+```
+
+All of these methods return the *Result<Self, ShellError>*
 
 * try_from_columns
 * try_from_iter
 * try_from_pipeline
 * try_from_series
 * try_from_value
+* column
+
+These return a Value
 
 * dataframe_into_value
 * into_value
