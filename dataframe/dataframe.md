@@ -4,9 +4,10 @@
 list syntax must be like this for it to work
 
 please add an example to the command so people [and myself]
-can see what is supposed to look like for future reference.
+can see what it is supposed to look like for future reference.
 
 ```rust
+cd polars/examples/datasets
 dfr open foods1.parquet --columns [calories]
 dfr open foods1.parquet --columns [calories,fats_g]
 ```
