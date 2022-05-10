@@ -8,6 +8,8 @@ can see what it is supposed to look like for future reference.
 
 ```rust
 cd polars/examples/datasets
+[a,b,c] | describe
+dfr open foods1.csv --columns [category,calories]
 dfr open foods1.parquet --columns [calories]
 dfr open foods1.parquet --columns [calories,fats_g]
 ```
