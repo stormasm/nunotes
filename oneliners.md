@@ -1,5 +1,13 @@
 
+```rust
+
 ```
+let v = [[[a]; [0], [1]], [[b]; [0] [1]]]
+$v.0 | merge {$v.1}
+```
+
+[discord](https://discord.com/channels/601130461678272522/614593951969574961/973776154974629918)
+
 def pwd-short [] {
   $env.PWD | str replace $nu.home-path '~' -s
 }
