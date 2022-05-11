@@ -1,13 +1,17 @@
 
-```rust
+Merging partial tables together with reduce and merge:
 
-```
-let v = [[[a]; [0], [1]], [[b]; [0] [1]]]
-$v.0 | merge {$v.1}
+```rust
+let v2 = [[[a]; [0], [1]], [[b]; [0] [1]], [[c]; [0] [1]]]
+$v2 | reduce {|it, acc| $acc | merge {$it}}
+
+let v1 = [[[a]; [0], [1]], [[b]; [0] [1]]]
+$v1.0 | merge {$v1.1}
 ```
 
 [discord](https://discord.com/channels/601130461678272522/614593951969574961/973776154974629918)
 
+```rust
 def pwd-short [] {
   $env.PWD | str replace $nu.home-path '~' -s
 }
