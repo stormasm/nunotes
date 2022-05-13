@@ -1,4 +1,10 @@
 
+### get versus select
+
+get gets the information out of the structure. select maintains the structure. you can see this with ls | get name vs ls | select name
+
+[discord](https://discord.com/channels/601130461678272522/614593951969574961/974713752085741589)
+
 ### Neat trick
 
 ```rust
