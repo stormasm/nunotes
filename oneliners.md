@@ -1,4 +1,10 @@
 
+Testing validity of all URLs in an Excel sheet
+
+```rust
+open nushell_links.xlsx | get Sheet1.column0 | par-each { |link| let valid = not (do -i { fetch $link } | empty?); {link: $link, valid: $valid} }
+```
+
 Merging partial tables together with reduce and merge:
 
 ```rust
