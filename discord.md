@@ -1,4 +1,10 @@
 
+[How do you run an external command based on a variable content?](https://discord.com/channels/601130461678272522/601130461678272524/982691281572618330)
+
+```rust
+^$variable
+```
+
 ### More details on $in
 
 another way to think of it:
