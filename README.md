@@ -1,4 +1,10 @@
 
+### $nu to see history-path and many others
+
+```rust
+$nu.history-path
+```
+
 ### get versus select
 
 get gets the information out of the structure. select maintains the structure. you can see this with ls | get name vs ls | select name
