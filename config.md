@@ -1,4 +1,8 @@
 
+### Notes on what crates nushell uses for config
+
+[discord](https://discord.com/channels/601130461678272522/614593951969574961/986790484204736522)
+
 ### Notes on how to work with config.nu files
 
 How to assign a F(5) key...
