@@ -1,4 +1,8 @@
 
+Yeap, that **Object datatype** is a curse and a blessing. It let us convert anything non standard into a df. You can have dfs inside dfs thanks to it but at the same time it gives the illusion that all DF commands should work on it
+
+[discord](https://discord.com/channels/601130461678272522/683070703716925568/987336961926791208)
+
 [if your want to see all dfr commands you have to use the scope](https://discord.com/channels/601130461678272522/683070703716925568/985489091179188284)
 
 ```rust
