@@ -1,4 +1,13 @@
 
+
+being able to do this is so nice 
+
+```rust
+open-db $nu.history-path | select * | from history | limit 10 | collect
+```
+
+[discord](https://discord.com/channels/601130461678272522/683070703716925568/990242225663402004)
+
 ### Spring 2022
 
 April 23 Weekend Discussion on Future Directions and **compile the pipeline**
