@@ -1,4 +1,10 @@
 
+```rust
+open <file>
+| into dB
+| select *
+| from history 
+```
 
 being able to do this is so nice 
 
