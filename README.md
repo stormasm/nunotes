@@ -1,4 +1,17 @@
 
+```rust
+view-source stars
+def stars [ --help (-h) ] {
+    fetch https://api.github.com/repos/nushell/nushell | get stargazers_count
+}
+```
+
+and another one...
+
+```rust
+fetch https://api.github.com/repos/nushell/nushell/releases/latest | get assets | select name download_count | sort-by download_count -r
+```
+
 ### $nu to see history-path and many others
 
 ```rust
