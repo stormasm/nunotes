@@ -1,4 +1,10 @@
 
+### Details about Environment Variables
+
+[discord](https://discord.com/channels/601130461678272522/614593951969574961/992244769835192350)
+
+### Fetching in Scripts
+
 ```rust
 view-source stars
 def stars [ --help (-h) ] {
