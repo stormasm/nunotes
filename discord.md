@@ -1,4 +1,12 @@
 
+### NU_LIB_DIRS
+
+you can add any dir to $env.NU_LIB_DIRS so you can have a dozen different folders where you can just do source blah.nu and nushell finds it and sources it.
+
+but it's not auto-sourcing - it just finds the full path to the file when you say source blah.nu
+
+[discord](https://discord.com/channels/601130461678272522/614593951969574961/993612209542402161)
+
 [How do you run an external command based on a variable content?](https://discord.com/channels/601130461678272522/601130461678272524/982691281572618330)
 
 ```rust
