@@ -1,4 +1,6 @@
 
+### Cool Scripts
+
 You first have to register the query plugin
 
 ```rust
