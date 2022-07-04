@@ -14,7 +14,7 @@ register --encoding json ./nu_plugin_query
 
 and you must **BUILD** your plugin first !
 
-If you try and register a plugin that is located in the
+If you try and register a plugin that is located in the src directory or github repo directory...
 
 ```rust
 ./nushell/crates/nu_plugin_query
