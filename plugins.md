@@ -22,6 +22,11 @@ If you try and register a plugin that is located in the src directory or github 
 
 It will not work !
 
+##### To show yourself that the commands were registered   
+
+```rust
+help commands | where is_plugin == true
+```
 
 ### Legacy Notes
 
@@ -41,7 +46,7 @@ If you are using python2 instead of python3 here is your [solution PR 524](https
 To show yourself that the commands were registered   
 
 ```rust
-help commands | where is_plugin == $true
+help commands | where is_plugin == true
 ```
 
 To get help on the plugins
