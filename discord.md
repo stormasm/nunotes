@@ -1,5 +1,5 @@
 
-### NU_LIB_DIRS
+#### NU_LIB_DIRS
 
 you can add any dir to $env.NU_LIB_DIRS so you can have a dozen different folders where you can just do source blah.nu and nushell finds it and sources it.
 
