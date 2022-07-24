@@ -1,4 +1,10 @@
 
+
+### Exact number of stars
+```rust
+curl -s "https://api.github.com/repos/nushell/nushell" | grep stargazers_count | cut -d : -f 2 | tr -d " " | tr -d ","
+```
+
 ### Details about Environment Variables
 
 [discord](https://discord.com/channels/601130461678272522/614593951969574961/992244769835192350)
