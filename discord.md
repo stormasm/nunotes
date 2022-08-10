@@ -1,4 +1,15 @@
 
+Lazy frames are a collection of operations done in a dataframe that are not executed until you collect on them.
+
+In theory this allows for better memory management because the query planner can optimise the operations.
+
+With normal df operations each operation is executed and it may not be optimised.
+
+The goal would be for everything to be lazy to allow for more optimisations
+Eventually everything should be done via expressions over lazyframes
+
+[discord](https://discord.com/channels/601130461678272522/864228801851949077/1007007859105616023)
+
 #### NU_LIB_DIRS
 
 you can add any dir to $env.NU_LIB_DIRS so you can have a dozen different folders where you can just do source blah.nu and nushell finds it and sources it.
