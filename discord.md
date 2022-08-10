@@ -11,7 +11,7 @@ with custom commands, aliases, and environment variables
 
 Moving forward this will no longer be the case.
 
-source-env will be for environment variables
+source-env will be for environment variables   
 use will be for custom commands and aliases
 
 ### Note on Lazy Dataframes
