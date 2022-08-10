@@ -7,7 +7,8 @@ In theory this allows for better memory management because the query planner can
 
 With normal df operations each operation is executed and it may not be optimised.
 
-The goal would be for everything to be lazy to allow for more optimisations
+The goal would be for everything to be lazy to allow for more optimisations.
+
 Eventually everything should be done via expressions over lazyframes
 
 [discord](https://discord.com/channels/601130461678272522/864228801851949077/1007007859105616023)
