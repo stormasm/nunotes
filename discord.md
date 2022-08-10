@@ -14,6 +14,8 @@ Moving forward this will no longer be the case.
 source-env will be for environment variables   
 use will be for custom commands and aliases
 
+[discord](https://discord.com/channels/601130461678272522/615329862395101194/1007032722801299607)
+
 ### Note on Lazy Dataframes
 
 Lazy frames are a collection of operations done in a dataframe that are not executed until you collect on them.
