@@ -1,4 +1,6 @@
 
+### Note on Lazy Dataframes
+
 Lazy frames are a collection of operations done in a dataframe that are not executed until you collect on them.
 
 In theory this allows for better memory management because the query planner can optimise the operations.
