@@ -1,4 +1,19 @@
 
+### the source command is going away
+
+Summary of a breaking change moving forward.
+
+This change will most likely land the release
+after the August 16th release next week.
+
+In the past you could use the keyword source for scripts
+with custom commands, aliases, and environment variables
+
+Moving forward this will no longer be the case.
+
+source-env will be for environment variables
+use will be for custom commands and aliases
+
 ### Note on Lazy Dataframes
 
 Lazy frames are a collection of operations done in a dataframe that are not executed until you collect on them.
