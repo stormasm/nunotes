@@ -1,5 +1,12 @@
 
 
+### Nushell birthday
+
+That’s correct. Public announcement was August 23rd, 2019   
+August 24th in New Zealand
+
+[discord](https://discord.com/channels/601130461678272522/683070703716925568/1007125536587403395)
+
 ### Exact number of stars
 ```rust
 curl -s "https://api.github.com/repos/nushell/nushell" | grep stargazers_count | cut -d : -f 2 | tr -d " " | tr -d ","
