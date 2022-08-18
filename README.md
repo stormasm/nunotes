@@ -1,4 +1,7 @@
 
+```rust
+7z x ($env.SOME_ARCHIVE_PATH) -o($env.DEPLOY_DIR)
+```
 
 * [You need to use a string interpolation to expand the -o string](https://github.com/nushell/nushell/issues/6352)
 
