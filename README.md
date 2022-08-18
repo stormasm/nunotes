@@ -1,5 +1,12 @@
 
 
+[You need to use a string interpolation to expand the -o string:]
+(https://github.com/nushell/nushell/issues/6352)
+
+```rust
+$"-o($env.DEPLOY_DIR)"
+```
+
 ### Nushell birthday
 
 That’s correct. Public announcement was August 23rd, 2019   
