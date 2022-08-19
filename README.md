@@ -1,4 +1,8 @@
 
+### Nulib Dirs
+
+the default_env defines NU_LIB_DIRS which has a default "scripts" folder. If you put any nu script in there you can just source it by source name.nu
+
 ### String Stuff
 
 ```rust
