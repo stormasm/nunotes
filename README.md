@@ -1,12 +1,12 @@
 
 
-In the past you could use the keyword source for scripts
+In the past you could use the keyword **source** for scripts
 with custom commands, aliases, and environment variables
 
 Moving forward this will no longer be the case.
 
-source-env will be for environment variables which can now have dynamic paths
-use will be for custom commands and aliases
+* source-env will be for environment variables which can now have dynamic paths
+* use will be for custom commands and aliases
 
 ### Nulib Dirs
 
