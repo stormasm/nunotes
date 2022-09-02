@@ -11,6 +11,6 @@
 using a set of crates starting with **nu-protocol** at the base of the stack.
 This will become even more interesting as we attempt to break out the language from the
 piped execution platform / engine.
-* Having a set of crates that will enable me to mix and match what commands I want in the platform is a very powerful concept. Today we only have nu-command;
+* Having a set of crates that will enable me to mix and match what commands I want in the platform is a very powerful concept. Today we only have **nu-command**;
 but into the future I look forward to being able to build custom nushell engines
 by pulling in the things I need and want for the particular application I am working on at the time.  This will give me the ability to control the binary size for smaller memory footprint embedded systems or larger scale enterprise level applications.
