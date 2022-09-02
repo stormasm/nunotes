@@ -8,7 +8,7 @@
     * custom commands in nu
     * plugins
 * I like the abstraction layer of being able to build nu from the ground up
-starting with nu-protocol at the base of the stack.
+starting with **nu-protocol** at the base of the stack.
 This will become even more interesting as we attempt to break out the language from the
 piped execution platform / engine.
 * Having a set of crates that will enable me to mix and match what commands I want in the platform is a very powerful concept. 
