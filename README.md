@@ -1,5 +1,13 @@
 
 
+[discord link](https://discord.com/channels/601130461678272522/615329862395101194/1022483303669960894)
+
+Also, we're currently experimenting with moving our syntax to a static grammar and trying out different syntax ideas: https://github.com/nushell/grammar. We're also preparing a rewrite of our parser once we have the grammar ready. One way that changed is also parsing the command calls: The parsing will happen the same way regardless of whether the command is extrernal or internal, but it would be the type checker that would match parsed command call to the expected signature. Therefore, at the output of the parser, we'll have all the arguments and their ordering, so we'd just need a mechanism to loosen up the rules in the type-checking stage and expose this information in the function body (maybe have a built-in $args variable?).
+
+So, with the new way of thinking, the first part of "fall-through" signatures might come naturally, we just need to come up with a good way to do the second part (how to expose the args within the function).
+
+### source
+
 In the past you could use the keyword **source** for scripts
 with custom commands, aliases, and environment variables
 
