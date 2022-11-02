@@ -41,6 +41,6 @@ Please correct me if I'm wrong, but doesn't nushell suffer from the same problem
 
 ##### [And finally... More than one post says our name should have been nutshell](https://news.ycombinator.com/item?id=33421581)
 
-I actually kind of like nutshell...  At least gmail thinks it should be nutshell too as that is what it auto-corrects to :)
+> I actually kind of like nutshell...  At least gmail thinks it should be nutshell too as that is what it auto corrects to :)
 
 ## [Previous Discussions about Nushell](https://news.ycombinator.com/item?id=33420520)
