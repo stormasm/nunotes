@@ -2,7 +2,7 @@
 There have been several page one nushell posts on hacker news.  Here are
 the highlights from some of them...
 
-## November 1, 2022
+## [November 1, 2022: Introduction to a new kind of shell](https://news.ycombinator.com/item?id=33419944)
 
 ##### [LLVM for shell scripts](https://news.ycombinator.com/item?id=33433840)
 
