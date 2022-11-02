@@ -1,6 +1,7 @@
 
 There have been several page one nushell posts on hacker news over the years.  
 Here are the highlights from some of them...
+The most recent post currently has 308 points, and was at the number one slot for a short time and the number three slot more than once as it attained that spot and then [climbed back up there](https://discord.com/channels/601130461678272522/683070703716925568/1037063155131617363)...
 
 ## [November 1, 2022: Introduction to a new kind of shell](https://news.ycombinator.com/item?id=33419944)
 
