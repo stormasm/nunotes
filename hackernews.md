@@ -39,4 +39,8 @@ One issue I have with nushell is that on macOS they use the `Library/Application
 
 Please correct me if I'm wrong, but doesn't nushell suffer from the same problem as powershell that all the nice fancy stuff works only for in-process commands and external programs are bit of a second-class citizens?
 
+##### [And finally... More than one post says our name should have been nutshell](https://news.ycombinator.com/item?id=33421581)
+
+I actually kind of like nutshell...  At least gmail thinks it should be nutshell too as that is what it auto-corrects to :)
+
 ## [Previous Discussions about Nushell](https://news.ycombinator.com/item?id=33420520)
