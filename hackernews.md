@@ -28,3 +28,11 @@ Traditional shell scripting languages are great at exactly three things:
 * and sourcing other shell scripts.
 
 They are also is distinct in that they are "strongly-typed" (i.e. everything is a string), and moreover that syntactically bare symbols are also strings.
+
+##### [does not support suspended jobs](https://news.ycombinator.com/item?id=33425689)
+
+##### [macos issue: Library/Application Support](https://news.ycombinator.com/item?id=33421658)
+
+One issue I have with nushell is that on macOS they use the `Library/Application Support` path for the config instead of the `.config` making it awkward, their reason is that the former is the correct path of application data, while none of the other CLI apps I use do this, every other app just points to the `$HOME` dir or `.config` dir.
+
+## [Previous Discussions about Nushell](https://news.ycombinator.com/item?id=33420520)
