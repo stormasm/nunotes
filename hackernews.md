@@ -1,5 +1,6 @@
 
-There have been several page one nushell posts on hacker news over the years.  Here are the highlights from some of them...
+There have been several page one nushell posts on hacker news over the years.  
+Here are the highlights from some of them...
 
 ## [November 1, 2022: Introduction to a new kind of shell](https://news.ycombinator.com/item?id=33419944)
 
