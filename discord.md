@@ -1,11 +1,9 @@
 
-### discord short cuts
+### to see a list of discord keyboard short cuts
 
 ```rust
 CMD /
 ```
-
-to see a list of discord keyboard shortcuts
 
 ### the source command is going away
 
