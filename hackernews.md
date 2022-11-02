@@ -18,3 +18,13 @@ Maybe some work in this area is being done, or already has been done...
 I'd be interested if anyone knew of anything like this...
 
 If so -- then links would be appreciated!
+
+##### [additional thoughts](https://news.ycombinator.com/item?id=33427070)
+
+Traditional shell scripting languages are great at exactly three things:
+
+* typing commands interactively,
+* running other programs,
+* and sourcing other shell scripts.
+
+They are also is distinct in that they are "strongly-typed" (i.e. everything is a string), and moreover that syntactically bare symbols are also strings.
