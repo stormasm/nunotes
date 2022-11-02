@@ -35,4 +35,8 @@ They are also is distinct in that they are "strongly-typed" (i.e. everything is 
 
 One issue I have with nushell is that on macOS they use the `Library/Application Support` path for the config instead of the `.config` making it awkward, their reason is that the former is the correct path of application data, while none of the other CLI apps I use do this, every other app just points to the `$HOME` dir or `.config` dir.
 
+##### [external programs are 2nd class citizens](https://news.ycombinator.com/item?id=33425990)
+
+Please correct me if I'm wrong, but doesn't nushell suffer from the same problem as powershell that all the nice fancy stuff works only for in-process commands and external programs are bit of a second-class citizens?
+
 ## [Previous Discussions about Nushell](https://news.ycombinator.com/item?id=33420520)
