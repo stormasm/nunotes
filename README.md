@@ -1,7 +1,7 @@
 
 ### How data in nushell gets printed out via the repl
 
-This shows **table** is the main default command of how data gets printed.
+This shows [table](https://github.com/nushell/nushell/blob/main/crates/nu-command/src/viewers/table.rs) is the main default command of how data gets printed.
 
 If you don't want to see the output via table simply run this command
 
