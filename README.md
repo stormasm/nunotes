@@ -1,4 +1,9 @@
 
+This is the key point in the cli where everything happens...
+
+```rust
+rg eval_source
+```
 
 [discord link](https://discord.com/channels/601130461678272522/615329862395101194/1022483303669960894)
 
