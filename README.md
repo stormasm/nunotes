@@ -1,11 +1,18 @@
 
-This is the key point in the cli where everything happens...
+### How data in nushell gets printed out via the repl
+
+In the
+[pipeline_data](https://github.com/nushell/nushell/blob/main/crates/nu-protocol/src/pipeline_data.rs) see the print function.  Everything gets printed out in the repl via this command located in nu-utils  [stdout_write_all_and_flush](https://github.com/nushell/nushell/blob/main/crates/nu-utils/src/utils.rs)
+
+These are the key points in the cli where everything happens...
 
 ```rust
 rg eval_source
+rg eval_file
+rg evaluate_file
 ```
 
-[discord link](https://discord.com/channels/601130461678272522/615329862395101194/1022483303669960894)
+* [discord link](https://discord.com/channels/601130461678272522/615329862395101194/1022483303669960894)
 
 Also, we're currently experimenting with moving our syntax to a static grammar and trying out different syntax ideas: https://github.com/nushell/grammar. We're also preparing a rewrite of our parser once we have the grammar ready. One way that changed is also parsing the command calls: The parsing will happen the same way regardless of whether the command is extrernal or internal, but it would be the type checker that would match parsed command call to the expected signature. Therefore, at the output of the parser, we'll have all the arguments and their ordering, so we'd just need a mechanism to loosen up the rules in the type-checking stage and expose this information in the function body (maybe have a built-in $args variable?).
 
