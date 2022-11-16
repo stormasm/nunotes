@@ -16,8 +16,8 @@ result = pipeline_data.print(engine_state, stack, false, false);
 ```
 
 * In the
-[pipeline_data](https://github.com/nushell/nushell/blob/main/crates/nu-protocol/src/pipeline_data.rs) see the **print** function.  
-* Eventually everything gets printed out in the repl via this command located in nu-utils  [stdout_write_all_and_flush](https://github.com/nushell/nushell/blob/main/crates/nu-utils/src/utils.rs)
+[pipeline_data](https://github.com/nushell/nushell/blob/main/crates/nu-protocol/src/pipeline_data.rs) see the **print** function which calls **write_all_and_flush**.  
+* And that goes ahead and finally calls [stdout_write_all_and_flush](https://github.com/nushell/nushell/blob/main/crates/nu-utils/src/utils.rs)
 
 These are the key points in the cli where everything happens...
 
@@ -25,6 +25,7 @@ These are the key points in the cli where everything happens...
 rg eval_source
 rg eval_file
 rg evaluate_file
+rg write_all_and_flush
 ```
 
 ### Discussion about nushell parser grammars which is not happening...
