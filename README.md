@@ -9,8 +9,9 @@ If you don't want to see the output via table simply run this command
 $nu | get os-info | debug -r
 ```
 
-In the
-[pipeline_data](https://github.com/nushell/nushell/blob/main/crates/nu-protocol/src/pipeline_data.rs) see the **print** function.  Everything gets printed out in the repl via this command located in nu-utils  [stdout_write_all_and_flush](https://github.com/nushell/nushell/blob/main/crates/nu-utils/src/utils.rs)
+* In the
+[pipeline_data](https://github.com/nushell/nushell/blob/main/crates/nu-protocol/src/pipeline_data.rs) see the **print** function.  
+* Eventually everything gets printed out in the repl via this command located in nu-utils  [stdout_write_all_and_flush](https://github.com/nushell/nushell/blob/main/crates/nu-utils/src/utils.rs)
 
 These are the key points in the cli where everything happens...
 
