@@ -3,6 +3,6 @@
 
 https://github.com/nushell/nushell/pull/6984
 
-on the :try stuff you have to have data in the bottom part
-before you can hit the down arrow so simply type ls or something
+on the :try stuff you have to have data in the bottom part   
+before you can hit the down arrow so simply type ls or something   
 after you do that you can simply type :q to get out...
