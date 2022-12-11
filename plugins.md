@@ -73,6 +73,12 @@ echo "this is input" | nu-python 1 abc 2 -f -n dog now is the time
 
 nu-example-3 is supposed to throw an error
 
+```rust
+nu-example-1 -f -n 555 78 why 666 newmexico -n "ralph" 
+nu-example-2 -f -n 555 78 why 666 arkansas -n "ralph" 
+nu-example-3 -f -n 555 78 why 666 delaware -n "ralph" 
+```
+
 ### PRs
 
 * [Plugin signature #520](https://github.com/nushell/engine-q/pull/520)
