@@ -11,6 +11,13 @@
 [[[1 2] [2 [4 4]] 1 2] [2 [4 4]]]
 ```
 
+```rust
+[
+[[1 2] [2 [4 4]] 1 2] 
+[2 [4 4]]
+]
+```
+
 ### How data in nushell gets printed out via the repl
 
 * This shows [table](https://github.com/nushell/nushell/blob/main/crates/nu-command/src/viewers/table.rs) is the main default command of how data gets printed.
