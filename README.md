@@ -1,5 +1,5 @@
 
-### An example of Records
+### an example of records
 
 ```rust
 {a: 1, e: {b: 3, c: 5}, f: 7}
