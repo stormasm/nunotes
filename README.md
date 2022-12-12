@@ -18,6 +18,10 @@
 ]
 ```
 
+```rust
+[[a b]; [1 2] [3 4] [5 6] [x y]] | get b.1 b.3 | to json
+```
+
 ### How data in nushell gets printed out via the repl
 
 * This shows [table](https://github.com/nushell/nushell/blob/main/crates/nu-command/src/viewers/table.rs) is the main default command of how data gets printed.
