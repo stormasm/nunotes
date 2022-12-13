@@ -1,4 +1,10 @@
 
+### Kubouch great explanation of parsing
+
+Would it help if you imagine parsing exactly as compiling? You could think of running Nushell code in similar terms as running Rust or C code: You compile source code to a machine code, then use a CPU hardware to run the compiled machine code and get some values back. In Nushell, instead of machine code, we compile (= parse) Nu language into a data structure (Expression, etc.). Then, we use the engine to evaluate the Expressions to produce Values. We're essentially a compiled language in the same sense as Rust or C but instead of compiling to assembly, we compile to our own intermediate representation. But we ultimately face the same limitations as the "traditional" languages. 
+
+[discord reference](https://discord.com/channels/601130461678272522/615329862395101194/1051797499620372520)
+
 ### an example of records
 
 ```rust
