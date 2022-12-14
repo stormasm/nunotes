@@ -741,3 +741,19 @@ cargo outdated -R
 ```rust
 cargo +nightly udeps --all-targets
 ```
+
+### prql 
+
+```rust
+open movies3.csv | 
+select LeadStudio WorldwideGross | 
+group-by LeadStudio | 
+transpose company gross | 
+insert total {
+|g| $g.gross | 
+reduce -f 0 {|i acc| $acc + $i.WorldwideGross}} | 
+reject gross |
+sort-by total
+```
+
+[discord](https://discord.com/channels/601130461678272522/683070703716925568/1052323116363288726)
