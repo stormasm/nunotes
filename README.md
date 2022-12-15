@@ -1,4 +1,8 @@
 
+apology in advance :)   
+some of the discord references in this document point to the core team channel;
+so unfortunately you will not be able to see those particular discord references...
+
 ### an example of records
 
 ```rust
