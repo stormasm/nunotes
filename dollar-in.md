@@ -19,10 +19,18 @@ The `$in` variable will collect the pipeline into a value for you, allowing you 
 "john ran to the store" | str length | $in > 25
 ```
 
-For more details....
+For more details download [nushell.github.io](https://github.com/nushell/nushell.github.io)
+and run the following command:
 
 ```rust
 rg -F '$in'
+```
+
+Also the nushell command tutor will give you a bit of insight as well..
+
+```rust
 tutor -f "$in"
 tutor var
 ```
+
+If anyone wants to add more details to this page I would happily accept a pull request or this page can be moved somewhere else that is more appropiate than my repo.
