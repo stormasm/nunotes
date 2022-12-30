@@ -11,3 +11,8 @@ I'm just thinking of the dozens of places where we go from primitive types to nu
 
 
 [discord](https://discord.com/channels/601130461678272522/615329862395101194/1056002041794801674)
+
+fdncred — Today at 6:56 AM
+maybe to nuon should work like to json and just put null in when it doesn't know what to do in situations like $env.config | to nuon, instead of failing with error messages?
+
+[discord](https://discord.com/channels/601130461678272522/615329862395101194/1058398141952565310)
