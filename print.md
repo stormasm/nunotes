@@ -53,4 +53,17 @@ info!("after eval source and after nu-protocol printing...");
 let cmd_duration = start_time.elapsed();
 ```
 
+So once eval_source is called it then goes into nu-protocol and there are one of two scenarios which can happen as noted in the eval_source method...
 
+[pipeline_data](https://github.com/nushell/nushell/blob/main/crates/nu-protocol/src/pipeline_data.rs)
+
+* pub fn print
+* pub fn print_if_stream
+
+So depending on whether you are printing a stream or just a simple command that executes immediately one of the two above scenarios happens...
+
+Examples of stream commands include:
+* ls
+* open some csv file
+
+If its not one of these streaming commands then a simple print gets called...
