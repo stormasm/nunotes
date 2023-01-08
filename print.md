@@ -72,3 +72,17 @@ rg evaluate_file
 rg write_all_and_flush
 rg "print\("
 ```
+
+To see how all of this works and/or to add in some debugging / info! lines do this...
+
+in nu-protocol Cargo.toml add this line
+
+```rust
+log = "0.4"
+```
+
+Then go ahead and add in all of your debugging lines
+
+```rust
+info!("table hit 03");
+```
