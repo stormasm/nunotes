@@ -58,8 +58,6 @@ So once eval_source is called it then goes into nu-protocol [pipeline_data](http
 * pub fn print
 * pub fn print_if_stream
 
-So depending on whether you are printing a stream or just a simple command that executes immediately one of the two above scenarios happens...
-
 Examples of stream commands include:
 * ls
 * open some csv file
