@@ -49,7 +49,7 @@ As noted above everything starts with the call to **eval_source** inside the nu-
 
 // On quick running commands everything gets printed from nu_protocol first
 // prior to this next line of code firing off...
-info!("after eval source part and after nu-protocol printing...");
+info!("after eval source and after nu-protocol printing...");
 let cmd_duration = start_time.elapsed();
 ```
 
