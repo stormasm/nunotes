@@ -29,3 +29,25 @@ rg evaluate_file
 rg write_all_and_flush
 rg "print\("
 ```
+
+### Printing in nu-protocol
+
+As noted above everything starts with the call to **eval_source** inside the nu-cli repl loop.
+
+```rust
+} else if !s.trim().is_empty() {
+    info!("eval source: {}", s);
+
+    eval_source(
+        engine_state,
+        stack,
+        s.as_bytes(),
+        &format!("entry #{}", entry_num),
+        PipelineData::empty(),
+    );
+}
+// On quick running commands everything gets printed from nu_protocol first prior to this next line of code firing off...
+let cmd_duration = start_time.elapsed();
+```
+
+
