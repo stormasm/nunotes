@@ -53,9 +53,7 @@ info!("after eval source and after nu-protocol printing...");
 let cmd_duration = start_time.elapsed();
 ```
 
-So once eval_source is called it then goes into nu-protocol and there are one of two scenarios which can happen as noted in the eval_source method...
-
-[pipeline_data](https://github.com/nushell/nushell/blob/main/crates/nu-protocol/src/pipeline_data.rs)
+So once eval_source is called it then goes into nu-protocol [pipeline_data](https://github.com/nushell/nushell/blob/main/crates/nu-protocol/src/pipeline_data.rs) and there are one of two scenarios which can happen as noted in the eval_source method...
 
 * pub fn print
 * pub fn print_if_stream
