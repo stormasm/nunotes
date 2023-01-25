@@ -1,5 +1,10 @@
 
-### Table of Contents
+Relevant cargo commands to track down dependencies and get rid of duplicated crates.  @sholderbach mentioned these two commands in our core team meeting.
+
+```rust
+cargo tree -- duplicated
+cargo build -- timings
+```
 
 * [How printing happens in Nushell](./print.md)
 
