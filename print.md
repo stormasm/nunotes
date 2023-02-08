@@ -2,7 +2,7 @@
 
 First off we will note how to print the Block that the parser returns...
 
-* Add these two lines of code [nu-cli/src/util.rs](https://github.com/nushell/nushell/blob/main/crates/nu-cli/src/util.rs) in the eval_source method right after the parse command.
+* Add these two lines of code in the file [nu-cli/src/util.rs](https://github.com/nushell/nushell/blob/main/crates/nu-cli/src/util.rs) in the eval_source method right after the parse command.
 
 ```rust
 use log::info;
