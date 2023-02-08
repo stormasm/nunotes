@@ -1,5 +1,18 @@
 ### How data in nushell gets printed out via the repl
 
+First off we will note how to print the Block that the parser returns...
+
+nu-cli/src/util.rs
+
+add these two lines of code in the **eval_source method** right after the parse command...
+
+```rust
+use log::info;
+info!("{:?}",block.pipelines);
+```
+
+
+
 * In [nu-cli/src/util.rs](https://github.com/nushell/nushell/blob/main/crates/nu-cli/src/util.rs) in eval_source then eval_block there is this line of code
 
 ```rust
