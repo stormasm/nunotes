@@ -1,4 +1,12 @@
 
+FYI - I enabled Pull Request Merge Queue this morning. It's a Branch Protection rule. Here are the defaults
+
+[Learn more about this here](https://github.blog/changelog/2023-02-08-pull-request-merge-queue-public-beta/)
+
+If we want to disable it, we go to the repo "Settings" then "Code and Automation -> Branches", then edit the Branch Protection Rules and turn it off. easy-peasy.
+
+[discordcore](https://discord.com/channels/601130461678272522/683070703716925568/1073604656204349501)
+
 ```rust
 open <file>
 | into dB
