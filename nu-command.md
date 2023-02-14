@@ -1,18 +1,16 @@
 
-I currently have 3 repos related to nu-command...
+So the findings for the day are the following...
 
-### nu-command-core
+This code is like a jigsaw puzzle...
 
-This is the latest work on this subject and is just the core commands.   
-The *nana* branch adds in table which nana wants to see...
+* core
+* env
+* system
+* shells
+* viewers
 
-the core branch pulls in 162 crates.  
-the nana branch pulls in 182 crates.   
-meaning the Table command pulls in 20 extra crates...
+Pretty much all go together and compiles...
 
-### nu-command-tiny is a legacy repo.
+References
 
-### nu-command-less is a legacy repo.
-
-The 2 legacy repos will get deleted post 0.62.0 after I upgrade
-nu-command-core to version 0.62.0
+[default_context.rs](https://github.com/stormasm/nushell/blob/two_com_crates_a/crates/nu-command-core/src/default_context.rs)
