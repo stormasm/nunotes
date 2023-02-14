@@ -18,7 +18,7 @@ And possibly add more stuff if we want...
 
 ### More details
 
-Core can live by itself but we actually will need let-env
+Core can live by itself but we actually will need let-env if we want config files.  If we don't want config files core works.
 
 So then you have to pull in env...
 
