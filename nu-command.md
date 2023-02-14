@@ -47,8 +47,6 @@ thread 'main' has overflowed its stack
 fatal runtime error: stack overflow
 ```
 
-If you try and install env.nu
-
 References
 
 [default_context.rs](https://github.com/stormasm/nushell/blob/two_com_crates_a/crates/nu-command-core/src/default_context.rs)
