@@ -40,7 +40,7 @@ help commands
 
 brings up 68 commands...
 
-However, the env.nu causes
+However, if you want to install env.nu from the command prompt by answering yes you will get a
 
 ```rust
 thread 'main' has overflowed its stack
