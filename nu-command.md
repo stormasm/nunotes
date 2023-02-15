@@ -59,6 +59,23 @@ is not inside nu-command-core, but is inside nu-command...
 
 All the tests are passing, plugin tests are failing, but that should be able to get fixed... Just haven't tracked that down yet...
 
-References
+#### References
 
 [default_context.rs](https://github.com/stormasm/nushell/blob/two_com_crates_a/crates/nu-command-core/src/default_context.rs)
+
+### Banch History
+
+The latest branch is at the top
+
+##### buc_version1
+
+Latest code base as of Feb 15 along with I figured out why there was an issue with version in the previous branches...
+
+### Issue with version resolved
+
+* You need the file build.rs in the crate where the version command is located.
+* Cargo.toml has to have this next line of code in it and the shadow crate needs to be referenced in there twice.
+
+```rust
+build = "build.rs"
+```
