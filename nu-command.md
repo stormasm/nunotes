@@ -71,6 +71,12 @@ The latest branch is at the top
 
 Latest code base as of Feb 15 along with I figured out why there was an issue with version in the previous branches...
 
+NOTE: This is just a core commands branch with no other commands yet !
+
+* version is displaying in its raw format without tables
+* exit is not there yet
+* help commands not showing in table
+
 ### Issue with version resolved
 
 * You need the file build.rs in the crate where the version command is located.
