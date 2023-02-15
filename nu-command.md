@@ -79,3 +79,6 @@ Latest code base as of Feb 15 along with I figured out why there was an issue wi
 ```rust
 build = "build.rs"
 ```
+
+* two_com_crates
+* two_com_crates_a
