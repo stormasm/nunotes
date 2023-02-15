@@ -63,7 +63,7 @@ All the tests are passing, plugin tests are failing, but that should be able to 
 
 [default_context.rs](https://github.com/stormasm/nushell/blob/two_com_crates_a/crates/nu-command-core/src/default_context.rs)
 
-### Banch History
+### Branch History
 
 The latest branch is at the top
 
@@ -79,6 +79,8 @@ Latest code base as of Feb 15 along with I figured out why there was an issue wi
 ```rust
 build = "build.rs"
 ```
+
+### Working branches older than above
 
 * two_com_crates
 * two_com_crates_a
