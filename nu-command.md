@@ -51,6 +51,9 @@ However
 
 ### If you pull in both nu-command-core and nu-command everything runs fine.
 
+JT and I debugged the issue Monday night and discovered that if you comment out
+the externall command that we no longer get a stack overflow meaning that the env.nu config file is referencing an external that is **not** in the crate.
+
 I imagine that running the config code is needing something at the moment that
 is not inside nu-command-core, but is inside nu-command...
 
