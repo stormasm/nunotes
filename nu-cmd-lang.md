@@ -1,4 +1,63 @@
 
+In Cargo.toml add the following crate
+
+```rust
+"crates/nu-cmd-lang",
+"crates/nu-command",
+```
+
+### nu-cmd-lang
+
+Create the following files and/or copy them over from another prerecorded branch
+
+* Cargo.toml
+* LICENSE
+* build.rs
+* src/default_context.rs
+* src/lib.rs
+
+## nu-command
+
+Modify the following files
+
+##### Cargo.toml
+nu-cmd-lang = { path = "../nu-cmd-lang", version = "0.76.1" }
+
+##### src/default_context.rs
+
+
+##### src/lib.rs
+comment out references to core_commands
+
+##### src/filters/find.rs
+use nu_cmd_lang::help::highlight_search_string;
+
+
+
+### Legacy Notes
+
+Bust up nu-command into 3 crates with the following crate names:
+
+```rust
+nu-cmd-lang
+nu-cmd-shell
+nu-cmd-extra
+```
+
+Here is what I have so far in nu-cmd-lang.
+
+```rust
+core
+env
+system
+shells
+viewers
+```
+
+This comes out to be around 257 crate dependencies.
+
+[legacy core team meeting notes](https://hackmd.io/YeL2nzIUS1ChdcsxUx-T1A)
+
 So the findings for the day are the following...
 
 This code is like a jigsaw puzzle...  
