@@ -6,6 +6,8 @@ In Cargo.toml add the following crate
 "crates/nu-command",
 ```
 
+[Run the script nu_cmd_lang.nu](https://github.com/stormasm/nuscripts/blob/main/nu_cmd_lang.nu)
+
 ### nu-cmd-lang
 
 Create the following files and/or copy them over from another prerecorded branch
@@ -24,15 +26,17 @@ Modify the following files
 nu-cmd-lang = { path = "../nu-cmd-lang", version = "0.76.1" }
 
 ##### src/default_context.rs
-
+comment out the next two lines
+```rust
+// #[cfg(feature = "plugin")]
+// bind_command!(Register);
+```
 
 ##### src/lib.rs
 comment out references to core_commands
 
 ##### src/filters/find.rs
 use nu_cmd_lang::help::highlight_search_string;
-
-
 
 ### Legacy Notes
 
