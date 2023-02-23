@@ -1,4 +1,15 @@
 
+### Notes from core team meeting 2/22/2023
+
+Besides the directories listed below the following are candidates
+to be added to nu-cmd-shell
+
+* filesystem
+* strings
+* filters [maybe just basic filters]
+
+### How to port over the code
+
 In Cargo.toml add the following crate
 
 ```rust
@@ -38,6 +49,16 @@ comment out references to core_commands
 ##### src/filters/find.rs
 use nu_cmd_lang::help::highlight_search_string;
 
+### Exec, Ps, Which
+
+These have to be dealt with in the default_context move
+
+### Critical Piece of Code, nu_command default_context
+
+```rust
+let mut engine_state = nu_command_core::create_default_context();
+```
+
 ### Legacy Notes
 
 Bust up nu-command into 3 crates with the following crate names:
@@ -53,8 +74,8 @@ Here is what I have so far in nu-cmd-lang.
 ```rust
 core
 env
-system
 shells
+system
 viewers
 ```
 
@@ -130,6 +151,10 @@ All the tests are passing, plugin tests are failing, but that should be able to 
 
 The latest branch is at the top
 
+This is the first branch created post the release of 0.76.1
+* nulangv1
+
+This was the version before the release of 0.76.1
 * buc_version1
 
 Latest code base as of Feb 15 along with I figured out why there was an issue with version in the previous branches...
