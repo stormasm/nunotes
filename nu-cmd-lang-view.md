@@ -1,7 +1,9 @@
 
 ## Output of nu-cmd-lang
 
-nu-cmd-lang will only contain core_commands. Since we will no
+nu-cmd-lang will only contain **core_commands**. 
+
+Since we will no
 longer have access to a viewer here is what the string output will look like.
 
 For more details you can check out
