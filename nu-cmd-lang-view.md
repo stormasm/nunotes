@@ -3,13 +3,20 @@
 
 nu-cmd-lang will only contain **core_commands**. 
 
+As we decided in our core team meeting today I went ahead and removed
+
+* env
+* shells
+* system
+* viewers
+
 Since we will no
 longer have access to a viewer here is what the string output will look like.
 
 For more details you can check out
 [nu-cmd-lang](https://github.com/stormasm/nushell/tree/nulangtest)
 
-If you run the above code for whatever reason you can exit out of the nushell repl with the command **ctrl-d**,    
+If you run the above code for whatever reason you can exit out of the nushell repl with the commangsd **ctrl-d**,    
 as the exit command is no longer available.
 
 ### version
