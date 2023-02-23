@@ -2,12 +2,10 @@
 ## Output of nu-cmd-lang
 
 nu-cmd-lang will only contain core_commands. Since we will no
-longer have access to a viewer here is what the output will look like.
+longer have access to a viewer here is what the string output will look like.
 
 For more details you can check out
 [nu-cmd-lang](https://github.com/stormasm/nushell/tree/nulangtest)
-
-Without the viewers here what the string output looks like...
 
 ### version
 
