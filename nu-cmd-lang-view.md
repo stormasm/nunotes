@@ -9,7 +9,7 @@ longer have access to a viewer here is what the string output will look like.
 For more details you can check out
 [nu-cmd-lang](https://github.com/stormasm/nushell/tree/nulangtest)
 
-If you run the above code for whatever reason you can exit out of the nushell repl with the cmd **ctrl-d**,    
+If you run the above code for whatever reason you can exit out of the nushell repl with the command **ctrl-d**,    
 as the exit command is no longer available.
 
 ### version
