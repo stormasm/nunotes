@@ -22,6 +22,12 @@ This is where we are going:
 * nu-cmd-shell
 * nu-cmd-extra
 
+What will be in these 3 crates is a work in progress.  I think these
+crates will continue to evolve over time and lay the ground work for
+other developers to come along and build on top of these crates their
+own versions of what they would like nushell to do (for them and their
+organizations longer term.)
+
 ## Step One: Example Code
 
 Now that we have two crates in the repo with commands --- if you review
