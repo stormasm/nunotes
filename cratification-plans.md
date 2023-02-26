@@ -46,7 +46,7 @@ and do some other example refactoring to make this stuff work in a clean way.
 We will discover that this week and I will update...
 
 ## Step Two: Test code infrastructure
-
+gs
 * [Idea 1](https://github.com/nushell/nushell/pull/8181#issuecomment-1442392097)
 * [Idea 2](https://github.com/nushell/nushell/pull/8181#issuecomment-1443488848)
 
@@ -82,7 +82,7 @@ Currently to bring up nushell the config system requires you need the env system
 
 System has the infrastructure code to run external commands which is interdependent with above mentioned directories.
 
-Other candidates for nu-cmd-shell include
+Other candidates for nu-cmd-shell include all or subsets of...
 
 * filesystem
 * strings
