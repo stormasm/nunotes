@@ -71,16 +71,16 @@ The ideas behind why these are bundled together are in the reference documents
 below but for the most part they are tightly interconnected in the code base and
 natually fall out into one piece of work.
 
-Practially though the shell has to be able to display data so viewers are clearly required..
+Practially though the shell has to be able to display data so *viewers* are clearly required..
 
 The config system which also needs to be revamped and refactored is a different
 subject and a different document but I could see the config refactor work happening in parallel to this work as time unfolds.  
 
 Bottom line is this...
 
-Currently to bring up nushell the config system requires you need the env system in place so you need this directory.
+Currently to bring up nushell the config system requires you need the **env** system in place so you need this directory.
 
-System has the infrastructure code to run external commands which is interdependent with above mentioned directories.
+**System** has the infrastructure code to run external commands which is interdependent with above mentioned directories.
 
 Other candidates for nu-cmd-shell include all or subsets of...
 
