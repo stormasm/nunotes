@@ -43,9 +43,10 @@ The first PR landed with (2) copies of
 
 ## Step Two: Test code infrastructure
 
-In PR 8181 Stefan  has some other ideas about how he would like the tests to look.  My plan is to work with him to get this all sorted out post Step One
-getting completed...  Since I don't quite understand the scope of this work
-I will update more on this point once Step 1 is done.
+* [Idea 1](https://github.com/nushell/nushell/pull/8181#issuecomment-1442392097)
+* [Idea 2](https://github.com/nushell/nushell/pull/8181#issuecomment-1443488848)
+
+In PR 8181 Stefan outlined some other ideas [see above] about how he would like the tests to look.  My plan is to work with him to get this all sorted out post Step One getting completed...  Since I don't quite understand the scope of this work I will update more on this point once Step 1 is done.
 
 ## Step Three: nu-cmd-shell
 
