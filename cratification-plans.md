@@ -28,7 +28,7 @@ other developers to come along and build on top of these crates their
 own versions of what they would like nushell to do (for them and their
 organizations longer term.)
 g
-## Step One: Example Code
+## Step One: Example Code Infrastructure
 
 Now that we have two crates in the repo with commands --- if you review
 the conversation in [PR 8181](https://github.com/nushell/nushell/pull/8181)
@@ -41,8 +41,12 @@ The first PR landed with (2) copies of
 [example_test.rs](https://github.com/nushell/nushell/blob/main/crates/nu-cmd-lang/src/example_test.rs) so
 [these 4 methods](https://github.com/stormasm/nutmp/blob/main/code/example_test_support.rs) have to be moved over to **nu-test-support**.  I was planning on making this happen this week.
 
-## Step Two: Test code infrastructure
+After this is completed and possibly during the process we may realize or uncover as this code gets written / modified that we need to get in there
+and do some other example refactoring to make this stuff work in a clean way.
+We will discover that this week and I will update...
 
+## Step Two: Test code infrastructure
+g
 * [Idea 1](https://github.com/nushell/nushell/pull/8181#issuecomment-1442392097)
 * [Idea 2](https://github.com/nushell/nushell/pull/8181#issuecomment-1443488848)
 
