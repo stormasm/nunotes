@@ -57,10 +57,19 @@ My idea is to start out with nu-cmd-shell have the following directories
 * viewers
 
 The ideas behind why these are bundled together are in the reference documents
-below.  Bottom line is they are tightly interconnected in the code base and
+below but for the most part they are tightly interconnected in the code base and
 natually fall out into one piece of work.
 
 Practially though the shell has to be able to display data so viewers are clearly required..
+
+The config system which also needs to be revamped and refactored is a different
+subject and a different document but I could see the config refactor work happening in parallel to this work as time unfolds.  
+
+Bottom line is this...
+
+Currently to bring up nushell the config system requires you need the env system in place so you need this directory.
+
+System has the infrastructure code to run external commands which is interdependent with above mentioned directories.
 
 Other candidates for nu-cmd-shell include
 
@@ -68,8 +77,22 @@ Other candidates for nu-cmd-shell include
 * strings
 * filters
 
-### References
+## Step Four: Running nu-cmd-lang standalone
 
+The ability to run nu-cmd-lang standalone in the code base requires
+you swap out these two methods in [main.rs](https://github.com/nushell/nushell/blob/main/src/main.rs)
+
+```rust
+use nu_command::create_default_context;
+with
+use nu_cmd_lang::create_default_context;
+```
+
+It would be nice to be able to flip a switch in the build process or send
+a flag into nushell making this automagically happen.
+
+### References
+s
 * [Output of version command in nu-cmd-lang](https://github.com/stormasm/nunotes/blob/main/nu-cmd-lang-view.md)
 * [Core Team Meeting Notes 2023-02-22 on this subject](https://github.com/stormasm/nunotes/blob/main/nu-cmd-lang.md)
 * [Core Team Meeting Notes 2023-02-22](https://hackmd.io/inSnmcirTfO7oTg8hTljwQ)
