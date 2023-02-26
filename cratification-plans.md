@@ -1,5 +1,4 @@
 
-
 ## Cratification Plans
 
 I am happy and excited to do the work to make this happen and you all
@@ -40,13 +39,15 @@ The first PR landed with (2) copies of
 
 In PR 8181 Stefan  has some other ideas about how he would like the tests to look.  My plan is to work with him to get this all sorted out post Step One
 getting completed...  Since I don't quite understand the scope of this work
-I will update more on this point one Step One is done
+I will update more on this point once Step One is done
 
-## Step Three: nu-cmd-lang
+## Step Three: nu-cmd-shell
 
 Once the test support work is done and we are happy with the concept of how
 examples and tests work in the context of multiple command crates we will move
-on to creating nu-cmd-shell.
+on to creating nu-cmd-shell.  I would prefer to wait on creating nu-cmd-shell
+until the ideas for examples and tests are flushed out and we have a working
+version living in the code base.
 
 My idea is to start out with nu-cmd-shell have the following directories
 
@@ -55,10 +56,20 @@ My idea is to start out with nu-cmd-shell have the following directories
 * system
 * viewers
 
-The ideas behind why these are bundled together
+The ideas behind why these are bundled together are in the reference documents
+below.  Bottom line is they are tightly interconnected in the code base and
+natually fall out into one piece of work.
+
+Practially though the shell has to be able to display data so viewers are clearly required..
+
+Other candidates for nu-cmd-shell include
+
+* filesystem
+* strings
+* filters
 
 ### References
 
-[Core Team Meeting Notes 2023-02-22 on this subject](https://github.com/stormasm/nunotes/blob/main/nu-cmd-lang.md)
-[Output of version command in nu-cmd-lang](https://github.com/stormasm/nunotes/blob/main/nu-cmd-lang-view.md)
+* [Core Team Meeting Notes 2023-02-22 on this subject](https://github.com/stormasm/nunotes/blob/main/nu-cmd-lang.md)
+* [Output of version command in nu-cmd-lang](https://github.com/stormasm/nunotes/blob/main/nu-cmd-lang-view.md)
 [Core Team Meeting Notes 2023-02-15]
