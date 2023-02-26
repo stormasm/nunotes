@@ -39,7 +39,7 @@ The first PR landed with (2) copies of
 
 In PR 8181 Stefan  has some other ideas about how he would like the tests to look.  My plan is to work with him to get this all sorted out post Step One
 getting completed...  Since I don't quite understand the scope of this work
-I will update more on this point once Step One is done
+I will update more on this point once Step 1 is done.
 
 ## Step Three: nu-cmd-shell
 
