@@ -46,7 +46,7 @@ and do some other example refactoring to make this stuff work in a clean way.
 We will discover that this week and I will update...
 
 ## Step Two: Test code infrastructure
-g
+
 * [Idea 1](https://github.com/nushell/nushell/pull/8181#issuecomment-1442392097)
 * [Idea 2](https://github.com/nushell/nushell/pull/8181#issuecomment-1443488848)
 
