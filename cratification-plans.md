@@ -89,10 +89,10 @@ use nu_cmd_lang::create_default_context;
 ```
 
 It would be nice to be able to flip a switch in the build process or send
-a flag into nushell making this automagically happen.
+a flag into nushell making this happen automagically.
 
 ### References
-s
+
 * [Output of version command in nu-cmd-lang](https://github.com/stormasm/nunotes/blob/main/nu-cmd-lang-view.md)
 * [Core Team Meeting Notes 2023-02-22 on this subject](https://github.com/stormasm/nunotes/blob/main/nu-cmd-lang.md)
 * [Core Team Meeting Notes 2023-02-22](https://hackmd.io/inSnmcirTfO7oTg8hTljwQ)
