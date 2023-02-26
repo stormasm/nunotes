@@ -72,5 +72,5 @@ Other candidates for nu-cmd-shell include
 
 * [Core Team Meeting Notes 2023-02-22 on this subject](https://github.com/stormasm/nunotes/blob/main/nu-cmd-lang.md)
 * [Output of version command in nu-cmd-lang](https://github.com/stormasm/nunotes/blob/main/nu-cmd-lang-view.md)
-[Core Team Meeting Notes 2023-02-22](https://hackmd.io/inSnmcirTfO7oTg8hTljwQ)
-[Core Team Meeting Notes 2023-02-15](https://hackmd.io/YeL2nzIUS1ChdcsxUx-T1A)
+* [Core Team Meeting Notes 2023-02-22](https://hackmd.io/inSnmcirTfO7oTg8hTljwQ)
+* [Core Team Meeting Notes 2023-02-15](https://hackmd.io/YeL2nzIUS1ChdcsxUx-T1A)
