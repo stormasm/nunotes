@@ -23,8 +23,8 @@ login_shell.is_some()
 
 pass in the zero config files here...
 
-parsed_nu_cli_args.config_file,
-parsed_nu_cli_args.env_file,
+* parsed_nu_cli_args.config_file,
+* parsed_nu_cli_args.env_file,
 
 
 
