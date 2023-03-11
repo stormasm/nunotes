@@ -5,6 +5,9 @@ apology in advance :)
 some of the discord references in this document point to the core team channel;
 so unfortunately you will not be able to see those particular discord references...
 
+##### 3/10/2023
+[hooks and display output] (https://discord.com/channels/601130461678272522/683070703716925568/1083891720099479562)
+
 ### an example of records
 
 ```rust
