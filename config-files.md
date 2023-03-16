@@ -6,6 +6,8 @@ The answer is just the env file as Riley noted.
 
 Here is why.
 
+The nu! macro runs a command and so run_commands get called...
+
 run_commands which is called in main.rs is the method that loads the env config file
 
 ```rust
