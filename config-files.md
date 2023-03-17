@@ -1,4 +1,6 @@
 
+Note: Thanks to Riley for reviewing this document prior to publication.
+
 There was a question yesterday in the core team meeting about
 which config files get loaded when the nu! macro runs...
 
