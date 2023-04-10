@@ -1,4 +1,6 @@
 
+### the new command VIEW is a cool one to know about
+
 * [How printing happens in Nushell](./print.md)
 
 apology in advance :) ... some of the discord references in this document point to the core team channel; so unfortunately you will not be able to see those particular discord references...
@@ -19,7 +21,7 @@ apology in advance :) ... some of the discord references in this document point 
 
 ```rust
 [
-[[1 2] [2 [4 4]] 1 2] 
+[[1 2] [2 [4 4]] 1 2]
 [2 [4 4]]
 ]
 ```
@@ -30,7 +32,7 @@ apology in advance :) ... some of the discord references in this document point 
 
 ### Kubouch great explanation of parsing
 
-Would it help if you imagine parsing exactly as compiling? You could think of running Nushell code in similar terms as running Rust or C code: You compile source code to a machine code, then use a CPU hardware to run the compiled machine code and get some values back. In Nushell, instead of machine code, we compile (= parse) Nu language into a data structure (Expression, etc.). Then, we use the engine to evaluate the Expressions to produce Values. We're essentially a compiled language in the same sense as Rust or C but instead of compiling to assembly, we compile to our own intermediate representation. But we ultimately face the same limitations as the "traditional" languages. 
+Would it help if you imagine parsing exactly as compiling? You could think of running Nushell code in similar terms as running Rust or C code: You compile source code to a machine code, then use a CPU hardware to run the compiled machine code and get some values back. In Nushell, instead of machine code, we compile (= parse) Nu language into a data structure (Expression, etc.). Then, we use the engine to evaluate the Expressions to produce Values. We're essentially a compiled language in the same sense as Rust or C but instead of compiling to assembly, we compile to our own intermediate representation. But we ultimately face the same limitations as the "traditional" languages.
 
 [discord reference](https://discord.com/channels/601130461678272522/615329862395101194/1051797499620372520)
 
@@ -70,7 +72,7 @@ $"-o($env.DEPLOY_DIR)"
 
 ### Nushell birthday
 
-That’s correct. Public announcement was August 23rd, 2019   
+That’s correct. Public announcement was August 23rd, 2019
 August 24th in New Zealand
 
 [discord](https://discord.com/channels/601130461678272522/683070703716925568/1007125536587403395)
@@ -150,7 +152,7 @@ let third = [[e f]; [5 6]]
 
 ### Why do we need a $ sign for variables ?
 
-someone asked:  
+someone asked:
 i dont really know what using let $bla brings when you could do let bla
 
 @kubouch reply:
@@ -284,8 +286,8 @@ let $list = (help commands | select name | first 10) # This works
 
 #### building a string or concatenation
 
-is build-str the only way to build a string?  
-we don't have an append or something like that. right?  
+is build-str the only way to build a string?
+we don't have an append or something like that. right?
 you can also do "hello" + " world"
 
 #### sourcing a file
@@ -311,7 +313,7 @@ keybindings default
 
 #### path stuff
 
-is there a replacement for pathvar in .59?   
+is there a replacement for pathvar in .59?
 let-env PATH = ($env.PATH | append foo)
 
 #### $it notes
@@ -395,7 +397,7 @@ exempt from the stale bot
 
 #### what is --testbin
 
---testbin String  
+--testbin String
 what does it mean to run internal test binary ?
 
 It's a known external we can call from our tests, since not all platforms have echo, cat, etc...
@@ -503,7 +505,7 @@ PathMember::Int
 PathMember::String
 ```
 
-The String arguments to follow_cell_path are for the column names.  
+The String arguments to follow_cell_path are for the column names.
 The Int arguments to follow_cell_path are for the rows.
 
 ```rust
@@ -596,7 +598,7 @@ if let Value::Record { .. } = value { <code> }
 
 [discord](https://discord.com/channels/601130461678272522/615329862395101194/917099551058427904)
 
-the engine-q table command will convert to strings   
+the engine-q table command will convert to strings
 in nushell, viewers don't return anything
 
 >>> getting columns names in engine-q similar to nushell
@@ -716,16 +718,16 @@ cargo outdated -R
 cargo +nightly udeps --all-targets
 ```
 
-### prql 
+### prql
 
 ```rust
-open movies3.csv | 
-select LeadStudio WorldwideGross | 
-group-by LeadStudio | 
-transpose company gross | 
+open movies3.csv |
+select LeadStudio WorldwideGross |
+group-by LeadStudio |
+transpose company gross |
 insert total {
-|g| $g.gross | 
-reduce -f 0 {|i acc| $acc + $i.WorldwideGross}} | 
+|g| $g.gross |
+reduce -f 0 {|i acc| $acc + $i.WorldwideGross}} |
 reject gross |
 sort-by total
 ```
