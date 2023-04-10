@@ -1,5 +1,5 @@
 
-### the new command VIEW is a cool one to know about
+* the new command VIEW is a cool one to know about
 
 * [How printing happens in Nushell](./print.md)
 
