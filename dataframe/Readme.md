@@ -7,4 +7,4 @@ cd nu-cmd-dataframe
 mkdir src
 cd src
 git mv dataframe from the nu-command crate to here
-grab Cargo.toml and LICENSE
+grab Cargo.toml from the nu-command crate and LICENSE
