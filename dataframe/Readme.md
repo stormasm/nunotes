@@ -1,5 +1,5 @@
 
-Notes for porting code over to a crate...
+Notes for porting dataframe code over to a crate as part of the cratification effort.
 
 ```rust
 mkdir nu-cmd-dataframe
