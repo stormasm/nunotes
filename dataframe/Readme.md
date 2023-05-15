@@ -8,3 +8,7 @@ mkdir src
 cd src
 git mv dataframe from the nu-command crate to here
 grab Cargo.toml from the nu-command crate and LICENSE
+add in your lib.rs file
+
+update the top level Cargo.toml file with the new workspace members
+```
