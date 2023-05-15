@@ -1,6 +1,7 @@
 
 Notes for porting code over to a crate...
 
+```rust
 mkdir nu-cmd-dataframe
 cd nu-cmd-dataframe
 mkdir src
