@@ -1,2 +1,2 @@
 
-[Notes for porting dataframe code over to a crate as part of the cratification effort](./cratifcation.md)
+[Notes for porting dataframe code over to a crate as part of the cratification effort](./cratification.md)
