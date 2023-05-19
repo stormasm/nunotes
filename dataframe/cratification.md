@@ -3,17 +3,17 @@
 ### The following tests were ignored...
 
 ```rust
-  modified:   crates/nu-cmd-dataframe/src/dataframe/series/date/get_day.rs
-	modified:   crates/nu-cmd-dataframe/src/dataframe/series/date/get_hour.rs
-	modified:   crates/nu-cmd-dataframe/src/dataframe/series/date/get_minute.rs
-	modified:   crates/nu-cmd-dataframe/src/dataframe/series/date/get_month.rs
-	modified:   crates/nu-cmd-dataframe/src/dataframe/series/date/get_nanosecond.rs
-	modified:   crates/nu-cmd-dataframe/src/dataframe/series/date/get_ordinal.rs
-	modified:   crates/nu-cmd-dataframe/src/dataframe/series/date/get_second.rs
-	modified:   crates/nu-cmd-dataframe/src/dataframe/series/date/get_week.rs
-	modified:   crates/nu-cmd-dataframe/src/dataframe/series/date/get_weekday.rs
-	modified:   crates/nu-cmd-dataframe/src/dataframe/series/date/get_year.rs
-	modified:   crates/nu-cmd-dataframe/src/dataframe/series/string/strftime.rs
+modified:   crates/nu-cmd-dataframe/src/dataframe/series/date/get_day.rs
+modified:   crates/nu-cmd-dataframe/src/dataframe/series/date/get_hour.rs
+modified:   crates/nu-cmd-dataframe/src/dataframe/series/date/get_minute.rs
+modified:   crates/nu-cmd-dataframe/src/dataframe/series/date/get_month.rs
+modified:   crates/nu-cmd-dataframe/src/dataframe/series/date/get_nanosecond.rs
+modified:   crates/nu-cmd-dataframe/src/dataframe/series/date/get_ordinal.rs
+modified:   crates/nu-cmd-dataframe/src/dataframe/series/date/get_second.rs
+modified:   crates/nu-cmd-dataframe/src/dataframe/series/date/get_week.rs
+modified:   crates/nu-cmd-dataframe/src/dataframe/series/date/get_weekday.rs
+modified:   crates/nu-cmd-dataframe/src/dataframe/series/date/get_year.rs
+modified:   crates/nu-cmd-dataframe/src/dataframe/series/string/strftime.rs
 ```
 
 Notes for porting dataframe code over to a crate as part of the cratification effort.
