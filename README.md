@@ -1,4 +1,6 @@
 
+* a picture of all of the [nushell crates](./images/nushell.png)
+
 * the new command VIEW is a cool one to know about
 
 * [How printing happens in Nushell](./print.md)
