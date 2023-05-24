@@ -1,3 +1,10 @@
+```rust
+nurun -n --no-std-lib
+```
+
+```rust
+$nu.startup-time
+```
 
 * a picture of all of the [nushell crates](./images/nushell.png)
 
