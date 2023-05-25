@@ -6,6 +6,14 @@ nurun -n --no-std-lib
 $nu.startup-time
 ```
 
+```rust
+nu --config $nu.config-path --env-config $nu.env-path -c "$nu.startup-time"
+nu --no-std-lib -n -c "$nu.startup-time"
+use std bench; bench { nu --config $nu.config-path --env-config $nu.env-path -c "$nu.startup-time" } --verbose
+```
+
+More details on startup options are [here](https://discord.com/channels/601130461678272522/683070703716925568/1111036615784140840)
+
 * a picture of all of the [nushell crates](./images/nushell.png)
 
 * the new command VIEW is a cool one to know about
