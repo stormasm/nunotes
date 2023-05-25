@@ -17,7 +17,6 @@ nu --no-std-lib -n -c "$nu.startup-time"
 ```rust
 use std bench; bench { nu --config $nu.config-path --env-config $nu.env-path -c "$nu.startup-time" } --verbose
 ```
-```
 
 More details on startup options are [here](https://discord.com/channels/601130461678272522/683070703716925568/1111036615784140840)
 
