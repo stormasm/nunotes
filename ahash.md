@@ -20,5 +20,5 @@ criterion_main!(benches);
 
 ### Details
 
-a microsecond is one millionth of a second   
-a millisecond is 1000 microseconds
+* a microsecond is one millionth of a second   
+* a millisecond is 1000 microseconds
