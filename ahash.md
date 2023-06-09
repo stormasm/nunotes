@@ -11,7 +11,7 @@
 
 ### References for comparison
 
-Let's just run the parser_benchmarks for comparison initially
+Let's just run the parser_benchmarks for comparison initially and then we can branch out if we want to other areas...
 
 ```rust
 criterion_group!(benches, parser_benchmarks,);
