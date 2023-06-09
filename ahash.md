@@ -17,3 +17,8 @@ Let's just run the parser_benchmarks for comparison initially and then we can br
 criterion_group!(benches, parser_benchmarks,);
 criterion_main!(benches);
 ```
+
+### Details
+
+a microsecond is one millionth of a second   
+a millisecond is 1000 microseconds
