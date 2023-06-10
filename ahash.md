@@ -1,5 +1,39 @@
 
 
+### Saturday June 10, 2023
+
+| function | main | ahash
+| - | - | - |
+| parse_default_env_file | 411.49 µs | 401.16 µs |
+| parse_default_config_file | 1.4912 ms | 1.4415 ms |
+| eval default_env.nu  | 823.05 µs | 770.71 µs |
+| eval default_config.nu  | 2.0569 ms | 1.9858 ms |
+| eval default_env.nu #2 | 812.52 µs | 767.01 µs |
+| eval default_config.nu #2 | 2.0333 ms | 1.9896 ms |
+
+### nushell
+
+parse_default_env_file  time:   [411.49 µs
+parse_default_config_file
+                        time:   [1.4912 ms
+eval default_env.nu     time:   [823.05 µs
+eval default_config.nu  time:   [2.0569 ms
+eval default_env.nu #2  time:   [812.52 µs
+eval default_config.nu #2
+                        time:   [2.0333 ms
+
+### ahash
+parse_default_env_file  time:   [401.16 µs
+parse_default_config_file
+                        time:   [1.4415 ms
+eval default_env.nu     time:   [770.71 µs
+eval default_config.nu  time:   [1.9858 ms
+eval default_env.nu #2  time:   [767.01 µs
+eval default_config.nu #2
+                        time:   [1.9896 ms
+
+
+### Friday June 9, 2023
 
 | function | main | ahash
 | - | - | - |
@@ -20,5 +54,5 @@ criterion_main!(benches);
 
 ### Details
 
-* a microsecond is one millionth of a second   
+* a microsecond is one millionth of a second
 * a millisecond is 1000 microseconds
