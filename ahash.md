@@ -2,6 +2,8 @@
 
 ### Saturday June 10, 2023
 
+Apple M1 Pro with 16G of memory
+
 | function | main | ahash
 | - | - | - |
 | parse_default_env_file | 411.49 µs | 401.16 µs |
@@ -11,7 +13,7 @@
 | eval default_env.nu #2 | 812.52 µs | 767.01 µs |
 | eval default_config.nu #2 | 2.0333 ms | 1.9896 ms |
 
-### nushell
+### main
 
 parse_default_env_file  time:   [411.49 µs
 
