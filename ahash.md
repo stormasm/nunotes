@@ -14,21 +14,31 @@
 ### nushell
 
 parse_default_env_file  time:   [411.49 µs
+
 parse_default_config_file
                         time:   [1.4912 ms
+
 eval default_env.nu     time:   [823.05 µs
+
 eval default_config.nu  time:   [2.0569 ms
+
 eval default_env.nu #2  time:   [812.52 µs
+
 eval default_config.nu #2
                         time:   [2.0333 ms
 
 ### ahash
 parse_default_env_file  time:   [401.16 µs
+
 parse_default_config_file
                         time:   [1.4415 ms
+
 eval default_env.nu     time:   [770.71 µs
+
 eval default_config.nu  time:   [1.9858 ms
+
 eval default_env.nu #2  time:   [767.01 µs
+
 eval default_config.nu #2
                         time:   [1.9896 ms
 
