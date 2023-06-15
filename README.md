@@ -1,6 +1,6 @@
 
 
-[location of the script to publish out new crates](https://github.com/nushell/nu_scripts/commits/main/make_release/nu_release.nu)
+* [location of the script to publish out new crates](https://github.com/nushell/nu_scripts/commits/main/make_release/nu_release.nu)
 
 ```rust
 nurun -n --no-std-lib
