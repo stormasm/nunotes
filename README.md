@@ -137,6 +137,10 @@ fetch https://api.github.com/repos/nushell/nushell/releases/latest | get assets 
 $nu.history-path
 ```
 
+### the version command
+
+TIL, if you want version to have the right commit_hash and build_time you need to touch crates\nu-cmd-lang\build.rs so this information gets rebuilt each time.  [discord](https://discord.com/channels/601130461678272522/683070703716925568/1125452299205095526)
+
 ### get versus select
 
 get gets the information out of the structure. select maintains the structure. you can see this with ls | get name vs ls | select name
