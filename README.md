@@ -1,4 +1,18 @@
 
+### Number of commands
+
+```rust
+427 commands without / nu-cmd-extra
+472 commands with / nu-cmd-extra
+548 commands with / nu-dataframe but not extra
+593 commands with / nu-datraframe and nu-cmd-extra
+```
+
+all based on the number of commands in "help commands"
+
+[discord](https://discord.com/channels/601130461678272522/683070703716925568/1128084700708225115)
+
+### How to publish out new crates
 
 * nu_scripts/make_release/nu_release.nu
 * [location of the script to publish out new crates](https://github.com/nushell/nu_scripts/commits/main/make_release/nu_release.nu)
