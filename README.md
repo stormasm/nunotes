@@ -10,7 +10,8 @@
 
 all based on the number of commands in "help commands"
 
-[discord](https://discord.com/channels/601130461678272522/683070703716925568/1128084700708225115)
+* [discord](https://discord.com/channels/601130461678272522/683070703716925568/1128084700708225115)
+* [commit point = PR 9647](https://github.com/nushell/nushell/pull/9647)
 
 ### How to publish out new crates
 
