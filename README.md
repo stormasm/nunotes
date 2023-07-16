@@ -791,3 +791,7 @@ Relevant cargo commands to track down dependencies and get rid of duplicated cra
 cargo tree -- duplicated
 cargo build -- timings
 ```
+
+### Nushell Language Search on Github
+
+* [here it is](https://github.com/search?type=repositories&q=language%3ANu++pushed%3A%3E2019-05-01+nushell)
