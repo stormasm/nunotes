@@ -1,4 +1,9 @@
 
+
+### Blocks versus Closures
+
+[discord 7/20/23](https://discord.com/channels/601130461678272522/683070703716925568/1131724033352814715)
+
 ### Number of commands
 
 ```rust
