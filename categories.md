@@ -33,3 +33,5 @@
 ```rust
 help commands | sort-by category
 ```
+
+* [pub enum Category](https://github.com/nushell/nushell/blob/main/crates/nu-protocol/src/signature.rs)
