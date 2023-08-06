@@ -27,3 +27,9 @@
 
 * system
 * viewers
+
+### Reference
+
+```rust
+help commands | sort-by category
+```
