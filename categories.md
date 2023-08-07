@@ -1,5 +1,5 @@
 
-### There are currently twenty two (22) nushell categories
+### There are currently twenty three (23) nushell categories
 
 * conversions
 * core
@@ -7,11 +7,13 @@
 * date
 * debug
 
+
 * default
 * deprecated
 * env
 * experimental
 * filesystem
+
 
 * filters
 * formats
@@ -19,14 +21,18 @@
 * hash
 * math
 
+
 * misc
 * network
+* path
 * platform
 * random
-* strings
 
+
+* strings
 * system
 * viewers
+
 
 ### Reference
 
