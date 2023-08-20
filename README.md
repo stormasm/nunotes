@@ -1,5 +1,9 @@
 
 
+### Move bytes commands back to core
+
+[discord 8/18/23](https://discord.com/channels/601130461678272522/615329862395101194/1142076853935423548)
+
 ### Blocks versus Closures
 
 [discord 7/20/23](https://discord.com/channels/601130461678272522/683070703716925568/1131724033352814715)
