@@ -1,5 +1,33 @@
 
-### Plugins
+### Creating the binary file of your plugin
+
+```rust
+cargo install --path crates/nu_plugin_from_parquet
+register ~/.cargo/bin/nu_plugin_from_parquet  
+```
+
+The register command must point to a binary file...
+
+And there are several ways to create the binary file...
+
+You can issue the *cargo install* command above which will put the binary
+file inside your default *~/.cargo/bin* directory or
+
+```rust
+cargo install --path crates/nu_plugin_from_parquet --target-dir /tmp/crates
+```
+
+Which will put the binary file inside the *target-dir/release* directory
+
+When you are inside the plugin directory you can issue the command
+
+```rust
+cargo build
+```
+
+This will put the binary file in the *target/debug* directory of the plugin's parent repository.
+
+### Plugins Legacy Notes
 
 ```rust
 register -e json ./nu_plugin_query
@@ -74,9 +102,9 @@ echo "this is input" | nu-python 1 abc 2 -f -n dog now is the time
 nu-example-3 is supposed to throw an error
 
 ```rust
-nu-example-1 -f -n 555 78 why 666 newmexico -n "ralph" 
-nu-example-2 -f -n 555 78 why 666 arkansas -n "ralph" 
-nu-example-3 -f -n 555 78 why 666 delaware -n "ralph" 
+nu-example-1 -f -n 555 78 why 666 newmexico -n "ralph"
+nu-example-2 -f -n 555 78 why 666 arkansas -n "ralph"
+nu-example-3 -f -n 555 78 why 666 delaware -n "ralph"
 ```
 
 ### PRs
