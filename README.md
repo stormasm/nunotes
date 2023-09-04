@@ -1,5 +1,13 @@
 
 
+### Difference between echo and print
+
+I've seen this a few times now. I'm not sure if my explanation is exact but I think about it like this. print puts output immediately. JT wrote this command one day when I was whining about not being able to debug scripts with echo. echo puts values in the pipeline, print's output does not go in the pipeline. Additionally, blocks will only output the last value, it apparently does not put multiple values in the pipeline.
+
+It used to but this was changed here https://github.com/nushell/nushell/pull/8292.
+
+[discord core](https://discord.com/channels/601130461678272522/683070703716925568/1148235827437121536)
+
 ### Move bytes commands back to core
 
 [discord 8/18/23](https://discord.com/channels/601130461678272522/615329862395101194/1142076853935423548)
