@@ -1,4 +1,12 @@
 
+
+```rust
+$env.config.color_config.leading_trailing_space_bg = {bg: sandybrown}
+cargo search nu_plugin --limit 10 | lines | parse "{crate_name} = {version} #{description}"
+```
+
+*****
+
 For anyone who want to help on this, here is also one-linear to get commands which starts with specific character(take 'b' as example):
 
 ```rust
@@ -6,6 +14,8 @@ help commands | where command_type == builtin | sort-by name | get name | filter
 ```
 
 [reference](https://github.com/nushell/nushell/pull/10121#issuecomment-1694545098)
+
+*****
 
 Testing validity of all URLs in an Excel sheet
 
