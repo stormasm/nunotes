@@ -1,4 +1,8 @@
 
+### Start up nushell with a log level
+
+nu --log-level info
+
 ### Environment Variables in Nushell
 
 To set an env
