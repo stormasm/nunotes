@@ -1,6 +1,10 @@
 
-The *parse()* method returns a compiler
+### Parser mantras
 
+The *parse()* method returns a compiler
+from which you can display the state of AstNode's.
+
+The AstNode is an enum.
 
 ## Notes on methods in parser.rs
 
