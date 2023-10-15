@@ -6,8 +6,6 @@ from which you can display the state of AstNode's.
 
 The AstNode is an enum.
 
-## Notes on methods in parser.rs
-
 ### Lexing
 
 ##### Tokens are returned by the following methods
