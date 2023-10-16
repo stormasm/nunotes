@@ -17,6 +17,8 @@ pub fn parse(mut self) -> Compiler {
 
 The *parse()* method starts with block so lets start there and dive down...
 
+### The block() method
+
 The main driving function in block is *has_tokens()*
 
 #### has_tokens() is what drives the lexer
