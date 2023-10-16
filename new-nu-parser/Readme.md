@@ -23,7 +23,8 @@ The main driving function in block is *has_tokens()*
 
 the lexer is happening in concert with the parsing
 
-The main concepts that are getting lexed and parsed are
+The main concepts that are getting lexed and parsed inside
+the *block()* method includes:
 
 * let_statement
 * while_statement
