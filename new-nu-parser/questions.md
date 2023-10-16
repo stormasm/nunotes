@@ -1,11 +1,11 @@
 
 ### Question 01
 
-Where does the NodeId gets its number
-
 What is a tuple struct in the context of NodeId.
 
 Why do we use a Tuple Struct
+
+Where does the NodeId gets its number
 
 ### Answer 01
 
