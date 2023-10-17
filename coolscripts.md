@@ -2,6 +2,10 @@
 ### Cool Scripts
 
 ```rust
+ls nu-* | each { |file| open ($file.name + "/Cargo.toml")  | get dependencies? | { name: $file.name, dependencies: $in }}
+```
+
+```rust
 ls | where <condition goes here> | each { |file| mv $file.name new_dir }
 ```
 
