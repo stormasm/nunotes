@@ -1,4 +1,6 @@
 
+### Parser is called twice every time because of eval_hook
+
 ### Start up nushell with a log level
 
 nu --log-level info
