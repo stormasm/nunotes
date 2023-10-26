@@ -1,7 +1,9 @@
 
 
 yeah, you have to
+```rust
 use nu-git-manager *
+```
 in config.nu 👍
 
 * repos are stored in a global location
