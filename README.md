@@ -1,4 +1,15 @@
 
+1. cargo install samply  
+2. samply record nu -n  
+3. type exit to exit nushell  
+~/src/forks/nushell> exit  
+Lost 10 events!  
+Local server listening at http://127.0.0.1:3000  
+Press Ctrl+C to stop.  
+
+and it automatically launches the screenshot website
+
+
 ### Parser is called twice every time because of eval_hook
 
 ### Start up nushell with a log level
