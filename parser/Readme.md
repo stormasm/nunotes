@@ -1,5 +1,5 @@
 
-All of the notes here about the old parser.
+All of the notes here are about the old parser.
 
 For notes on the new parser go [here](./new-nu-parser)
 
