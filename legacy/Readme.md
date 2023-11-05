@@ -5,6 +5,8 @@ This is for legacy directories like
 * [crates](./crates)
 * [dataframe](./dataframe)
 * [engine-q](./engine-q)
+* [grammar](./grammar)
+* [images](./images)
 * [nana](./nana)
 
 ---
