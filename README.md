@@ -1,4 +1,12 @@
 
+### How to use std properly including all the commands that are not in the prelude
+
+[discord](https://discord.com/channels/601130461678272522/1075541668922658868/1158888597714386954)
+
+```rust
+scope modules | where name =~ '^std' | get submodules.0
+```
+
 [Powershell Reference on Arrays and Ranges](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_arrays?view=powershell-7.3#reading-an-array)
 
 1. cargo install samply  
