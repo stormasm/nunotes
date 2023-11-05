@@ -1,6 +1,9 @@
 
 This is for legacy directories like
 
+* [articles](./articles)
+* [crates](./crates)
+* [dataframe](./dataframe)
 * [engine-q](./engine-q)
 * [nana](./nana)
 
