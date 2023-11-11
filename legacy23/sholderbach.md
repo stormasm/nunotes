@@ -19,6 +19,7 @@ Nushell 0.84 was the last release with the old Record structure...
 before
 
 ```rust
+pub enum Value {
 String {
      val: String,
      span: Span,
@@ -37,6 +38,7 @@ String {
 Nushell 0.85 has the new Record structure
 
 ```rust
+pub enum Value {
 String {
     val: String,
     // note: spans are being refactored out of Value
