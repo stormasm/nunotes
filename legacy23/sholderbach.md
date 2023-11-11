@@ -14,7 +14,7 @@ and supplements what @sholderbach and @ianmanske has already documented.
 
 ### History
 
-Nushell 0.84 was the last release with the Old Record structure...
+Nushell 0.84 was the last release with the old Record structure...
 
 before
 
