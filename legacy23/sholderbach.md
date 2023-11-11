@@ -11,3 +11,48 @@ and supplements what @sholderbach and @ianmanske has already documented.
 
 * [Create Record type](https://github.com/nushell/nushell/pull/10103)
 * [Add common map-like API to nu_protocol::Record](https://github.com/nushell/nushell/pull/10841)
+
+### History
+
+Nushell 0.84 was the last release with the Old Record structure...
+
+before
+
+```rust
+String {
+     val: String,
+     span: Span,
+ },
+ Record {
+     cols: Vec<String>,
+     vals: Vec<Value>,
+     span: Span,
+ },
+ List {
+     vals: Vec<Value>,
+     span: Span,
+ },
+```
+
+Nushell 0.85 has the new Record structure
+
+```rust
+String {
+    val: String,
+    // note: spans are being refactored out of Value
+    // please use .span() instead of matching this span value
+    internal_span: Span,
+},
+Record {
+    val: Record,
+    // note: spans are being refactored out of Value
+    // please use .span() instead of matching this span value
+    internal_span: Span,
+},
+List {
+    vals: Vec<Value>,
+    // note: spans are being refactored out of Value
+    // please use .span() instead of matching this span value
+    internal_span: Span,
+},
+```
