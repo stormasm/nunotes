@@ -9,6 +9,8 @@ and supplements what @sholderbach and @ianmanske has already documented.
 
 ### Usage
 
+To see the actual underlying Record data structures in Nushell
+
 ```rust
 [[a b]; [1 2] [3 4]] | debug -r
 ```
