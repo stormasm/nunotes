@@ -9,7 +9,7 @@ and supplements what @sholderbach and @ianmanske has already documented.
 
 ### Usage
 
-```nu
+```rust
 [[a b]; [1 2] [3 4]] | debug -r
 ```
 
