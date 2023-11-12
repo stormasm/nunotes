@@ -7,6 +7,12 @@ the ease of use for Nushell developers moving forward.
 Most of the documentation for the PRs are in the PR itself so this simply outlines
 and supplements what @sholderbach and @ianmanske has already documented.
 
+### Usage
+
+```nu
+[[a b]; [1 2] [3 4]] | debug -r
+```
+
 ### PRs in order
 
 * [Create Record type](https://github.com/nushell/nushell/pull/10103)
