@@ -55,6 +55,12 @@ nu-git-manager/tests/mod.nu
     use ~/.nupm/modules/nupm
 ```
 
+### Notes
+
+```rust
+help modules | where name == nu-git-manager
+```
+
 ### Example packages
 
 * https://github.com/amtoine/tmux-sessionizer
