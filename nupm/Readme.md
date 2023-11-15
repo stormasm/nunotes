@@ -63,3 +63,7 @@ nu-git-manager/tests/mod.nu
 * https://github.com/amtoine/scripts
 * https://github.com/nushell/nu_scripts/blob/main/package.nuon
 * [discord](https://discord.com/channels/601130461678272522/1112829613920505956/1172882159959281745)
+
+### References
+
+* [antoine dotfiles](https://github.com/amtoine/dotfiles)
