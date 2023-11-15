@@ -3,6 +3,14 @@
 
 * module files and their paths must be available before your script is run as parsing occurs before anything is evaluated
 
+this means that you can NOT have
+
+```rust
+use nu-git-manager *
+```
+
+for example in a custom command
+
 This command comes in handy to get to the *default-config-dir*
 
 ```rust
