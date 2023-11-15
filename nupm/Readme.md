@@ -34,6 +34,7 @@ or you can simply type *nuconfig*
 
 * delete-nupm
 * install-nupm
+* install-ngm
 
 ### nu-git-manager
 
