@@ -9,7 +9,9 @@ this means that you can NOT have
 use nu-git-manager *
 ```
 
-for example in a custom command
+for example in a custom command or an *alias*
+
+---
 
 This command comes in handy to get to the *default-config-dir*
 
