@@ -8,6 +8,9 @@ tags:
   - jq
   - data
 ---
+
+This is a [fork / copy](https://www.seachess.net/notes/from-jq-to-nushell/).
+
 # From jq to Nushell
 
 Where I translate [The Ultimate Interactive JQ Guide](https://ishan.page/blog/2023-11-06-jq-by-example/) to [Nushell](https://ww.nushell.sh/).
@@ -67,14 +70,14 @@ Notice that the output for `jq` is a JSON string whereas in `nu` it's a table va
 In `jq`, to map an array we do:
 
 ```sh
-echo '[1, 2, 3, 4, 5]' | 
+echo '[1, 2, 3, 4, 5]' |
 jq -r 'map(. * 2)'
 ```
 
 In `nu` we do:
 
 ```nu
-'[1, 2, 3, 4, 5]' 
+'[1, 2, 3, 4, 5]'
 | from json
 | each { |x| $x * 2 }
 ```
@@ -82,7 +85,7 @@ In `nu` we do:
 Note that you can rely on the auto-binding `$in` to type a slightly more compact block:
 
 ```nu
-'[1, 2, 3, 4, 5]' 
+'[1, 2, 3, 4, 5]'
 | from json
 | each { $in * 2 }
 ```
@@ -92,14 +95,14 @@ Note that you can rely on the auto-binding `$in` to type a slightly more compact
 In `jq`, to combine filters we do:
 
 ```sh
-echo '[{"name": "Alice", "age": 30}, {"name": "Bob", "age": 25}]' | 
+echo '[{"name": "Alice", "age": 30}, {"name": "Bob", "age": 25}]' |
 jq -r '.[] | select(.age > 28) | .name'
 ```
 
 In `nu` we do:
 
 ```nu
-'[{"name": "Alice", "age": 30}, {"name": "Bob", "age": 25}]' 
+'[{"name": "Alice", "age": 30}, {"name": "Bob", "age": 25}]'
 | from json
 | where age > 28
 | get name
@@ -180,7 +183,7 @@ In `nu` we do:
 In `jq`, to compose a new object we do:
 
 ```sh
-echo '{"name": "Alice", "age": 30}' | 
+echo '{"name": "Alice", "age": 30}' |
 jq -r '{name: .name, age: (.age + 5)}'
 ```
 
@@ -199,14 +202,14 @@ In `nu` we do:
 In `jq`, to recursively filter a tree structure we do:
 
 ```sh
-echo '{"data": {"value": 42, "nested": {"value": 24}}}' | 
+echo '{"data": {"value": 42, "nested": {"value": 24}}}' |
 jq -r '.. | .value?'
 ```
 
 In `nu`, there is no built-in function to achieve this, however, you can always define your own reusable commands. [See the Appendix: toolbox.nu](#appendix-toolbox-nu) for an implementation of the command `cherry-pick` shown in the example below.
 
 ```nu
-'{"data": {"value": 42, "nested": {"value": 24}}}' 
+'{"data": {"value": 42, "nested": {"value": 24}}}'
 | from json
 | cherry-pick {|x| $x.value?}
 ```
@@ -236,7 +239,7 @@ In `nu` we do:
 In `jq`, to get all the key-value pairs we do:
 
 ```sh
-echo '{"person": {"name": {"first": "Alice", "last": "Smith"}, "age": 30}}' | 
+echo '{"person": {"name": {"first": "Alice", "last": "Smith"}, "age": 30}}' |
 jq -r 'paths as $p | select(getpath($p) | type != "object") | ($p | join(".")) + " = " + (getpath($p) | tostring)'
 ```
 
@@ -253,14 +256,14 @@ In `nu`, there is also no built-in function to achieve this. [See the Appendix: 
 In `jq`, to traverse a tree we can do:
 
 ```sh
-echo '{"data": {"value": 42, "nested": {"value": 24}}}' | 
+echo '{"data": {"value": 42, "nested": {"value": 24}}}' |
 jq -r 'recurse | .value? | select(. != null) | { value: (. * 5) } | add'
 ```
 
 In `nu`, there is no built-in function equivalent to `recurse`. However, we can reuse the solution from [Recursive Descent](#recursive-descent) to extract the values to manipulate:
 
 ```nu
-'{"data": {"value": 42, "nested": {"value": 24}}}' 
+'{"data": {"value": 42, "nested": {"value": 24}}}'
 | from json
 | cherry-pick {|x| $x.value?}
 | compact # or use the familiar `where {|x| $x != null}`
@@ -273,14 +276,14 @@ In `nu`, there is no built-in function equivalent to `recurse`. However, we can 
 In `jq`, to map over object values we do:
 
 ```sh
-echo '{"items": [{"name": "Apple", "price": 1}, {"name": "Banana", "price": 0.5}]}' | 
+echo '{"items": [{"name": "Apple", "price": 1}, {"name": "Banana", "price": 0.5}]}' |
 jq -r '.items | map({(.name): (.price * 2)}) | add'
 ```
 
 In `nu` we do:
 
 ```nu
-'{"items": [{"name": "Apple", "price": 1}, {"name": "Banana", "price": 0.5}]}' 
+'{"items": [{"name": "Apple", "price": 1}, {"name": "Banana", "price": 0.5}]}'
 | from json
 | get items
 | update price {|row| $row.price * 2}
@@ -294,14 +297,14 @@ Note that in this case nu does not require creating new records because we can l
 In `jq`, to traverse and transform an object we do:
 
 ```sh
-echo '{"data": {"values": [1, 2, 3], "nested": {"values": [4, 5, 6]}}}' | 
+echo '{"data": {"values": [1, 2, 3], "nested": {"values": [4, 5, 6]}}}' |
 jq -r 'walk(if type == "number" then . * 2 else . end)'
 ```
 
 In `nu`, there is no built-in function to achieve this. [See the Appendix: toolbox.nu](#appendix-toolbox-nu) for an implementation of the command `walk` shown in the example below.
 
 ```nu
-'{"data": {"values": [1, 2, 3], "nested": {"values": [4, 5, 6]}}}' 
+'{"data": {"values": [1, 2, 3], "nested": {"values": [4, 5, 6]}}}'
 | from json
 | walk {|value| if ($value | describe) == "int" { $value * 2 } else { $value }}
 ```
@@ -313,7 +316,7 @@ In `nu`, there is no built-in function to achieve this. [See the Appendix: toolb
 In `jq`, to sort an array we do:
 
 ```sh
-echo '[3, 1, 4, 2, 5]' | 
+echo '[3, 1, 4, 2, 5]' |
 jq -r 'sort'
 ```
 
@@ -322,7 +325,7 @@ In `nu` we do:
 ```nu
 '[3, 1, 4, 2, 5]'
 | from json
-| sort 
+| sort
 ```
 
 ### Extracting Unique Values from an Array
@@ -330,14 +333,14 @@ In `nu` we do:
 In `jq`, to filter an array keeping just unique values we do:
 
 ```sh
-echo '[1, 2, 2, 3, 4, 4, 5]' | 
+echo '[1, 2, 2, 3, 4, 4, 5]' |
 jq -r 'unique'
 ```
 
 In `nu` we do:
 
 ```nu
-'[1, 2, 2, 3, 4, 4, 5]' 
+'[1, 2, 2, 3, 4, 4, 5]'
 | from json
 | uniq
 ```
@@ -347,14 +350,14 @@ In `nu` we do:
 In `jq`, to calculate an average we do:
 
 ```sh
-echo '[{"score": 90}, {"score": 85}, {"score": 95}]' | 
+echo '[{"score": 90}, {"score": 85}, {"score": 95}]' |
 jq -r 'map(.score) | add / length'
 ```
 
 In `nu` we do:
 
 ```nu
-'[{"score": 90}, {"score": 85}, {"score": 95}]' 
+'[{"score": 90}, {"score": 85}, {"score": 95}]'
 | from json
 | get score
 | math avg
@@ -365,14 +368,14 @@ In `nu` we do:
 In `jq`, to group an array of objects by key we do:
 
 ```sh
-echo '[{"category": "A", "value": 10}, {"category": "B", "value": 20}, {"category": "A", "value": 5}]' | 
+echo '[{"category": "A", "value": 10}, {"category": "B", "value": 20}, {"category": "A", "value": 5}]' |
 jq -r 'group_by(.category) | map({category: .[0].category, sum: map(.value) | add})'
 ```
 
 In `nu` we do:
 
 ```nu
-'[{"category": "A", "value": 10}, {"category": "B", "value": 20}, {"category": "A", "value": 5}]' 
+'[{"category": "A", "value": 10}, {"category": "B", "value": 20}, {"category": "A", "value": 5}]'
 | from json
 | group-by --to-table category
 | update items { |row| $row.items.value | math sum }
@@ -384,14 +387,14 @@ In `nu` we do:
 In `jq`, to filter after aggregating we do:
 
 ```sh
-echo '[{"category": "A", "value": 10}, {"category": "B", "value": 20}, {"category": "A", "value": 5}]' | 
+echo '[{"category": "A", "value": 10}, {"category": "B", "value": 20}, {"category": "A", "value": 5}]' |
 jq -r 'group_by(.category) | map({category: .[0].category, sum: (map(.value) | add)}) | .[] | select(.sum > 17)'
 ```
 
 In `nu` we do:
 
 ```nu
-'[{"category": "A", "value": 10}, {"category": "B", "value": 20}, {"category": "A", "value": 5}]' 
+'[{"category": "A", "value": 10}, {"category": "B", "value": 20}, {"category": "A", "value": 5}]'
 | from json
 | group-by --to-table category
 | update items { |row| $row.items.value | math sum }
@@ -401,27 +404,27 @@ In `nu` we do:
 
 ### Custom Aggregation with reduce
 
-In `jq`, to use a custom aggregation we do: 
+In `jq`, to use a custom aggregation we do:
 
 ```sh
-echo '[{"value": 10}, {"value": 20}, {"value": 30}]' | 
+echo '[{"value": 10}, {"value": 20}, {"value": 30}]' |
 jq -r 'reduce .[] as $item (0; . + $item.value)'
 ```
 
 In `nu` we do:
 
 ```nu
-'[{"value": 10}, {"value": 20}, {"value": 30}]' 
+'[{"value": 10}, {"value": 20}, {"value": 30}]'
 | from json
 | reduce -f 0 { |item, acc| $acc + $item.value }
 ```
 
 ### Calculating Histogram Bins
 
-In `jq`, to 
+In `jq`, to
 
 ```sh
-echo '[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]' | 
+echo '[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]' |
 jq -r 'group_by(. / 5 | floor * 5) | map({ bin: .[0], count: length })'
 ```
 
@@ -437,7 +440,7 @@ In `nu` we do:
 
 ## Closing thoughts
 
-First, I want to thank the author of [The Ultimate Interactive JQ Guide](https://ishan.page/blog/2023-11-06-jq-by-example/) for putting that guide together. Translating these examples to Nushell has been quite fun. 
+First, I want to thank the author of [The Ultimate Interactive JQ Guide](https://ishan.page/blog/2023-11-06-jq-by-example/) for putting that guide together. Translating these examples to Nushell has been quite fun.
 
 Over the years I've used `jq` sporadically, typically to quickly wrangle and inspect some unknown JSON. Due to that on/off interaction I have never managed to retain its syntax in my head for long so when using it for any non trivial operation I've had to invest a decent chunk of time to re-acquaint myself with it.
 
@@ -536,7 +539,7 @@ export def describe-primitive []: any -> string {
 
 # A command for cherry-picking values from a record key recursively
 export def "flatten record-paths" [
-    --separator (-s): string = "."    # The separator to use when chaining paths 
+    --separator (-s): string = "."    # The separator to use when chaining paths
 ] {
     let input = $in
 
@@ -546,7 +549,7 @@ export def "flatten record-paths" [
 
     $input | flatten-record-paths $separator
 }
-    
+
 def flatten-record-paths [separator: string, ctx?: string] {
     let input = $in
 
@@ -554,7 +557,7 @@ def flatten-record-paths [separator: string, ctx?: string] {
         "record" => {
             $input
             | items { |key, value|
-                  let path = if $ctx == null { $key } else { [$ctx $key] | str join $separator } 
+                  let path = if $ctx == null { $key } else { [$ctx $key] | str join $separator }
                   {path: $path, value: $value}
               }
             | reduce -f [] { |row, acc|
