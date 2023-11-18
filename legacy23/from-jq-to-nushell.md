@@ -9,7 +9,7 @@ tags:
   - data
 ---
 
-This is a [fork / copy](https://www.seachess.net/notes/from-jq-to-nushell/).
+This is a [fork / copy](https://www.seachess.net/notes/from-jq-to-nushell/) from [Arnau Siches](https://github.com/arnau).
 
 # From jq to Nushell
 
