@@ -1,4 +1,12 @@
 
+### How to run individual tests
+
+```rust
+cargo run tests/let_.nu
+```
+
+which is the same as [this input file](https://github.com/sophiajt/new-nu-parser/blob/main/src/snapshots/new_nu_parser__test__node_output%40let_.nu.snap)
+
 ### Parser mantras
 
 The *parse()* method returns a compiler
