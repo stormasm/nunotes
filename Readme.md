@@ -20,3 +20,7 @@ def --env changedir [] {
 ---
 
 * [awesome rust repo stats](https://github.com/emanuelef/awesome-rust-repo-stats)
+
+---
+
+[notrace](./legacy23/notrace.md)
