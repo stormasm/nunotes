@@ -23,4 +23,4 @@ def --env changedir [] {
 
 ---
 
-[notrace](./legacy23/notrace.md)
+* [notrace](https://github.com/stormasm/rust-examples/tree/main/notrace)
