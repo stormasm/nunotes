@@ -9,11 +9,11 @@ Is the AstNode https://github.com/sophiajt/new-nu-parser/blob/main/src/parser.rs
 
 The same as the https://github.com/nushell/nushell/blob/main/crates/nu-protocol/src/ast/expr.rs
 
-### sophia
+#### sophia
 
 @storm close but different. AstNode is all of the forms in one place, where Expr is only expressions
 
-### storm
+#### storm
 
 when we do the integration work will AstNode replace Expr or will we still keep Expr around ?
 
@@ -21,8 +21,8 @@ I am trying to write Expression and was curious what I should do ?
 
 https://github.com/nushell/nushell/blob/main/crates/nu-protocol/src/ast/expression.rs
 
-### Sophia
+#### sophia
 It'll replace it
 
-### storm
+#### storm
 cool ---- for now that is all I need to know 🙂  Thank you !
