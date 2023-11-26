@@ -1,4 +1,8 @@
 
+### december 2023
+
+* [discord](https://discord.com/channels/601130461678272522/1177305370805407854/1177671705800487043)
+
 ### cargo-nextest
 
 ```rust
