@@ -1,4 +1,16 @@
 
+From the nushell directory
+
+```rust
+nurun -c "use std testing; testing run-tests --path crates/nu-std"
+```
+
+```rust
+cargo run -- -c 'use std testing; testing run-tests --path crates/nu-std'
+```
+
+* [ref](https://github.com/nushell/nushell/blob/main/crates/nu-std/CONTRIBUTING.md#useful-commands)
+
 ### december 2023
 
 * [discord](https://discord.com/channels/601130461678272522/1177305370805407854/1177671705800487043)
