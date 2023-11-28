@@ -4,6 +4,18 @@
 
 ---
 
+### toolkit.nu
+
+```rust
+source toolkit.nu
+fmt
+clippy
+test
+test stdlib
+```
+
+---
+
 ### Latest Stuff
 
 This gets moved out to another location after some time
