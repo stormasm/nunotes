@@ -15,6 +15,8 @@ the prompt initially.  The code does not really have to be there.  If its
 not there you just don't see the prompt when you hit ENTER.  However, you
 will see the prompt once you type your first key.
 
+---
+
 ```rust
 EventStatus::Handled => {
      if !paste_enter_state {
@@ -26,6 +28,8 @@ EventStatus::Handled => {
 The second *repaint* is the CRITICAL repaint that needs to be there.  Its job
 is to actually write each letter out to the screen when you type it.  If its
 not there you won't see what you typed until after you hit return.
+
+---
 
 ```rust
 fn submit_buffer(&mut self, prompt: &dyn Prompt) -> io::Result<EventStatus> {
