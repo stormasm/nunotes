@@ -45,6 +45,31 @@ for event in crossterm_events.drain(..) {
 This is where the *Enter* event appears on the scene after being pushed in to
 the crossterm_events Vec above.
 
+---
+
+```rust
+ReedlineEvent::Enter => {
+     #[cfg(feature = "bashisms")]
+     if let Some(event) = self.parse_bang_command() {
+         return self.handle_editor_event(prompt, event);
+     }
+
+     let buffer = self.editor.get_buffer().to_string();
+     match self.validator.as_mut().map(|v| v.validate(&buffer)) {
+         None | Some(ValidationResult::Complete) => Ok(self.submit_buffer(prompt)?),
+         Some(ValidationResult::Incomplete) => {
+             self.run_edit_commands(&[EditCommand::InsertNewline]);
+
+             Ok(EventStatus::Handled)
+         }
+     }
+ }
+```
+
+And finally the *Enter* event triggers a *submit_buffer*
+
+---
+
 ## Notes about the engine's repaint
 
 ```rust
