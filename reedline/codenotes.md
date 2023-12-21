@@ -1,4 +1,50 @@
 
+## Where does the Enter event come from ?
+
+```rust
+loop {
+      match event::read()? {
+          Event::Resize(x, y) => {
+              latest_resize = Some((x, y));
+          }
+          enter @ Event::Key(KeyEvent {
+              code: KeyCode::Enter,
+              modifiers: KeyModifiers::NONE,
+              ..
+          }) => {
+              let enter = ReedlineRawEvent::convert_from(enter);
+              if let Some(enter) = enter {
+                  crossterm_events.push(enter);
+                  // Break early to check if the input is complete and
+                  // can be send to the hosting application. If
+                  // multiple complete entries are submitted, events
+                  // are still in the crossterm queue for us to
+                  // process.
+                  paste_enter_state = crossterm_events.len() > EVENTS_THRESHOLD;
+                  break;
+              }
+          }
+```
+
+The *Enter* event gets pushed into the crossterm_events Vec.
+
+---
+
+```
+for event in crossterm_events.drain(..) {
+    match (&mut last_edit_commands, self.edit_mode.parse_event(event)) {
+        (None, ReedlineEvent::Edit(ec)) => {
+            last_edit_commands = Some(ec);
+        }
+        (None, other_event) => {
+            println!("other_event {:?}", other_event);
+            reedline_events.push(other_event);
+        }
+```
+
+This is where the *Enter* event appears on the scene after being pushed in to
+the crossterm_events Vec above.
+
 ## Notes about the engine's repaint
 
 ```rust
