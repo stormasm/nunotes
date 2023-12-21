@@ -1,7 +1,5 @@
 
-## Notes about the engine
-
-#### repaint
+## Notes about the engine's repaint
 
 ```rust
 fn read_line_helper(&mut self, prompt: &dyn Prompt) -> Result<Signal> {
