@@ -26,7 +26,14 @@ loop {
           }
 ```
 
-The *Enter* event gets pushed into the crossterm_events Vec.
+The *Enter* event gets pushed into the crossterm_events Vec
+
+```rust
+loop {
+      match event::read()? {
+```
+
+via the only call in the Engine to [crossterm::event::read](https://docs.rs/crossterm/latest/crossterm/event/fn.read.html)
 
 ---
 
