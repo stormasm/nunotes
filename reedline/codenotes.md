@@ -37,7 +37,7 @@ via the only call in the Engine to [crossterm::event::read](https://docs.rs/cros
 
 ---
 
-```
+```rust
 for event in crossterm_events.drain(..) {
     match (&mut last_edit_commands, self.edit_mode.parse_event(event)) {
         (None, ReedlineEvent::Edit(ec)) => {
