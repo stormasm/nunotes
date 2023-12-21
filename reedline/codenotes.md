@@ -66,8 +66,8 @@ ReedlineEvent::Enter => {
  }
 ```
 
-And finally the *Enter* event triggers a *submit_buffer*
-
+And finally the *Enter* event triggers a *submit_buffer* inside the function *handle_editor_event*
+which runs from line 889 to 1218.
 ---
 
 ## Notes about the engine's repaint
