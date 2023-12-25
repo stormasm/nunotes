@@ -1,5 +1,9 @@
 
+* repaint
+* buffer_paint
+* repaint_buffer
 
+### repaint_buffer is how the prompt and buffer get painted
 
 * print_small_buffer
 * print_large_buffer
