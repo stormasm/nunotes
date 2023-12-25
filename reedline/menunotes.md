@@ -38,3 +38,12 @@ fn print_small_buffer(
  ) -> Result<()> {
 
 ```
+
+#### These are the interfaces to the Menu System
+
+```rust
+mod menu;
+pub use menu::{
+    menu_functions, ColumnarMenu, ListMenu, Menu, MenuEvent, MenuTextStyle, ReedlineMenu,
+};
+```
