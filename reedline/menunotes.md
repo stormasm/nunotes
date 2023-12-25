@@ -3,7 +3,7 @@
 * buffer_paint
 * repaint_buffer
 
-### repaint_buffer is how the prompt and buffer get painted
+##### repaint_buffer is how the prompt and buffer get painted
 
 and where the following two methods get called
 
@@ -15,10 +15,18 @@ if self.large_buffer {
    }
 ```
 
-* print_small_buffer
 * print_large_buffer
+* print_small_buffer
 
 ```rust
+fn print_large_buffer(
+     &mut self,
+     prompt: &dyn Prompt,
+     lines: &PromptLines,
+     menu: Option<&ReedlineMenu>,
+     use_ansi_coloring: bool,
+ ) -> Result<()> {
+
 fn print_small_buffer(
      &mut self,
      prompt: &dyn Prompt,
@@ -27,11 +35,4 @@ fn print_small_buffer(
      use_ansi_coloring: bool,
  ) -> Result<()> {
 
-fn print_large_buffer(
-     &mut self,
-     prompt: &dyn Prompt,
-     lines: &PromptLines,
-     menu: Option<&ReedlineMenu>,
-     use_ansi_coloring: bool,
- ) -> Result<()> {
 ```
