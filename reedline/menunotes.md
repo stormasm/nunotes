@@ -1,5 +1,5 @@
 
-* repaint
+* [repaint](./codenotes.md#notes-about-the-engines-repaint)
 * buffer_paint
 * repaint_buffer
 
