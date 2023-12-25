@@ -5,6 +5,16 @@
 
 ### repaint_buffer is how the prompt and buffer get painted
 
+and where the following two methods get called
+
+```rust
+if self.large_buffer {
+       self.print_large_buffer(prompt, lines, menu, use_ansi_coloring)?;
+   } else {
+       self.print_small_buffer(prompt, lines, menu, use_ansi_coloring)?;
+   }
+```
+
 * print_small_buffer
 * print_large_buffer
 
