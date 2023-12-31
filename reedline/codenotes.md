@@ -81,6 +81,20 @@ which runs from line 889 to 1218.
 ## Notes about the engine's repaint
 
 ```rust
+/// Repaint of either the buffer or the parts for reverse history search
+ fn repaint(&mut self, prompt: &dyn Prompt) -> io::Result<()> {
+     // Repainting
+     if self.input_mode == InputMode::HistorySearch {
+         self.history_search_paint(prompt)
+     } else {
+         self.buffer_paint(prompt)
+     }
+ }
+```
+
+This is the only reference to *buffer_paint* in the entire code base.
+
+```rust
 fn read_line_helper(&mut self, prompt: &dyn Prompt) -> Result<Signal> {
      self.painter.initialize_prompt_position()?;
      self.hide_hints = false;
