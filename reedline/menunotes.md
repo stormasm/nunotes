@@ -5,7 +5,7 @@
 * buffer_paint
 * repaint_buffer
 
-##### repaint_buffer is how the prompt and buffer get painted
+##### repaint_buffer is how the menus, prompt and buffer get painted
 
 and where the following two methods get called
 
