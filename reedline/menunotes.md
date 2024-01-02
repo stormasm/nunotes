@@ -17,7 +17,7 @@ if self.large_buffer {
    }
 ```
 
-#### print_menu is the CRITICAL driver behind the next two functions
+#### *print_menu* is the CRITICAL driver behind the next two functions
 
 * print_large_buffer
 * print_small_buffer
