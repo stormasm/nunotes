@@ -1,4 +1,25 @@
 
+
+Inside the *core_editor* module there are two key files...
+
+* editor.rs
+* line_buffer.rs
+
+If you look inside *editor.rs* and search for *line_buffer* you will see
+that the editor code is continually referencing and manipulating the underlying
+line_buffer...
+
+As noted in the code comments of *editor.rs*
+
+```rust
+/// Stateful editor executing changes to the underlying [`LineBuffer`]
+///
+/// In comparison to the state-less [`LineBuffer`] the [`Editor`] keeps track of
+/// the undo/redo history and has facilities for cut/copy/yank/paste
+```
+
+### Implementation Code Details
+
 Inside the engine the open_editor code spawns off the command that was set
 with the *with_buffer_editor* code inside the reedline/examples/demo.rs or
 inside the nushell cli.  In this case it was emacs.  But it can
