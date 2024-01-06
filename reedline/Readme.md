@@ -1,3 +1,3 @@
 
-*[code](./code.md)
-*[editor](./editor.md)
+* [code](./code.md)
+* [editor](./editor.md)
