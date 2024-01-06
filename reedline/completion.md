@@ -1,7 +1,7 @@
 
 ### Significant PRs in the history of Completer
 
-* [Addfirst implementation of auto completion #93](https://github.com/nushell/reedline/pull/93)
+* [Add first implementation of auto completion #93](https://github.com/nushell/reedline/pull/93)
 
 ### References
 
