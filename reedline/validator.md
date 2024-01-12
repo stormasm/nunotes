@@ -73,8 +73,6 @@ nu-parser/src/lex.rs
 An *UnexpectedEof* gets returned which matches up with the
 [NuValidator](https://github.com/nushell/nushell/blob/main/crates/nu-cli/src/validation.rs)
 
-nu-cli/src/validation.rs
-
 ```rust
 impl Validator for NuValidator {
     fn validate(&self, line: &str) -> ValidationResult {
@@ -92,3 +90,6 @@ impl Validator for NuValidator {
     }
 }
 ```
+
+which returns a *ValidationResult::Incomplete* which triggers the
+*ReedlineEvent::Enter* above.
