@@ -48,3 +48,47 @@ If you do a *rg* in the nushell code it is not really being used except possibly
 to report some error messages.
 
 I will explore this idea later on but for now we are good with it.
+
+### How it works in Nushell
+
+nu-parser/src/lex.rs
+
+```rust
+// If there is still unclosed opening delimiters, remember they were missing
+ if let Some(block) = block_level.last() {
+     let delim = block.closing();
+     let cause =
+         ParseError::UnexpectedEof((delim as char).to_string(), Span::new(span.end, span.end));
+
+     return (
+         Token {
+             contents: TokenContents::Item,
+             span,
+         },
+         Some(cause),
+     );
+ }
+```
+
+An *UnexpectedEof* gets returned which matches up with the
+[NuValidator](https://github.com/nushell/nushell/blob/main/crates/nu-cli/src/validation.rs)
+
+nu-cli/src/validation.rs
+
+```rust
+impl Validator for NuValidator {
+    fn validate(&self, line: &str) -> ValidationResult {
+        let mut working_set = StateWorkingSet::new(&self.engine_state);
+        parse(&mut working_set, None, line.as_bytes(), false);
+
+        if matches!(
+            working_set.parse_errors.first(),
+            Some(ParseError::UnexpectedEof(..))
+        ) {
+            ValidationResult::Incomplete
+        } else {
+            ValidationResult::Complete
+        }
+    }
+}
+```
