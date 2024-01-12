@@ -33,7 +33,11 @@ fn add_newline_keybinding(keybindings: &mut Keybindings) {
 }
 ```
 
-#### More details
+#### More details from when I first started learning Reedline
+
+In the very beginning of my *Reedline journey* I did not understand the above concept
+and so I wrote up this piece below.  Since that time clearly I have learned
+more about the Validator's functionality as witnessed by the notes above...
 
 So I reviewed the Validator in Reedline and its not an important feature I
 think I would ever use at this time...
