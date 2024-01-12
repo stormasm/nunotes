@@ -1,7 +1,7 @@
 
 ### Validator and InsertNewline
 
-The reason unbalanced brackets and braces causes a Newline:
+The reason unbalanced brackets and braces causes a *InsertNewline*.
 
 ```rust
 ReedlineEvent::Enter => {
