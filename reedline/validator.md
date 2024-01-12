@@ -35,20 +35,6 @@ fn add_newline_keybinding(keybindings: &mut Keybindings) {
 }
 ```
 
-#### More details from when I first started learning Reedline
-
-In the very beginning of my *Reedline journey* I did not understand the above concept
-and so I wrote up this piece below.  Since that time clearly I have learned
-more about the Validator's functionality as witnessed by the notes above...
-
-So I reviewed the Validator in Reedline and its not an important feature I
-think I would ever use at this time...
-
-If you do a *rg* in the nushell code it is not really being used except possibly
-to report some error messages.
-
-I will explore this idea later on but for now we are good with it.
-
 ### How it works in Nushell
 
 nu-parser/src/lex.rs
@@ -93,3 +79,17 @@ impl Validator for NuValidator {
 
 which returns a *ValidationResult::Incomplete* which triggers the
 *ReedlineEvent::Enter* above.
+
+### More details from when I first started learning Reedline
+
+In the very beginning of my *Reedline journey* I did not understand the above concept
+and so I wrote up this piece below.  Since that time clearly I have learned
+more about the Validator's functionality as witnessed by the notes above...
+
+So I reviewed the Validator in Reedline and its not an important feature I
+think I would ever use at this time...
+
+If you do a *rg* in the nushell code it is not really being used except possibly
+to report some error messages.
+
+I will explore this idea later on but for now we are good with it.
