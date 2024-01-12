@@ -3,6 +3,8 @@
 
 The reason unbalanced brackets and braces causes a *InsertNewline*.
 
+The following code is in *engine.rs*
+
 ```rust
 ReedlineEvent::Enter => {
      let buffer = self.editor.get_buffer().to_string();
