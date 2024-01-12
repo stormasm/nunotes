@@ -1,5 +1,39 @@
 
-### Validator
+### Validator and InsertNewline
+
+The reason unbalanced brackets and braces causes a Newline:
+
+```rust
+ReedlineEvent::Enter => {
+     let buffer = self.editor.get_buffer().to_string();
+     match self.validator.as_mut().map(|v| v.validate(&buffer)) {
+         None | Some(ValidationResult::Complete) => Ok(self.submit_buffer(prompt)?),
+         Some(ValidationResult::Incomplete) => {
+             self.run_edit_commands(&[EditCommand::InsertNewline]);
+             Ok(EventStatus::Handled)
+         }
+     }
+ }
+```
+
+* [DefaultValidator checks for mismatched quotes and brackets](https://github.com/nushell/reedline/blob/main/src/validator/default.rs)
+
+and defines the validate method above
+
+Also in the Reedline example demo there is the Keybinding
+
+```rust
+fn add_newline_keybinding(keybindings: &mut Keybindings) {
+    // This does work for macOS where the ALT key is the Option key
+    keybindings.add_binding(
+        KeyModifiers::ALT,
+        KeyCode::Enter,
+        ReedlineEvent::Edit(vec![EditCommand::InsertNewline]),
+    );
+}
+```
+
+#### More details
 
 So I reviewed the Validator in Reedline and its not an important feature I
 think I would ever use at this time...
