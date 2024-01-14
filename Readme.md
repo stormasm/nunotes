@@ -38,3 +38,5 @@ def --env changedir [] {
 
 * [notrace](https://github.com/stormasm/rust-examples/tree/main/notrace)
 * [nushell 2023 survey results](https://www.nushell.sh/blog/2023-11-16-nushell-2023-survey-results.html)
+
+ok
