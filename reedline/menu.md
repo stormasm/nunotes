@@ -1,4 +1,9 @@
 
+### Real world example of how to add a new menu to nushell
+
+[On the nushell side this PR shows the simplicity of how our menu system works](https://github.com/nushell/nushell/pull/11593)
+[On the reedline side this got it up and running](https://github.com/nushell/reedline/pull/696)
+
 ### How does the menu get painted on the screen
 
 * [repaint](./codenotes.md#notes-about-the-engines-repaint)
