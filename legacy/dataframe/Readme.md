@@ -7,9 +7,11 @@ Arrow / Arrow2 Integration / Merger
 
 ### Refs:
 
-Ritchie Vink
-ritchie46
-arrow
-arrow2
-integration
-merger
+* Ritchie Vink
+* ritchie46
+* arrow
+* arrow2
+* integration
+* merger
+* https://github.com/jorgecarleitao
+* Jorge Leitao
