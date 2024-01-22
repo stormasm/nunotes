@@ -1,4 +1,14 @@
 
+### The latest and greatest way to source nu code
+
+```rust
+source $'($nu.default-config-dir)/config.nu'
+source $'([($nu.default-config-dir) config.nu] | path join)'
+source ($"($nu.default-config-dir)" + '/config.nu')
+```
+
+---
+
 * [testing](./legacy23/testing.md)
 * [legacy23](./legacy23/README.md)
 
