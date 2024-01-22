@@ -7,6 +7,17 @@ source $'([($nu.default-config-dir) config.nu] | path join)'
 source ($"($nu.default-config-dir)" + '/config.nu')
 ```
 
+[Description of the concept which is constants](https://discord.com/channels/601130461678272522/601130461678272524/1199014467980251237)
+
+The key takeaway here is source and use work with constants. Now that some string interpolations are constants, you can do this type of thing. You can also do this type of thing
+
+```rust
+const f = "foo.nu"
+source $f
+```
+
+again, because f is constant.
+
 ---
 
 * [testing](./legacy23/testing.md)
