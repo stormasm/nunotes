@@ -1,4 +1,6 @@
 
+### nu_plugin_query
+
 Go to the specific plugin directory and build the plugin
 
 cargo build
