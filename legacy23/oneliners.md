@@ -1,4 +1,21 @@
 
+Go to the specific plugin directory and build the plugin
+
+cargo build
+
+Then go to target/debug and
+
+```rust
+register ./nu_plugin_query
+```
+
+Now you are all set to run the command...
+
+```rust
+http get https://iq.opengenus.org/age-of-programming-languages | query web --query 'table' | str trim | lines | skip 7 | window 3 --stride 5 --remainder | each {|r| {PL: $r.0 YEAR: $r.1 AGE: $r.2}}
+```
+
+---
 
 ```rust
 $env.config.color_config.leading_trailing_space_bg = {bg: sandybrown}
