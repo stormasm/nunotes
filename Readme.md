@@ -1,4 +1,8 @@
 
+### A creative hack to allow config reloads
+
+* [Config Reloads](https://github.com/nushell/nushell/issues/10736)
+
 ### The latest and greatest way to source nu code
 
 ```rust
