@@ -1,4 +1,12 @@
 
+To push tags to nushell, you need to set your git remote to SSH, for example
+
+```rust
+git remote add publish git@github.com:nushell/nushell.git
+```
+
+Then, you'd do git push publish main --tags at the end of step 2
+
 * [Reference](https://hackmd.io/LIKj-derSki6dmtVDwopFA?view)
 
 # The release process of Nushell 0.90.0
