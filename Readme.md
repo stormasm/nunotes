@@ -1,4 +1,26 @@
 
+### Bare Words
+
+bare words: foo, foo-bar, bar_baz   
+bare words with spaces:
+
+```
+`foo bar` `hello world`
+```
+
+strings: "foo", 'foo-bar'   
+bash: /foo\ bar/
+
+bash:   
+```
+cd Some\ Dir
+```
+
+Nushell:   
+```
+cd `Some Dir`
+```
+
 ### A creative hack to allow config reloads
 
 * [Config Reloads](https://github.com/nushell/nushell/issues/10736)
