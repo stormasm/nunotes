@@ -1,4 +1,8 @@
 
+### Contributor Book which contains Plugin Stuff
+
+https://www.nushell.sh/contributor-book/plugin_protocol_reference.html
+
 ### Bare Words
 
 bare words: foo, foo-bar, bar_baz   
