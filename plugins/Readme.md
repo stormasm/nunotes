@@ -1,5 +1,8 @@
 
 
+- [windsoilder plugin diagram](https://drive.google.com/file/d/19g7GktaRYlz_pKKbnnvV0Zjblz3x6Xvg/view)
+- [discord ref](https://discord.com/channels/601130461678272522/683070703716925568/1226769385281290281)
+
 [Go here for more details on how to build and run a plugin](https://github.com/stormasm/nunotes/blob/main/legacy23/oneliners.md#nu_plugin_query)
 
 ```rust
