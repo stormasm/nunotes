@@ -2,9 +2,7 @@
 
 - [Overhaul the plugin cache file with a new msgpack+brotli format](https://github.com/nushell/nushell/pull/12579)
 - register becomes plugin add and there's a plugin rm now? amazing
-
-[discord ref](https://discord.com/channels/601130461678272522/683070703716925568/1231603041896108174)
-
+- [discord ref](https://discord.com/channels/601130461678272522/683070703716925568/1231603041896108174)
 - [windsoilder plugin diagram](https://drive.google.com/file/d/19g7GktaRYlz_pKKbnnvV0Zjblz3x6Xvg/view)
 - [discord ref](https://discord.com/channels/601130461678272522/683070703716925568/1226769385281290281)
 
