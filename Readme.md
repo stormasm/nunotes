@@ -1,4 +1,13 @@
 
+### Building Nushell
+
+```rust
+cargo test --workspace --exclude nu_plugin_*
+toolkit test
+```
+
+- [ref discord](https://discord.com/channels/601130461678272522/683070703716925568/1232125170714677339)
+
 * [Contributor Book which contains Plugin Stuff](https://www.nushell.sh/contributor-book/plugin_protocol_reference.html)
 
 ### Bare Words
