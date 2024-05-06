@@ -105,3 +105,4 @@ def --env changedir [] {
 
 - https://www.kaggle.com/datasets/heesoo37/120-years-of-olympic-history-athletes-and-results
 - [discord](https://discord.com/channels/601130461678272522/683070703716925568/1236806789412950099)
+- https://www.kaggle.com/datasets/jessicali9530/animal-crossing-new-horizons-nookplaza-dataset
