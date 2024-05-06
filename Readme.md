@@ -101,4 +101,7 @@ def --env changedir [] {
 * [notrace](https://github.com/stormasm/rust-examples/tree/main/notrace)
 * [nushell 2023 survey results](https://www.nushell.sh/blog/2023-11-16-nushell-2023-survey-results.html)
 
-ok
+### Dataset
+
+- https://www.kaggle.com/datasets/heesoo37/120-years-of-olympic-history-athletes-and-results
+- [discord](https://discord.com/channels/601130461678272522/683070703716925568/1236806789412950099)
