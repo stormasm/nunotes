@@ -1,4 +1,13 @@
 
+### Streaming and cheat-sheet notes on discord
+
+[discord](https://discord.com/channels/601130461678272522/683070703716925568/1245123684205858856)
+
+```rust
+cheat-sheet --output list --input string
+cheat-sheet --input list --output table
+```
+
 ### Building Nushell
 
 ```rust
