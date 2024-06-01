@@ -1,4 +1,6 @@
 
+- [How data in nushell gets printed out via the repl](./legacy23/print.md)
+
 ### Streaming and cheat-sheet notes on discord
 
 [discord](https://discord.com/channels/601130461678272522/683070703716925568/1245123684205858856)
