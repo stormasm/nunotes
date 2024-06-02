@@ -1,4 +1,5 @@
 
+- *nu-engine/src/eval.rs* is where the eval happens
 - [How data in nushell gets printed out via the repl](./legacy23/print.md)
 
 ### Streaming and cheat-sheet notes on discord
