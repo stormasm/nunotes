@@ -1,4 +1,13 @@
 
+### Improved
+
+```rust
+nurun --log-level trace --log-exclude '[nu_parser, nu_cli, nu_utils, nu::config_files]'
+```
+
+- [Add options for filtering the log output from nu](https://github.com/nushell/nushell/pull/13044)
+
+
 - *nu-engine/src/eval.rs* is where the eval happens
 - [How data in nushell gets printed out via the repl](./legacy23/print.md)
 
