@@ -1,4 +1,12 @@
 
+### nu_plugin_inc
+
+```rust
+"1.1.1" | inc -M
+"2.1.3" | inc -p
+456 | inc
+"345" | inc
+```
 
 - [Overhaul the plugin cache file with a new msgpack+brotli format](https://github.com/nushell/nushell/pull/12579)
 - register becomes plugin add and there's a plugin rm now? amazing
