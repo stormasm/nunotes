@@ -18,6 +18,8 @@ fn eval<D: DebugContext>(
 
 ### eval.rs pub fn
 
+*eval_expression* uses the *fn eval* in the above trait
+
 - eval_call
 - eval_expression
 - eval_expression_with_input
