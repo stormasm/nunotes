@@ -70,6 +70,9 @@ The *next()* methods job is to return
 
 ---
 
-
-
 * lots of methods return the *NodeId*
+
+
+### References
+
+- [Type Checking in Compiler Design](https://www.geeksforgeeks.org/type-checking-in-compiler-design/)
