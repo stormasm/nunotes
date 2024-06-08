@@ -1,7 +1,7 @@
 
 All of the notes here are about the old parser.
 
-For notes on the new parser go [here](./new-nu-parser)
+For notes on the new parser go [here](./../new-nu-parser)
 
 Start to write up the flow of the parser...
 
