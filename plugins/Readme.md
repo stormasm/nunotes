@@ -1,4 +1,12 @@
 
+### nu_plugin_query_git
+
+```rust
+query git "select * from commits limit 20" | into value | reject message email repo | update commit_id {str substring 0..6}
+```
+
+[discord](https://discord.com/channels/601130461678272522/683070703716925568/1248842093829423136)
+
 ### nu_plugin_inc
 
 ```rust
