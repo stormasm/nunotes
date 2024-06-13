@@ -2,7 +2,9 @@
 
 ### Viewing binary data
 
+```rust
 open binaryfile.txt | into binary
+```
 
 ### Improved nushell logging
 
