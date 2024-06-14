@@ -1,5 +1,9 @@
 
 
+### Config file loading rules
+
+- [Darren's Config Loading Rules](https://gist.github.com/fdncred/b87b784f04984dc31a150baed9ad2447/)
+
 ### Viewing binary data
 
 ```rust
