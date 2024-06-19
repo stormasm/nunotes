@@ -7,6 +7,7 @@ nurunn --log-level trace --log-exclude '[nu_parser, nu_cli, nu_utils, nu::config
 
 ```rust
 do --use-ir {1 + 2}
+do --use-ir {print -e ((ansi gb) ++ ("hello world !" | str upcase) ++ (ansi reset))}
 ```
 
 ### View Ir
