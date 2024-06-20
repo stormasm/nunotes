@@ -13,4 +13,4 @@ self.keyword
 - return
 - while
 
-* Note there are eleven (11) keywords
+* there are eleven (11) keywords
