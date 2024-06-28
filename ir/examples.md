@@ -1,4 +1,10 @@
 
+### Startup
+
+```rust
+nurunn --use-ir
+```
+
 ### Eval
 
 ```rust
