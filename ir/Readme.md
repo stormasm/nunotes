@@ -1,8 +1,4 @@
 
-### Eval
-
-nu-engine/src/eval_ir.rs
-
 ### Startup
 
 ```rust
@@ -10,6 +6,8 @@ nurunn --use-ir
 ```
 
 ### Eval
+
+nu-engine/src/eval_ir.rs
 
 ```rust
 nurunn --log-level trace --log-exclude '[nu_parser, nu_cli, nu_utils, nu::config_files]'
