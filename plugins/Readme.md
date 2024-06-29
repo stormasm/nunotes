@@ -1,4 +1,10 @@
 
+### check to see if your plugin is installed
+
+```rust
+help commands | where command_type == "plugin"
+```
+
 ### nu_plugin_query_git
 
 ```rust
