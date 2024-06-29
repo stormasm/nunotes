@@ -20,3 +20,10 @@ view ir --json {
   }
 } | explore ir
 ```
+
+```rust
+if ([] | is-empty) {
+  let x = 1;
+  $x
+}
+```
