@@ -1,4 +1,25 @@
 
+By default Devyn parses each block and compiles it into the IR...
+
+Then if you pass in the *--use-ir* flag it gets evaluated as well...
+
+### nu-engine/src/eval.rs
+
+```rust
+pub fn eval_block<D: DebugContext>(
+    engine_state: &EngineState,
+    stack: &mut Stack,
+    block: &Block,
+    mut input: PipelineData,
+) -> Result<PipelineData, ShellError> {
+    // Remove once IR is the default.
+    if stack.use_ir {
+        return eval_ir_block::<D>(engine_state, stack, block, input);
+    }
+```
+
+### nu-parser/src/parser.rs
+
 See [parser.rs](https://github.com/devyn/nushell/blob/ir/crates/nu-parser/src/parser.rs) parse_block
 
 ```rust
