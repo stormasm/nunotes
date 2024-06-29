@@ -1,7 +1,7 @@
 
 ##### How to fire it up...
 
-Compiles Devyn's branch and then issue this command
+Compile Devyn's *ir* branch and then issue this command
 
 ```rust
 nurunn
