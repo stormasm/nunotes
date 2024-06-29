@@ -2,6 +2,11 @@
 ### Startup
 
 ```rust
+devir
+nuir
+```
+
+```rust
 nurunn --use-ir
 ```
 
