@@ -10,7 +10,7 @@ nurunn --use-ir
 nu-engine/src/eval_ir.rs
 
 ```rust
-nurunn --log-level trace --log-exclude '[nu_parser, nu_cli, nu_utils, nu::config_files]'
+nurunn --use-ir --log-level trace --log-exclude '[nu_parser, nu_cli, nu_utils, nu::config_files]'
 ```
 
 ```rust
