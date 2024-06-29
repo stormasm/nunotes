@@ -1,4 +1,16 @@
 
+See [parser.rs](https://github.com/devyn/nushell/blob/ir/crates/nu-parser/src/parser.rs) parse_block
+
+```rust
+pub fn parse_block(
+    working_set: &mut StateWorkingSet,
+    tokens: &[Token],
+    span: Span,
+    scoped: bool,
+    is_subexpression: bool,
+) -> Block {
+```
+
 Devyn adds to the end of the [parse_block function](https://github.com/devyn/nushell/blob/ir/crates/nu-parser/src/parser.rs#L5793) in the parser this code...
 
 ```rust
