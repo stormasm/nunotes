@@ -27,3 +27,14 @@ if ([] | is-empty) {
   $x
 }
 ```
+
+---
+
+```rust
+view ir --json {
+  let x = true;
+  if ($x) {
+    print "foo"
+  }
+}
+```
