@@ -31,10 +31,17 @@ if ([] | is-empty) {
 ---
 
 ```rust
+/// Example 01
 view ir --json {
   let x = true;
   if ($x) {
     print "foo"
   }
 }
+```
+
+---
+
+```rust
+view ir { for x in [1 2 3] { print $x }}
 ```

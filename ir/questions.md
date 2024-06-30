@@ -1,4 +1,6 @@
 
-#### Questions for Devyn about Ir
+### Questions for Devyn about Ir
 
-The *branch-if* instruction is always preceded by a *not* instruction.
+#### Questions about Example 01
+
+- The *branch-if* instruction is always preceded by a *not* instruction.
