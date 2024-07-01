@@ -61,3 +61,11 @@ view ir { let name = "Alice"; $"greetings, ($name)" }
 ```rust
 view ir { [{A: A0}] | get 0.A }
 ```
+
+---
+
+#### view ast as json
+
+```rust
+ast '{1 + 2}' --json | get block | save -f look.json
+```
