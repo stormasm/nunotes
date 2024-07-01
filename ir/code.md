@@ -15,3 +15,10 @@ if load_std_lib.is_none() && engine_state.get_config().show_banner {
     );
 }
 ```
+
+#### nu_engine/src/eval_ir.rs
+
+```rust
+-        log::trace!(
++        println!(
+```

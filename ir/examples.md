@@ -45,3 +45,19 @@ view ir --json {
 ```rust
 view ir { for x in [1 2 3] { print $x }}
 ```
+
+---
+
+#### string-append
+
+```rust
+view ir { let name = "Alice"; $"greetings, ($name)" }
+```
+
+---
+
+#### record-insert
+
+```rust
+view ir { [{A: A0}] | get 0.A }
+```
