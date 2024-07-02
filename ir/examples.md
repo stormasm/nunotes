@@ -69,3 +69,7 @@ view ir { [{A: A0}] | get 0.A }
 ```rust
 ast '{1 + 2}' --json | get block | save -f look.json
 ```
+
+```rust
+ast 'help commands | where category == "debug"' --json | get block
+```
