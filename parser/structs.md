@@ -30,3 +30,12 @@ pub struct Expression {
     pub custom_completion: Option<DeclId>,
 }
 ```
+
+### Examples
+
+```rust
+ast '
+"01/22/2021" |
+parse "{month}/{day}/{year}" |
+get year'
+```
