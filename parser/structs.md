@@ -1,5 +1,5 @@
 
-#### block.rs, pipeline.rs
+#### block.rs, pipeline.rs, expression.rs
 
 ```rust
 pub struct Block {
@@ -20,5 +20,13 @@ pub struct PipelineElement {
     pub pipe: Option<Span>,
     pub expr: Expression,
     pub redirection: Option<PipelineRedirection>,
+}
+
+pub struct Expression {
+    pub expr: Expr,
+    pub span: Span,
+    pub span_id: SpanId,
+    pub ty: Type,
+    pub custom_completion: Option<DeclId>,
 }
 ```
