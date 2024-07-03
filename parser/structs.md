@@ -39,3 +39,5 @@ ast '
 parse "{month}/{day}/{year}" |
 get year'
 ```
+
+- [ir examples](./../ir/examples.md)
