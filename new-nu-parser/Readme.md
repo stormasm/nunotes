@@ -1,4 +1,21 @@
 
+
+#### rg "pub usize"
+
+```rust
+src/typechecker.rs
+pub struct TypeId(pub usize);
+
+src/parser.rs
+pub struct NodeId(pub usize);
+pub struct BlockId(pub usize);
+
+src/resolver.rs
+pub struct ScopeId(pub usize);
+pub struct VarId(pub usize);
+pub struct DeclId(pub usize);
+```
+
 ### How to run individual tests
 
 ```rust
