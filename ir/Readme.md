@@ -4,7 +4,7 @@
 Set environment variable: *NU_USE_IR*
 [see discord](https://discord.com/channels/601130461678272522/683070703716925568/1260135306628304907)
 
-In the code its checked in `src/run.rs`
+In the code its checked in `nu-engine/src/eval.rs`
 
 ```rust
 rg use_ir
@@ -17,6 +17,14 @@ devir
 nuir
 nurunn
 ```
+
+### Setting your environment variable
+
+```rust
+export NU_USE_IR=true
+```
+
+-[Notes from the Nushell Book](https://www.nushell.sh/book/environment.html)
 
 ### Eval
 
