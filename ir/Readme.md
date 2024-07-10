@@ -1,6 +1,16 @@
 
 ### Startup
 
+Set environment variable to: *NU_USE_IR*
+
+In the code its checked in `src/run.rs`
+
+```rust
+rg use_ir
+```
+
+for further details...
+
 ```rust
 devir
 nuir
