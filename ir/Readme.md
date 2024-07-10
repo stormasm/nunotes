@@ -1,7 +1,7 @@
 
 ### Startup
 
-Set environment variable to: *NU_USE_IR*
+Set environment variable: *NU_USE_IR*
 [see discord](https://discord.com/channels/601130461678272522/683070703716925568/1260135306628304907)
 
 In the code its checked in `src/run.rs`
