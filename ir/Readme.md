@@ -14,10 +14,7 @@ for further details...
 ```rust
 devir
 nuir
-```
-
-```rust
-nurunn --use-ir
+nurunn
 ```
 
 ### Eval
@@ -25,7 +22,7 @@ nurunn --use-ir
 nu-engine/src/eval_ir.rs
 
 ```rust
-nurunn --use-ir --log-level trace --log-exclude '[nu_parser, nu_cli, nu_utils, nu::config_files]'
+nurunn --log-level trace --log-exclude '[nu_parser, nu_cli, nu_utils, nu::config_files]'
 ```
 
 ```rust
