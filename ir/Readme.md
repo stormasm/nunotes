@@ -1,4 +1,19 @@
 
+### debug profile
+
+- [Add IR support to the debugger](https://github.com/nushell/nushell/pull/13345)
+
+```rust
+debug profile --instructions { if true { echo 'spam' }}
+```
+
+versus
+
+```rust
+view ir { if true { echo 'spam' }}
+```
+
+
 ### Startup
 
 Set environment variable: *NU_USE_IR*
