@@ -1,6 +1,7 @@
 
 ### take it from the top given a nushell script
 
+- [eval_source](https://github.com/nushell/nushell/blob/main/crates/nu-cli/src/util.rs#L202)
 - [evaluate_source](https://github.com/nushell/nushell/blob/main/crates/nu-cli/src/util.rs#L243)
 
 ### pub trait Eval
