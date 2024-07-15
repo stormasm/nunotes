@@ -33,6 +33,8 @@ fn eval<D: DebugContext>(
 
 ### From the top
 
+- main
+- run_repl
 - evaluate_repl
 - loop_iteration
 - do_run_cmd
