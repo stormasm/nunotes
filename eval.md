@@ -36,7 +36,9 @@ fn eval<D: DebugContext>(
 
 - main
 - run.rs: run_commands, run_file, run_repl
-- nu-cli/src/eval_cmds.rs evaluate_commands, nu-cli/src/eval_file.rs evaluate_file, nu-cli/src/repl.rs evaluate_repl
+- nu-cli/src/eval_cmds.rs evaluate_commands
+- nu-cli/src/eval_file.rs evaluate_file
+- nu-cli/src/repl.rs evaluate_repl
 
 ### Continuing on
 
