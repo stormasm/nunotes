@@ -40,7 +40,18 @@ fn eval<D: DebugContext>(
 - nu-cli/src/eval_file.rs evaluate_file
 - nu-cli/src/repl.rs evaluate_repl
 
-### Continuing on
+### evaluate_commands
+
+```rust
+// Run the block
+ let pipeline = eval_block::<WithoutDebug>(engine_state, stack, &block, input)?;
+```
+
+### evaluate_file
+
+- eval_source
+
+### evaluate_repl
 
 - loop_iteration
 - do_run_cmd
