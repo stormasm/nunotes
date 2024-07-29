@@ -1,4 +1,6 @@
 
+- [Blog Post Release of the IR in Version 0.96](https://www.nushell.sh/blog/2024-07-23-nushell_0_96_0.html#internal-representation-preview-toc)
+
 ### debug profile
 
 - [Add IR support to the debugger](https://github.com/nushell/nushell/pull/13345)
