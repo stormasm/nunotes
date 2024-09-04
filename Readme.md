@@ -1,5 +1,9 @@
 
 
+### Sophia Terminal performance on the Mac
+
+- [How to add your terminal to Developer Tools](https://nexte.st/docs/installation/macos/#how-to-add-your-terminal-to-developer-tools)
+
 ### Config file loading rules
 
 - [Darren's Config Loading Rules](https://gist.github.com/fdncred/b87b784f04984dc31a150baed9ad2447/)
