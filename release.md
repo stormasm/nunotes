@@ -1,4 +1,7 @@
 
+- [Discord Ref 11/12/2024](https://discord.com/channels/601130461678272522/683070703716925568/1305868667569049671)
+- https://github.com/nushell/nu_scripts/blob/main/make_release/Readme.md
+
 To push tags to nushell, you need to set your git remote to SSH, for example
 
 ```rust
