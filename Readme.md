@@ -1,6 +1,5 @@
 
-- Hustcer recommended *clifm* [here](https://discord.com/channels/601130461678272522/683070703716925568/1307531577953353739)
-- [clifm](https://github.com/leo-arch/clifm)
+- Hustcer recommended [clifm](https://github.com/leo-arch/clifm) [here.](https://discord.com/channels/601130461678272522/683070703716925568/1307531577953353739)
 
 ### Sophia Terminal performance on the Mac
 
