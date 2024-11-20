@@ -1,8 +1,12 @@
 
+#### Cargo --locked
+
 - cargo +1.80.1 install nu
 - Always remember if things are NOT building to add --locked
 - [discord ref](https://discord.com/channels/601130461678272522/683070703716925568/1308860637132361809)
 - The --locked flag can be used to force Cargo to use the packaged Cargo.lock file if it is available.
+
+#### CliFM
 
 - Hustcer recommended [CliFM](https://github.com/leo-arch/clifm) [here on discord.](https://discord.com/channels/601130461678272522/683070703716925568/1307531577953353739)
 - Jakub recommended [yazi](https://github.com/sxyazi/yazi)
