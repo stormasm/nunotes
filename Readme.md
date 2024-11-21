@@ -1,4 +1,12 @@
 
+
+#### nuconfig
+
+```rust
+$env.config.show_banner = false
+$nu.startup-time
+```
+
 #### Cargo --locked
 
 - cargo +1.80.1 install nu
