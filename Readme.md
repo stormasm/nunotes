@@ -1,4 +1,8 @@
 
+#### $nu
+
+This is a critical command / variable for understanding all of your
+config stuff et al in nushell !
 
 #### nuconfig
 
