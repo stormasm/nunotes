@@ -8,6 +8,15 @@
 - see parser.rs: parse_full_cell_path
 - see parser.rs: parse_table_expression
 
+This code is executed starting at around line 4886
+
+```rust
+SyntaxShape::Any => {
+    if bytes.starts_with(b"[") {
+        //parse_value(working_set, span, &SyntaxShape::Table)
+        parse_full_cell_path(working_set, None, span)
+```
+
 This code is executed starting at around line 2315
 
 ```rust
