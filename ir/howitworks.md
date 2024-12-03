@@ -7,7 +7,7 @@ See [parser.rs](https://github.com/nushell/nushell/blob/main/crates/nu-parser/sr
 
 - compile_block
 
-#### ir_block found in the following spots
+#### ir_block: found in the following spots
 
 - nu-protocol
 - nu-engine
