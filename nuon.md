@@ -3,7 +3,7 @@
 
 
 ```rust
-[[name, age]; [rick 64] [hb 74]]
+[[name, age]; [rick 24] [hb 34]]
 ```
 
 - see parser.rs: parse_full_cell_path
