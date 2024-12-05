@@ -1,7 +1,14 @@
 
 ### How parsing Nuon works
 
-- parser.rs: parse_table_expression
+
+```rust
+[[name, age]; [rick 64] [hb 74]]
+```
+
+- see parser.rs: parse_full_cell_path
+- see parser.rs: parse_table_expression
+- [for more details see brainstream: 12/05/24](https://github.com/stormasm/nunotes/blob/main/brainstream.md#this-is-our-test-parse-for-parsing-nuon-tables)
 
 #### Reference
 
