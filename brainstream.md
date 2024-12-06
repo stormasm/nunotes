@@ -1,4 +1,18 @@
 
+
+How does a new parser get kicked off ?
+
+```rust
+rg "parse\("
+nu_parser::parse
+```
+
+How do you kick off a new StateWorkingSet ?
+
+```rust
+StateWorkingSet::new(&engine_state);
+```
+
 ##### 12/05/24: This is our test parse for parsing Nuon tables
 
 ```rust
