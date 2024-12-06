@@ -5,6 +5,9 @@ To see critical stuff run the following command in `nunotes`
 rg eval_source
 ```
 
+- nu_cli/src/repl.rs
+- fn do_run_cmd
+
 All of the notes here are about the old parser.
 
 - [fn do_run_cmd](https://github.com/stormasm/nunotes/blob/main/brainstream.md#120624-how-does-a-new-parser-get-kicked-off-)
