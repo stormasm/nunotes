@@ -1,6 +1,12 @@
 
 ##### 12/06/24: How does a new parser get kicked off ?
 
+For more info run the following command in `nunotes`
+
+```rust
+rg eval_source
+```
+
 - nu_cli/src/repl.rs
 - fn do_run_cmd
 
