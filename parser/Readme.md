@@ -1,5 +1,13 @@
 
+To see critical stuff run the following command in `nunotes`
+
+```rust
+rg eval_source
+```
+
 All of the notes here are about the old parser.
+
+- [fn do_run_cmd](https://github.com/stormasm/nunotes/blob/main/brainstream.md#120624-how-does-a-new-parser-get-kicked-off-)
 
 For notes on the new parser go [here](./../new-nu-parser)
 
