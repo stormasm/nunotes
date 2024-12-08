@@ -22,4 +22,25 @@ pub struct FullCellPath {
 pub struct CellPath {
     pub members: Vec<PathMember>,
 }
+
+/// One level of access of a [`CellPath`]
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub enum PathMember {
+    /// Accessing a member by string (i.e. columns of a table or [`Record`](crate::Record))
+    String {
+        val: String,
+        span: Span,
+        /// If marked as optional don't throw an error if not found but perform default handling
+        /// (e.g. return `Value::Nothing`)
+        optional: bool,
+    },
+    /// Accessing a member by index (i.e. row of a table or item in a list)
+    Int {
+        val: usize,
+        span: Span,
+        /// If marked as optional don't throw an error if not found but perform default handling
+        /// (e.g. return `Value::Nothing`)
+        optional: bool,
+    },
+}
 ```
