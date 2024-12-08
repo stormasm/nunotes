@@ -24,7 +24,6 @@ pub struct CellPath {
 }
 
 /// One level of access of a [`CellPath`]
-#[derive(Debug, Clone, Serialize, Deserialize)]
 pub enum PathMember {
     /// Accessing a member by string (i.e. columns of a table or [`Record`](crate::Record))
     String {
