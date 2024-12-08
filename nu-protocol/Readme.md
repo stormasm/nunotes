@@ -18,7 +18,7 @@ pub struct FullCellPath {
 /// 0.col1
 /// col2
 /// 42
-/// ```
+
 pub struct CellPath {
     pub members: Vec<PathMember>,
 }

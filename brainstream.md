@@ -1,4 +1,11 @@
 
+
+##### 12/07/2024
+
+- FullCellPath
+- CellPath
+- PathMember
+
 #### evaluate_source is the final stop for the whole concept
 
 ##### 12/06/24: How does a new parser get kicked off ?
