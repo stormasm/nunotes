@@ -1,4 +1,6 @@
 
+To visualize the ast simply cat this file in your terminal :)
+
 ```rust
 ast [{name: sam rank: 10} {name: bill rank: 34}]
 ```
