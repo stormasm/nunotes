@@ -1,4 +1,8 @@
 
+```rust
+ast [{name: sam rank: 10} {name: bill rank: 34}]
+```
+---
 
 pipelines: [                                                                                         │
 │       │         Pipeline {                                                                                       │
