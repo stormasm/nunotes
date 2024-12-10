@@ -1,4 +1,9 @@
 
+##### 12/10/2024 working on IR
+
+```rust
+eval_pipeline_without_terminal_expression
+```
 
 ##### 12/07/2024
 
@@ -6,7 +11,7 @@
 - CellPath
 - PathMember
 
-#### evaluate_source is the final stop for the whole concept
+#### Conclusion: *evaluate_source* is the final stop for the whole concept
 
 ##### 12/06/24: How does a new parser get kicked off ?
 
