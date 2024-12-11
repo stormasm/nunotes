@@ -1,4 +1,6 @@
 
+- [Nushell IR Doc (for now)](https://github.com/nushell/nushell/blob/63787f367b3923df8fca59ed260861f88aa0b711/crates/nu-protocol/src/ir/mod.rs)
+
 - [Blog Post Release of the IR in Version 0.96](https://www.nushell.sh/blog/2024-07-23-nushell_0_96_0.html#internal-representation-preview-toc)
 
 ### debug profile

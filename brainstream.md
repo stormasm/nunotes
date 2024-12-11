@@ -5,7 +5,7 @@
 eval_pipeline_without_terminal_expression
 ```
 
-##### 12/07/2024
+##### 12/07/2024 looking at the ast produced from a nuon table
 
 - FullCellPath
 - CellPath
