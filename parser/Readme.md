@@ -35,4 +35,12 @@ if pipeline.commands.len() > 1 {
 
 ### References
 
+- [kubouch notes on parsing et al](https://discord.com/channels/601130461678272522/683070703716925568/1316492246505361508)
+
+```rust
+[[foo bar]; [1 2][2 3]]
+```
+
+- is parsed as math expression because it starts with [.
+- Math expression means "expression that is not a call". For example, foo is parsed as a call, but in ls foo, the foo is a math expression (because it's not in a call position) and is eventually parsed as a string.
 - [entity component systems](https://en.wikipedia.org/wiki/Entity_component_system)
