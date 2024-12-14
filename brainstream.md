@@ -1,5 +1,5 @@
 
-##### 12/13/2024 Keep going with IrBlock
+##### 12/13/2024 Keep going with IrBlock along with the view command
 
 ##### 12/10/2024 working on IR
 
