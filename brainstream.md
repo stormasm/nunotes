@@ -1,4 +1,11 @@
 
+Run rg inside the nu-command crate to see where this is referenced in concert
+with `view ir`
+
+```rust
+rg "call\.req\(engine_state, stack, 0\)\?;"
+```
+
 ##### 12/13/2024 Keep going with IrBlock along with the view command
 
 ##### 12/10/2024 working on IR
