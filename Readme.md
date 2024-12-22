@@ -1,4 +1,8 @@
 
+##### How eval works
+
+- [excellent kubouch explanation](https://github.com/nushell/nushell/issues/2812#issuecomment-2558166296)
+
 #### $nu
 
 This is a critical command / variable for understanding all of your
