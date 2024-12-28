@@ -1,5 +1,7 @@
 
-FYI - I enabled Pull Request Merge Queue this morning. It's a Branch Protection rule. Here are the defaults 
+- [List of core team members](https://discord.com/channels/601130461678272522/683070703716925568/1322616683247964213) and their first commit...
+
+FYI - I enabled Pull Request Merge Queue this morning. It's a Branch Protection rule. Here are the defaults
 
 [message link](https://discord.com/channels/601130461678272522/683070703716925568/1073604656204349501)
 
@@ -11,10 +13,10 @@ If we want to disable it, we go to the repo "Settings" then "Code and Automation
 open <file>
 | into dB
 | select *
-| from history 
+| from history
 ```
 
-being able to do this is so nice 
+being able to do this is so nice
 
 ```rust
 open-db $nu.history-path | select * | from history | limit 10 | collect
