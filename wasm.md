@@ -1,4 +1,6 @@
 
+https://cptpiepmatz.github.io/nushell-web-demo/
+
 ##### Method One
 
 ```rust
