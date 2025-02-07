@@ -1,4 +1,13 @@
 
+##### Startup with zsh and Nushell
+
+In Ghostty, I think you could set a startup command that runs something like this
+which would save you the startup step [discord](https://discord.com/channels/601130461678272522/683070703716925568/1337091577314803794).
+
+```
+zsh -c "exec nu"
+```
+
 ##### How eval works
 
 - [excellent kubouch explanation](https://github.com/nushell/nushell/issues/2812#issuecomment-2558166296)
