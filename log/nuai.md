@@ -11,4 +11,16 @@ Over the past couple of months we have noticed that in some cases developers
 are using the AI tool output as a replacement for their own words in dialogs
 and code.
 
-This has led to some confusing and unclear direction in which way 
+This has led to some confusing and unclear direction in our policy about
+how we want to move forward on this subject.  This document will attempt
+to outline a path ahead :)
+
+### Pull Requests
+
+The most important concept about submitting a PR to nushell is that if
+you do use an AI tool to assist you in writing the code you must fully
+understand each and every line of code that gets submitted.  Relying
+on an AI tool to "write the code for you" and not carefully reviewing
+each line of code that gets generated and understanding what it does
+will not help the Nushell community and codebase move forward in a sustainable
+fashion. 
