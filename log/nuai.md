@@ -14,10 +14,9 @@ most specifically in the context of Pull Requests (PRs)
 - Over the past couple of months we have noticed that in some cases developers
 are using the AI tool output as a replacement for their own words in dialogs
 and code.
-- This has led to some confusing and unclear direction in our policy about
+- This has led to some confusion and unclear direction in our policy about
 how we want to move forward on this subject.  
-- This document will attempt
-to outline a path ahead.
+- This document will attempt to outline a path ahead.
 
 ### Pull Requests
 
