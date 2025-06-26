@@ -3,7 +3,7 @@
 
 ### Summary of the guidelines
 
-- Do not use the AI model to communicate with the PR reviewer if you are a native English speaker
+- Do not use the AI model to communicate with the PR reviewer if you are a native English speaker;
 use your own words
 - Fully understand each line of code that gets submitted in a PR
 
