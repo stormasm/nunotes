@@ -17,10 +17,10 @@ to outline a path ahead :)
 
 ### Pull Requests
 
-The most important concept about submitting a PR to nushell is that if
+The most important concept about submitting a PR to Nushell is that if
 you do use an AI tool to assist you in writing the code you must fully
 understand each and every line of code that gets submitted.  Relying
 on an AI tool to "write the code for you" and not carefully reviewing
 each line of code that gets generated and understanding what it does
 will not help the Nushell community and codebase move forward in a sustainable
-fashion. 
+fashion.
