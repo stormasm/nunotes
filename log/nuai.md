@@ -16,8 +16,9 @@ including Discussions, Issues, and Discord.
 are using the AI tool output as a replacement for their own words in dialogs
 and code.
 - This has led to some confusing and unclear direction in our policy about
-how we want to move forward on this subject.  This document will attempt
-to outline a path ahead :)
+how we want to move forward on this subject.  
+- This document will attempt
+to outline a path ahead.
 
 ### Pull Requests
 
