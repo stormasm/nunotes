@@ -7,7 +7,7 @@
 use your own words
 - Fully understand each line of code that gets submitted in a PR
 
-### Scope of the guidelines
+### Scope and motivation of the guidelines
 
 - This document is about how Nushell contributors interact with the community as a whole
 most specifically in the context of Pull Requests (PRs)
