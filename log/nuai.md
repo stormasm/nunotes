@@ -1,13 +1,13 @@
 
 ## Nushell AI Guidelines
 
-### Summary of the Document
+### Summary of the guidelines
 
 - Do not use the AI model to communicate with the PR reviewer if you are a native English speaker
 use your own words
 - Fully understand each line of code that gets submitted in a PR
 
-### Scope of this document
+### Scope of the guidelines
 
 This document is about how Nushell contributors interact with the community as a whole
 most specifically in the context of Pull Requests (PRs) but also in other areas
