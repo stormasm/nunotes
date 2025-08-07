@@ -26,6 +26,7 @@
 | concept | scripting |
 | concept | semantics |
 | concept | stability-concern |
+| concept | syntax |
 | concept | unhelpful-error |
 | concept | wontfix |
 
@@ -34,6 +35,7 @@
 | Category| Label|
 | ---------| --------|
 | platform | platform-specific |
+| platform | POSIX-expectations |
 | platform | android |
 | platform | freebsd |
 | platform | linux |
