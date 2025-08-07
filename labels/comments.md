@@ -10,8 +10,10 @@
 | concept | good first issue |
 | concept | help wanted |
 | concept | investigate |
+| concept | language |
 | concept | more information needed |
 | concept | naming things |
+| concept | needs design |
 | concept | needs triage |
 | concept | optimization |
 | concept | performance |
@@ -22,6 +24,7 @@
 | concept | question |
 | concept | refactor |
 | concept | scripting |
+| concept | semantics |
 | concept | stability-concern |
 | concept | unhelpful-error |
 | concept | wontfix |
