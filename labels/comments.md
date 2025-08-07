@@ -2,8 +2,9 @@
 
 ### Platforms
 
-| | |
-| category | label |
+
+| Category| Label |
+| ---------| --------|
 | platform | android |
 | platform | freebsd |
 | platform | linux |
