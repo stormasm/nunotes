@@ -56,3 +56,7 @@ The platform labels are fine but it was obvious that they fit into a well define
 | platform | macos |
 | platform | windows |
 | platform | wasm |
+
+### Reference
+
+[Complete List of Labels](https://hackmd.io/d574LQorTAGigMmGcrb-OQ)
