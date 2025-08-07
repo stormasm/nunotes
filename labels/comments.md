@@ -5,7 +5,7 @@
 
 | Category | Labels  |
 | ---------| --------|
-| platform | android, freebsd, linux, macos, windows |
+| platform | android, freebsd, linux, macos, windows, wasm |
 
 ---
 
