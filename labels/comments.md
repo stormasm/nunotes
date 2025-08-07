@@ -3,7 +3,13 @@
 ### Platforms
 
 
-| Category| Label |
+| Category | Labels  |
+| ---------| --------|
+| platform | android, freebsd, linux, macos, windows |
+
+---
+
+| Category| Label|
 | ---------| --------|
 | platform | android |
 | platform | freebsd |
