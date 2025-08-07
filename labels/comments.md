@@ -59,4 +59,4 @@ The platform labels are fine but it was obvious that they fit into a well define
 
 ### Reference
 
-[Complete List of Labels](https://hackmd.io/d574LQorTAGigMmGcrb-OQ)
+[Complete List of Nushell Issue Labels](https://hackmd.io/d574LQorTAGigMmGcrb-OQ)
