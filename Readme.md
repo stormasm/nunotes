@@ -1,4 +1,10 @@
 
+##### Release Notes script
+
+Starts on 11/29/2025 around 9:04am
+
+- [discord](https://discord.com/channels/601130461678272522/601130461678272524/1444373571651768465)
+
 ##### Startup with zsh and Nushell
 
 In Ghostty, I think you could set a startup command that runs something like this
