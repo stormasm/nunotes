@@ -1,6 +1,10 @@
 
 ##### Release Notes script
 
+Continued on 12/02/2025
+
+- [discord](https://discord.com/channels/601130461678272522/601130461678272524/1445537087163203584)
+
 Starts on 11/29/2025 around 9:04am
 
 - [release notes](https://github.com/nushell/nu_scripts/tree/main/make_release/notes)
