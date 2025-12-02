@@ -3,6 +3,7 @@
 
 Starts on 11/29/2025 around 9:04am
 
+- [release notes](https://github.com/nushell/nu_scripts/tree/main/make_release/notes)
 - [discord](https://discord.com/channels/601130461678272522/601130461678272524/1444373571651768465)
 
 ##### Startup with zsh and Nushell
