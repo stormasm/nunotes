@@ -27,7 +27,7 @@ The People :
 In reality we think in order to get the NNP developed and integrated into Nushell
 we are going to need the help of a few key developers who have the "ability"
 and "knowledge" to guide us to a soft landing and integration.  The thesis being
-that with out a subset of these people we do not currently have the expertise to complete
+that without a subset of these people we do not currently have the expertise to complete
 the job.  And if this is the case then we can take the NNP off the table and
 move forward with plans to complete 1.0.
 
