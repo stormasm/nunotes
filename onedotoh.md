@@ -31,6 +31,14 @@ that with out a subset of these people we do not currently have the expertise to
 the job.  And if this is the case then we can take the NNP off the table and
 move forward with plans to complete 1.0.
 
+This was confirmed recently in communication with Wind and Yash who both
+expressed on discord (in so many words) that they do not have the knowledge
+needed to complete the task without the help of the "core NNP" developers.
+
+https://github.com/nushell/new-nu-parser/graphs/contributors
+
+Based on developers who have contributed to the new-nu-parser over time.
+
 ### One Dot Oh
 
 One of the main reasons we have not gotten to Nushell 1.0 yet is because for the
