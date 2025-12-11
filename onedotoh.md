@@ -48,6 +48,10 @@ Which brings us to our third key idea of funding.  If the above named developers
 are wiling to help on this effort would funding help motivate them to be more
 involved and spend the time that it takes to complete the task.
 
+If we were able to get the help of the above named developers then a funding
+effort could begin in the spring of 2026 after some research is done to determine
+the best way to do this.
+
 Our belief is that we could get the funding required to get the job done if
 Sophia and Devyn were involved.  At least we would make a whole hearted effort
 to attempt to get the funding required by the end of summer 2026.
