@@ -17,10 +17,8 @@ The Concepts :
 The People :
 
 - Sophia
-- Andres ?
 - Devyn
 - Jakub
-- Sholderbach ?
 
 ### New-nu-parser (NNP)
 
