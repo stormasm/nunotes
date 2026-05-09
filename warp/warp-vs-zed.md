@@ -1,4 +1,6 @@
 
+- [Google: Warp vs Zed](https://www.google.com/search?q=are+warp+and+zed+in+competition+or+working+together&rlz=1C5OZZY_enUS1141US1141&oq=are+warp+and+zed+in+competition+or+working+together&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABjvBTIHCAIQABjvBTIHCAMQABjvBTIHCAQQABjvBTIHCAUQABjvBdIBCTEzNDc3ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8)
+
 Warp and Zed are primarily in competition as they fight for the same user base of developers looking for fast, AI-native tools, though they have different, specialized areas of focus.
 
 [Warp] is an intelligent terminal (or Agentic Development Environment) that is building AI capabilities directly into the command line.
