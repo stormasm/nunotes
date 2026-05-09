@@ -1,4 +1,6 @@
 
+https://onnx.ai/
+
 ### Early January 2026 Nushell in Concert with AI discussion
 
 - [part 01](https://discord.com/channels/601130461678272522/601130461678272524/1458889081869172746)
