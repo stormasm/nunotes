@@ -1,4 +1,11 @@
 
+
+### Open Collective
+
+- [helix transactions](https://opencollective.com/helix-editor/transactions)
+- [helix budget with balance](https://opencollective.com/helix-editor#category-BUDGET)
+
+
 ### HackClub
 
 - [ghostty](https://hcb.hackclub.com/ghostty)
