@@ -4,7 +4,7 @@
 
 - [helix transactions](https://opencollective.com/helix-editor/transactions)
 - [helix budget with balance](https://opencollective.com/helix-editor#category-BUDGET)
-
+- [since april of 2022](https://opencollective.com/helix-editor/contributions/535486)
 
 ### HackClub
 
