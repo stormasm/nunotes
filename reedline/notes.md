@@ -1,4 +1,6 @@
 
+## LineBuffer and Editor Architecture in Reedline
+
 - LineBuffer is the core text model,
 - Editor is the stateful editing controller, and
 - Reedline is the top-level interactive engine.
