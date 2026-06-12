@@ -1,4 +1,10 @@
 
+### Latest Log
+
+- [notes.md](./notes.md)
+
+### Legacy Notes
+
 * [how does repaint work](./code.md)
 * [setting emacs and vi as the default editor](./editor.md)
 * [the insides of the menu system](./menu.md)
