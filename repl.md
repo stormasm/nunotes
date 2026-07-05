@@ -7,7 +7,7 @@ Stack of how the repl gets called...
 
 ### the file repl.rs in the nu-cli crate
 
-- which lives inside the file repl.rs in the crate nu-cli
+- *evaluate_repl* lives inside the file repl.rs in the crate nu-cli
 - the *evaluate_repl* function has a loop construct inside of it
 - inside the loop construct is a call to loop_iteration
 -
