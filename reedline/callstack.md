@@ -8,5 +8,5 @@ In reality this is the way everyone fires up and uses Reedline
 
 - read_line
 - read_line_helper  [lines 830 - 968]
-- repaint
+- [repaint](./code.md)
 - update_working_details
