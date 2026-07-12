@@ -1,4 +1,11 @@
 
+---
+
+/// Trait that defines how a menu will be printed by the painter
+[pub trait Menu: Send](./menu.rs)
+
+---
+
 - *fn resolve_completer_input*
 - is called from all 4 menu types in the
 - *fn update_values*

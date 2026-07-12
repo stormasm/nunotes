@@ -1,4 +1,6 @@
 
+/// Trait that defines how a menu will be printed by the painter
+pub trait Menu: Send {
 
 /// Menu to present suggestions in a columnar fashion
 /// It presents a description of the suggestion if available
