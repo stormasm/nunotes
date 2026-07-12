@@ -1,4 +1,8 @@
 
+- *fn resolve_completer_input*
+- is called from all 4 menu types in the
+- *fn update_values*
+
 ### Real world example of how to add a new menu to nushell
 
 * [On the nushell side this PR shows the simplicity of how our menu system works](https://github.com/nushell/nushell/pull/11593)
