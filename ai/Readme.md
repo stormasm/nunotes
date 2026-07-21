@@ -1,4 +1,7 @@
 
+- [Peter Steinberger Talks on Ai](https://github.com/steipete/speaking)
+
+
 https://onnx.ai/
 
 ### Early January 2026 Nushell in Concert with AI discussion
