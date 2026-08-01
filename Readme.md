@@ -1,4 +1,6 @@
 
+- [log26](https://github.com/stormasm/nunotes/blob/main/log/log26.md)
+
 ##### Release Notes script
 
 Continued on 12/02/2025
