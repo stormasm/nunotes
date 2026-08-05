@@ -1,4 +1,16 @@
 
+### Reserved Special Variables / Words in Nushell
+
+In keeping with the flavor of our reserved special variables / words
+- $in
+- $nu
+- $env
+- $it
+
+We are going to add
+- $ans
+
+---
 
 - [How the Repl gets called](https://github.com/stormasm/nunotes/blob/main/repl.md)
 
