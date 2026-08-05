@@ -1,4 +1,9 @@
 
+### Debug Adapter Protocol
+
+- https://zed.dev/docs/debugger
+- now available in nushell 2026 summer
+
 ### Reserved Special Variables / Words in Nushell
 
 In keeping with the flavor of our reserved special variables / words
