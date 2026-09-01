@@ -1,5 +1,10 @@
 
 
+### Miles amazing description of how completions work
+
+- [Unified Completions Descriptions](https://github.com/nushell/nushell/pull/18791)
+
+
 ### Corporate Overview Incredibuild
 
 - [ref incredibuild](https://docs.google.com/document/d/e/2PACX-1vT4GeXvborUk-cp2_PFguSNtqgL-F8b46ADpeqKGhAMmUDC8TCcECEEdKXYQbQeV96AZrOUAxQr1wBm/pub)
