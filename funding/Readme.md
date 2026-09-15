@@ -1,5 +1,9 @@
 
 
+### Zeffy
+
+- [Zeffy is used by the Corvallis Guitar Society](https://www.zeffy.com/)
+
 ### Open Collective
 
 - [helix contributors](https://opencollective.com/helix-editor/contribute)
