@@ -30,4 +30,4 @@ Here is a breakdown of what it means, why it matters, and how it works:
 
 Language committees and developer communities often use extensive **validation suites**—massive collections of test scripts and source code designed to probe every corner of a language specification.
 
-For example, when a new `Nu` standard is released, compiler developers run their compilers against thousands of test cases to ensure every new feature (like concepts, modules, or coroutines) conforms precisely to the ISO standard.
+For example, when a new `Nu` standard is released, developers run their parsers or implementation of the language against thousands of test cases to ensure every new feature conforms precisely to the standard.
