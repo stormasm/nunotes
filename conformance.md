@@ -13,7 +13,9 @@ Here is a breakdown of what it means, why it matters, and how it works:
 ### **Why Conformance Matters**
 
 * **Portability:** If a language implementation fully conforms to a standard, code written on one compiler or platform will run identically on another. This prevents "vendor lock-in."  
+
 * **Predictability:** Developers rely on standardized behaviors to ensure code is bug-free, secure, and behaves consistently across different operating systems or hardware architectures.  
+
 * **Interoperability:** Libraries and frameworks built by different teams can work together seamlessly because they all speak the exact same standardized version of the language.
 
 ### **Common Types of Conformance**
