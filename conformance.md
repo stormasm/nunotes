@@ -21,10 +21,8 @@ Here is a breakdown of what it means, why it matters, and how it works:
 ### **Common Types of Conformance**
 
 > 1. **Strict Conformance:** The compiler/interpreter follows the standard to the letter. It rejects any code that uses non-standard extensions or violates the specification, even if the underlying platform might otherwise support it.  
-> 2. **Implementation-Defined & Undefined Behavior:** Even fully conforming implementations often leave certain edge cases as "implementation-defined" (meaning the compiler must document how it handles it) or "undefined" (where the standard doesn't mandate a behavior). Conformance tests check how a tool handles these boundaries.  
-> 3. **Subset/Superset Conformance:** Some embedded systems or specialized domains might use a *subset* of a language for safety (e.g., MISRA C). Conversely, many compilers offer *extensions* (a superset) while still maintaining core conformance if flags are set correctly.
 
-> 
+> 2. **Implementation-Defined & Undefined Behavior:** Even fully conforming implementations often leave certain edge cases as "implementation-defined" (meaning the compiler must document how it handles it) or "undefined" (where the standard doesn't mandate a behavior). Conformance tests check how a tool handles these boundaries.  
 
 ### **How Conformance is Tested**
 
