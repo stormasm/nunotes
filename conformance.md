@@ -1,10 +1,13 @@
 In the context of a programming language, **conformance** (often called *language conformance* or *compliance*) refers to how strictly a specific implementation of a compiler, interpreter, or tool adheres to the official specification or standard defined for that language.  
+
 Here is a breakdown of what it means, why it matters, and how it works:
 
 ### **Key Concepts**
 
-* **The Standard (The "Rulebook"):** Many programming languages have a formal specification maintained by a standards organization (such as ISO, IEC, ANSI) or a core language committee. For example, C has ISO/IEC standards (like C11 or C17), C++ has ISO standards (like C++20), and ECMAScript (JavaScript) is standardized by Ecma International.  
+* **The Standard (The "Rulebook"):** Many programming languages have a formal specification maintained by a standards organization (such as ISO, IEC, ANSI) or a core language committee. For example, C has ISO/IEC standards (like C11 or C17), C++ has ISO standards (like C++20), and ECMAScript (JavaScript) is standardized by Ecma International. 
+ 
 * **The Implementation (The "Player"):** This is the actual software tool you run, such as GCC or Clang for C++, or V8 for JavaScript.  
+
 * **Conformance Level:** An implementation is considered "conforming" if it correctly implements every required feature, syntax rule, and behavior mandated by the language standard, without violating any prohibitions.
 
 ### **Why Conformance Matters**
