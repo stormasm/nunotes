@@ -3,6 +3,15 @@
 
 ---
 
+- [Experimental Options](https://www.nushell.sh/blog/2025-07-23-nushell_0_106_0.html)
+
+```rust
+nurun --experimental-options winnow-parser
+alias nuwin='nurun --experimental-options winnow-parser'
+```
+
+---
+
 ##### Debug vs Release mode and the number of crates
 
 - [Darren's note from Discord](https://discord.com/channels/601130461678272522/683070703716925568/1560322511692898417)
