@@ -1,6 +1,16 @@
 
 - [log26](https://github.com/stormasm/nunotes/blob/main/log/log26.md)
 
+---
+
+##### Debug vs Release mode and the number of crates
+
+- [Darren's note from Discord](https://discord.com/channels/601130461678272522/683070703716925568/1560322511692898417)
+
+```rust
+cargo build --release --config 'profile.release.build-override.opt-level="s"'
+```
+
 ##### Release Notes script
 
 Continued on 12/02/2025
