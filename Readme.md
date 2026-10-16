@@ -10,6 +10,13 @@ nurun --experimental-options winnow-parser
 alias nuwin='nurun --experimental-options winnow-parser'
 ```
 
+This will show you that the winnow parser is indeed on !
+
+```rust
+nuwin
+debug experimental-options
+```
+
 ---
 
 ##### Debug vs Release mode and the number of crates
