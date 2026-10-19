@@ -1,3 +1,6 @@
+
+#### How to filter out all of the logging code in nushell except one line
+
 Yes\! Depending on whether you are using the standard log crate (with a subscriber like env\_logger) or tracing, you can easily filter out everything except a single line by using **custom targets** and **environment filter strings**.
 
 Here are the best ways to achieve this.
