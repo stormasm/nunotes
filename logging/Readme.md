@@ -1,0 +1,3 @@
+
+For logging notes in general...
+
