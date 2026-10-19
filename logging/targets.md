@@ -1,4 +1,4 @@
-In rust logging what are targets
+#### In rust logging what are targets
 
 In Rust logging (typically using the standard log facade crate), a **target** is a string identifier attached to a log record that specifies its origin or category. Think of it as a namespace or category tag for your logs, separate from the actual module path where the log macro was called.
 
