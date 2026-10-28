@@ -1,8 +1,8 @@
 
 ### How Nushell handles flags in scripts
 
-- [ref](https://github.com/stormasm/nunotes/blob/main/flags.md)
-- [ref](./../flags.md)
+- [ref1](https://github.com/stormasm/nunotes/blob/main/flags.md)
+- [ref2](./../flags.md)
 
 ### How to suppress linker messages
 
