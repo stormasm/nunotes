@@ -23,7 +23,7 @@ def main \[
         print $"Youare($age) years old."  
     }  
 }
-```nu
+```
 
 ### **Running the Script**
 
