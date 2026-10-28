@@ -4,6 +4,7 @@ In Nushell, scripts handle arguments and flags through a main function definitio
 
 Create a script file (e.g., greet.nu):
 
+```nu
 Code snippet  
 \# greet.nu  
 def main \[  
@@ -22,6 +23,7 @@ def main \[
         print $"Youare($age) years old."  
     }  
 }
+```nu
 
 ### **Running the Script**
 
