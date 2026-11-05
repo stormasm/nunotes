@@ -19,6 +19,20 @@ debug experimental-options
 
 ---
 
+### linker error message Nushell
+
+to get rid of the linker error message
+in the winnow_parser branch
+
+line 33 in the file .cargo/config.toml
+
+change this line
+rustflags = ["-Ctarget-cpu=apple-m1"]
+to this line
+rustflags = ["-Ctarget-cpu=apple-m1", "-Alinker-messages"]
+
+---
+
 ##### Debug vs Release mode and the number of crates
 
 - [Darren's note from Discord](https://discord.com/channels/601130461678272522/683070703716925568/1560322511692898417)
