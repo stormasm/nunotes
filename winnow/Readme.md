@@ -3,6 +3,19 @@
 Everything starts
 [here](https://github.com/stormasm/nushell/blob/winnow_parser/crates/nu-parser/src/winnow/syntax/mod.rs)
 
+And then goes
+[here](https://github.com/stormasm/nushell/blob/winnow_parser/crates/nu-parser/src/winnow/syntax/parser/mod.rs)
+
+```rust
+/// Parse `source` into an AST plus any diagnostics (nu's `parse`).
+pub(crate) fn parse<'a>(source: &'a str, config: &ParseConfig) -> (Ast<'a>, Vec<Diagnostic>) {
+}
+
+/// Parse the block covering `span` of `source` statement by statement (see
+/// [`crate::winnow::syntax::parse_block_streaming`]).
+pub(crate) fn parse_block_streaming<'a>(
+```
+
 ---
 
 ```rust
