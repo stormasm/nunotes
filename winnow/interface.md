@@ -1,5 +1,5 @@
 
-rust ```
+```rust
 rg crate::winnow
 ```
 
